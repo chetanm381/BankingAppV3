@@ -820,7 +820,7 @@ Screen2 As screen:
                         Size: =12
                         Text: ="Application number"
                         Width: =Parent.Width*.1
-                        X: =Parent.Width*.01
+                        X: =Parent.Width*.03
                         Y: =Parent.Height*.02
                         ZIndex: =3
 
@@ -831,7 +831,7 @@ Screen2 As screen:
                         Height: =50
                         Size: =12
                         Text: ="Name"
-                        Width: =Parent.Width*.1
+                        Width: =Parent.Width*.08
                         X: =DS_Label13_10.Width+DS_Label13_10.X
                         Y: =Parent.Height*.02
                         ZIndex: =4
@@ -924,9 +924,8 @@ Screen2 As screen:
                         OnSelect: =Select(Parent)
                         Size: =11
                         Text: =ThisItem.ApplicationNumber
-                        Width: =Parent.Width*.15
-                        X: =DS_Label11_10.X+(DS_Label13_5.Width-Self.Width)/2
-                        Y: =(Gallery1_2.TemplateHeight-Self.Height)/2
+                        Width: =Parent.Width*.06
+                        X: =DS_Label13_10.X
                         ZIndex: =1
 
                     DS_Label15_2 As label:
