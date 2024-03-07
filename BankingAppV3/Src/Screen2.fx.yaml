@@ -803,7 +803,7 @@ Screen2 As screen:
                     LoadingSpinner: =LoadingSpinner.Data
                     TemplatePadding: =0
                     TemplateSize: =80
-                    Width: =2000
+                    Width: =1800
                     ZIndex: =1
 
                     Label18 As label:
