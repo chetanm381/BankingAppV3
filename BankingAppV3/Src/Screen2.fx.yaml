@@ -1,0 +1,255 @@
+Screen2 As screen:
+
+    cmp_HeaderContainer_NDS As groupContainer.manualLayoutContainer:
+        BorderStyle: =BorderStyle.None
+        DropShadow: =DropShadow.None
+        Height: =Parent.Height*.08
+        Width: =Parent.Width
+        ZIndex: =1
+
+        DS_img_xebiaLogo_5 As image:
+            Height: =Parent.Height*.80
+            Image: ='download (7) 1'
+            PaddingBottom: =5
+            PaddingLeft: =5
+            PaddingTop: =5
+            Width: =153
+            Y: =(Parent.Height-Self.Height)/2
+            ZIndex: =1
+
+        DS_userimage_9 As image:
+            Height: =50
+            Image: =User().Image
+            RadiusBottomLeft: =50
+            RadiusBottomRight: =50
+            RadiusTopLeft: =50
+            RadiusTopRight: =50
+            Width: =50
+            X: =Parent.Width-Self.Width-Parent.Width*.02
+            Y: =(Parent.Height-Self.Height)/2
+            ZIndex: =2
+
+        DS_Button1_15 As button:
+            BorderThickness: =1
+            Color: =RGBA(107, 29, 94, 1)
+            Fill: =RGBA(252, 242, 247, 1)
+            Height: =Parent.Height*.5
+            HoverFill: =ColorFade(Self.Color, 20%)
+            OnSelect: |
+                =Set(
+                    visibility,
+                    false
+                );
+                Reset(OA_TextInput2_6);
+                Reset(OA_TextInput2_8);
+                Reset(OA_TextInput2_9);
+                Reset(OA_TextInput2_10);
+                Reset(OA_TextInput2_7);
+                Reset(OA_TextInput2_11);
+                
+                Navigate(
+                    OpenAccountScreen,
+                    ScreenTransition.CoverRight
+                );
+            Size: =10
+            Text: ="New Customer Visit"
+            Visible: =false
+            Width: =Parent.Width*.15
+            X: =DS_userimage_9.X-Self.Width-Parent.Width*.01
+            Y: =(Parent.Height-Self.Height)/2
+            ZIndex: =3
+
+        Image2_3 As image:
+            Height: =40
+            Image: ='notification (1)'
+            Width: =40
+            X: =DS_userimage_9.X-Self.Width-Parent.Width*.01
+            Y: =(Parent.Height-Self.Height)/2
+            ZIndex: =5
+
+    con_Main_NDS As groupContainer.verticalAutoLayoutContainer:
+        Height: =Parent.Height-cmp_HeaderContainer_NDS.Height-shp_Seperator.Height
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutMode: =LayoutMode.Auto
+        Width: =Parent.Width
+        Y: =DS_Rectangle2_3.Y+DS_Rectangle2_3.Height
+        ZIndex: =2
+
+        con_UserName_NDS As groupContainer.horizontalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
+            DropShadow: =DropShadow.None
+            FillPortions: =0
+            Height: =Parent.Height*.09
+            LayoutAlignItems: =LayoutAlignItems.Center
+            LayoutMinHeight: =100
+            LayoutMinWidth: =Parent.Width
+            LayoutMode: =LayoutMode.Auto
+            PaddingLeft: =10
+            Width: =Parent.Width
+            ZIndex: =1
+
+            Image5_2 As image:
+                Height: =50
+                Image: =User().Image
+                RadiusBottomLeft: =50
+                RadiusBottomRight: =50
+                RadiusTopLeft: =50
+                RadiusTopRight: =50
+                Width: =50
+                X: =Parent.Width*.005
+                Y: =(Parent.Height-Self.Height)/2
+                ZIndex: =1
+
+            HtmlText1_1 As htmlViewer:
+                HtmlText: ="<b>Hello,</b> "& Proper(User().FullName)
+                Size: =15
+                Width: =Parent.Width*.15
+                X: =Image5.Width+Image5.X+Parent.Width*.006
+                Y: =(Parent.Height-Self.Height)/2
+                ZIndex: =2
+
+            Container8 As groupContainer.manualLayoutContainer:
+                AlignInContainer: =AlignInContainer.SetByContainer
+                DropShadow: =DropShadow.None
+                FillPortions: =0
+                Height: =Parent.Height
+                LayoutMinHeight: =Parent.Height
+                LayoutMinWidth: =250
+                Width: =Parent.Width*.3
+                ZIndex: =3
+
+            Container8_1 As groupContainer.manualLayoutContainer:
+                AlignInContainer: =AlignInContainer.SetByContainer
+                DropShadow: =DropShadow.None
+                FillPortions: =0
+                Height: =Parent.Height
+                LayoutMinHeight: =Parent.Height
+                LayoutMinWidth: =250
+                Width: =Parent.Width*.27
+                ZIndex: =4
+
+            DS_Button1_16 As button:
+                BorderColor: |-
+                    =ColorFade(ColorValue("#6b1d5e"), 70%)
+                BorderThickness: =1
+                Color: =RGBA(107, 29, 94, 1)
+                Fill: =RGBA(252, 242, 247, 1)
+                Height: =Parent.Height*.5
+                HoverBorderColor: =RGBA(252, 242, 247, 1)
+                HoverFill: =ColorFade(Self.Color, 20%)
+                OnSelect: |
+                    =If(IsBlank(DS_Dropdown1_3.Selected.Value),Set(InReview,true),Set(InReview,InReview));
+                PressedBorderColor: =RGBA(252, 242, 247, 1)
+                RadiusBottomLeft: =5
+                RadiusBottomRight: =5
+                RadiusTopLeft: =5
+                RadiusTopRight: =5
+                Size: =10
+                Text: ="My Task"
+                Width: =Parent.Width*.08
+                X: =DS_Button1_14.X-Self.Width-Parent.Width*.012
+                Y: =(Parent.Height-Self.Height)/2
+                ZIndex: =5
+
+            Container8_2 As groupContainer.manualLayoutContainer:
+                AlignInContainer: =AlignInContainer.SetByContainer
+                DropShadow: =DropShadow.None
+                FillPortions: =0
+                LayoutMinHeight: =Parent.Height
+                LayoutMinWidth: =250
+                Width: =Parent.Width*.02
+                ZIndex: =6
+
+            DS_Button1_17 As button:
+                BorderColor: |-
+                    =ColorFade(ColorValue("#6b1d5e"), 70%)
+                BorderThickness: =1
+                Color: =RGBA(107, 29, 94, 1)
+                Fill: =RGBA(252, 242, 247, 1)
+                Height: =Parent.Height*.5
+                HoverBorderColor: =RGBA(252, 242, 247, 1)
+                HoverFill: =ColorFade(Self.Color, 20%)
+                OnSelect: |
+                    =Set(
+                        visibility,
+                        false
+                    );
+                    Reset(OA_TextInput2_6);
+                    Reset(OA_TextInput2_8);
+                    Reset(OA_TextInput2_9);
+                    Reset(OA_TextInput2_10);
+                    Reset(OA_TextInput2_7);
+                    Reset(OA_TextInput2_11);
+                    
+                    Navigate(
+                        OpenAccountScreen,
+                        ScreenTransition.CoverRight
+                    );
+                PressedBorderColor: =RGBA(252, 242, 247, 1)
+                RadiusBottomLeft: =5
+                RadiusBottomRight: =5
+                RadiusTopLeft: =5
+                RadiusTopRight: =5
+                Size: =10
+                Text: ="New Customer Visit"
+                Width: =Parent.Width*.12
+                X: =Parent.Width-Self.Width-Parent.Width*.01
+                Y: =(Parent.Height-Self.Height)/2
+                ZIndex: =7
+
+        Container9 As groupContainer.horizontalAutoLayoutContainer:
+            DropShadow: =DropShadow.None
+            FillPortions: =0
+            Height: =Parent.Height*.25
+            LayoutAlignItems: =LayoutAlignItems.Center
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            PaddingLeft: =20
+            ZIndex: =2
+
+            Container6 As groupContainer.verticalAutoLayoutContainer:
+                AlignInContainer: =AlignInContainer.Center
+                Fill: =RGBA(247, 247, 247, 1)
+                FillPortions: =0
+                Height: =Parent.Height*.7
+                LayoutAlignItems: =LayoutAlignItems.Center
+                LayoutDirection: =LayoutDirection.Vertical
+                LayoutJustifyContent: =LayoutJustifyContent.Center
+                LayoutMinHeight: =Parent.Height*.6
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                RadiusBottomLeft: =20
+                RadiusBottomRight: =20
+                RadiusTopLeft: =20
+                RadiusTopRight: =20
+                Width: =Parent.Width*.2
+                ZIndex: =1
+
+                Container7 As groupContainer.horizontalAutoLayoutContainer:
+                    AlignInContainer: =AlignInContainer.Start
+                    DropShadow: =DropShadow.None
+                    FillPortions: =0
+                    Height: =Parent.Height*.6
+                    LayoutAlignItems: =LayoutAlignItems.Center
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =Parent.Width*.1
+                    LayoutMode: =LayoutMode.Auto
+                    PaddingLeft: =5
+                    Width: =Parent.Width*.3
+                    ZIndex: =1
+
+                    Image7 As image:
+                        Height: =Parent.Height
+                        Image: ='Group 494'
+                        Width: =Parent.Width
+                        ZIndex: =1
+
+    shp_Seperator As rectangle:
+        Fill: =RGBA(107, 29, 94, 1)
+        Height: =2
+        Width: =Parent.Width
+        X: =(Parent.Width-Self.Width)/2
+        Y: =DS_img_xebiaLogo_4.Y+DS_img_xebiaLogo_4.Height+Parent.Height*.015
+        ZIndex: =3
+
