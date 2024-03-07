@@ -1,0 +1,653 @@
+"'Dashboard Screen_1' As screen":
+    ContentLanguage: =""
+    OnVisible: |-
+        =Reset(DS_Dropdown1_3);
+        Set(order,true);
+        Set(InReview,false);
+        Reset(DS_Dropdown1_5)
+
+    DS_HeaderContainer_2 As groupContainer.manualLayoutContainer:
+        BorderStyle: =BorderStyle.None
+        DropShadow: =DropShadow.None
+        Height: =Parent.Height*.08
+        Width: =Parent.Width
+        ZIndex: =1
+
+        DS_img_xebiaLogo_4 As image:
+            Height: =Parent.Height*.80
+            Image: ='download (7) 1'
+            PaddingBottom: =5
+            PaddingLeft: =5
+            PaddingTop: =5
+            Width: =153
+            Y: =(Parent.Height-Self.Height)/2
+            ZIndex: =1
+
+        DS_userimage_8 As image:
+            Height: =50
+            Image: =User().Image
+            RadiusBottomLeft: =50
+            RadiusBottomRight: =50
+            RadiusTopLeft: =50
+            RadiusTopRight: =50
+            Width: =50
+            X: =Parent.Width-Self.Width-Parent.Width*.02
+            Y: =(Parent.Height-Self.Height)/2
+            ZIndex: =2
+
+        DS_Button1_11 As button:
+            BorderThickness: =1
+            Color: =RGBA(107, 29, 94, 1)
+            Fill: =RGBA(252, 242, 247, 1)
+            Height: =Parent.Height*.5
+            HoverFill: =ColorFade(Self.Color, 20%)
+            OnSelect: |
+                =Set(
+                    visibility,
+                    false
+                );
+                Reset(OA_TextInput2_6);
+                Reset(OA_TextInput2_8);
+                Reset(OA_TextInput2_9);
+                Reset(OA_TextInput2_10);
+                Reset(OA_TextInput2_7);
+                Reset(OA_TextInput2_11);
+                
+                Navigate(
+                    OpenAccountScreen,
+                    ScreenTransition.CoverRight
+                );
+            Size: =10
+            Text: ="New Customer Visit"
+            Visible: =false
+            Width: =Parent.Width*.15
+            X: =DS_userimage_8.X-Self.Width-Parent.Width*.01
+            Y: =(Parent.Height-Self.Height)/2
+            ZIndex: =3
+
+        Label6_3 As label:
+            Align: =Align.Center
+            Color: =RGBA(107, 29, 94, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =Parent.Height
+            Size: =25
+            Text: ="DOOR STEP BANKING"
+            Width: =Parent.Width/2
+            X: =(Parent.Width-Self.Width)/2
+            Y: =(Parent.Height-Self.Height)/2
+            ZIndex: =4
+
+        Image2_2 As image:
+            Height: =40
+            Image: ='notification (1)'
+            Width: =40
+            X: =DS_userimage_8.X-Self.Width-Parent.Width*.01
+            Y: =(Parent.Height-Self.Height)/2
+            ZIndex: =5
+
+    DS_Rectangle2_3 As rectangle:
+        Fill: =RGBA(201, 201, 201, 1)
+        Height: =2
+        Width: =Parent.Width*.95
+        X: =(Parent.Width-Self.Width)/2
+        Y: =DS_img_xebiaLogo_4.Y+DS_img_xebiaLogo_4.Height+Parent.Height*.015
+        ZIndex: =2
+
+    DS_Container7_1 As groupContainer.manualLayoutContainer:
+        DropShadow: =DropShadow.None
+        Height: =(Parent.Height-DS_img_xebiaLogo_4.Height-DS_Rectangle2_3.Height)*.09
+        Width: =Parent.Width*.95
+        X: =(Parent.Width-Self.Width)/2
+        Y: =DS_Rectangle2_3.Y+DS_Rectangle2_3.Height+Parent.Height*.015
+        ZIndex: =4
+
+        DS_Button1_14 As button:
+            BorderColor: |-
+                =ColorFade(ColorValue("#6b1d5e"), 70%)
+            BorderThickness: =1
+            Color: =RGBA(107, 29, 94, 1)
+            Fill: =RGBA(252, 242, 247, 1)
+            Height: =Parent.Height*.5
+            HoverBorderColor: =RGBA(252, 242, 247, 1)
+            HoverFill: =ColorFade(Self.Color, 20%)
+            OnSelect: |
+                =Set(
+                    visibility,
+                    false
+                );
+                Reset(OA_TextInput2_6);
+                Reset(OA_TextInput2_8);
+                Reset(OA_TextInput2_9);
+                Reset(OA_TextInput2_10);
+                Reset(OA_TextInput2_7);
+                Reset(OA_TextInput2_11);
+                
+                Navigate(
+                    OpenAccountScreen,
+                    ScreenTransition.CoverRight
+                );
+            PressedBorderColor: =RGBA(252, 242, 247, 1)
+            RadiusBottomLeft: =5
+            RadiusBottomRight: =5
+            RadiusTopLeft: =5
+            RadiusTopRight: =5
+            Size: =10
+            Text: ="New Customer Visit"
+            Width: =Parent.Width*.2
+            X: =Parent.Width-Self.Width-Parent.Width*.01
+            Y: =(Parent.Height-Self.Height)/2
+            ZIndex: =5
+
+        DS_Button1_13 As button:
+            BorderColor: |-
+                =ColorFade(ColorValue("#6b1d5e"), 70%)
+            BorderThickness: =1
+            Color: =RGBA(107, 29, 94, 1)
+            Fill: =RGBA(252, 242, 247, 1)
+            Height: =Parent.Height*.5
+            HoverBorderColor: =RGBA(252, 242, 247, 1)
+            HoverFill: =ColorFade(Self.Color, 20%)
+            OnSelect: |
+                =If(IsBlank(DS_Dropdown1_3.Selected.Value),Set(InReview,true),Set(InReview,InReview));
+            PressedBorderColor: =RGBA(252, 242, 247, 1)
+            RadiusBottomLeft: =5
+            RadiusBottomRight: =5
+            RadiusTopLeft: =5
+            RadiusTopRight: =5
+            Size: =10
+            Text: ="My Task"
+            Width: =Parent.Width*.1
+            X: =DS_Button1_14.X-Self.Width-Parent.Width*.012
+            Y: =(Parent.Height-Self.Height)/2
+            ZIndex: =6
+
+        Image5 As image:
+            Height: =50
+            Image: =User().Image
+            RadiusBottomLeft: =50
+            RadiusBottomRight: =50
+            RadiusTopLeft: =50
+            RadiusTopRight: =50
+            Width: =50
+            X: =Parent.Width*.01
+            Y: =(Parent.Height-Self.Height)/2
+            ZIndex: =7
+
+        HtmlText1 As htmlViewer:
+            Height: =41
+            HtmlText: ="<b>Hello,</b> "& Proper(User().FullName)
+            Width: =312
+            X: =62
+            Y: =7
+            ZIndex: =8
+
+    DS_Container9_1 As groupContainer.manualLayoutContainer:
+        DropShadow: =DropShadow.None
+        Height: =60
+        Width: =DS_Container7_1.Width
+        X: =DS_Container7_1.X
+        Y: =DS_Container8_3.Y+DS_Container8_3.Height+Parent.Height*.025
+        ZIndex: =8
+
+        DS_Icon4_1 As icon.Reload:
+            BorderColor: =RGBA(107, 29, 94, 1)
+            Color: =RGBA(107, 29, 94, 1)
+            Height: =Parent.Height*.5
+            HoverColor: |-
+                =ColorFade(ColorValue("#6b1d5eff"), 20%)
+            Icon: =Icon.Reload
+            OnSelect: =Refresh('Identification Details')
+            Tooltip: ="Refresh"
+            Width: =Parent.Width*.035
+            X: =Parent.Width-Self.Width-Parent.Width*.03
+            Y: =(Parent.Height-Self.Height)/2
+            ZIndex: =3
+
+        DS_Label72_2 As label:
+            Color: =RGBA(107, 29, 94, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =39
+            Size: =12
+            Text: ="Application Status"
+            Width: =Parent.Width*.19
+            X: =Parent.Width*.02
+            Y: =(Parent.Height-Self.Height)/2
+            ZIndex: =6
+
+        DS_Dropdown1_3 As dropdown:
+            BorderColor: =RGBA(107, 29, 94, 0.55)
+            BorderThickness: =1
+            ChevronBackground: =RGBA(255, 255, 255, 0.52)
+            ChevronFill: =RGBA(107, 29, 94, 1)
+            ChevronHoverBackground: |-
+                =ColorFade(ColorValue("#6b1d5e"), -20%)
+            Color: =RGBA(107, 29, 94, 1)
+            Height: =Parent.Height*.5
+            HoverFill: =RGBA(107, 29, 94, 0.27)
+            Items: =[Blank(),"New","In-Review","Visited","Account-Opened"]
+            PressedFill: =RGBA(107, 29, 94, 1)
+            SelectionFill: =RGBA(107, 29, 94, 1)
+            Size: =10
+            Width: =Parent.Width*.22
+            X: =DS_Label72_2.X+DS_Label72_2.Width
+            Y: =(Parent.Height-Self.Height)/2
+            ZIndex: =7
+
+        DS_Dropdown1_4 As dropdown:
+            BorderColor: =RGBA(107, 29, 94, 0.55)
+            BorderThickness: =1
+            ChevronBackground: =RGBA(255, 255, 255, 0.52)
+            ChevronFill: =RGBA(107, 29, 94, 1)
+            ChevronHoverBackground: |-
+                =ColorFade(ColorValue("#6b1d5e"), -20%)
+            Color: =RGBA(107, 29, 94, 1)
+            Height: =Parent.Height*.5
+            HoverFill: =RGBA(107, 29, 94, 0.27)
+            Items: =[Blank(),"Full Name","Address"]
+            OnChange: =
+            PressedFill: =RGBA(107, 29, 94, 1)
+            SelectionFill: =RGBA(107, 29, 94, 1)
+            Size: =12
+            Visible: =false
+            Width: =Parent.Width*.22
+            X: =DS_Icon_1.X-Self.Width-Parent.Width*.015
+            Y: =(Parent.Height-Self.Height)/2
+            ZIndex: =11
+
+        DS_Icon_1 As icon.FilterFlat:
+            Color: =RGBA(107, 29, 94, 1)
+            Height: =Parent.Height*.40
+            Icon: =Icon.Sort
+            OnSelect: |-
+                =Set(order,!order);
+                Set(sorting,DS_Dropdown1_5.Selected.value)
+            Tooltip: ="Click to sort "
+            Width: =Parent.Width*.035
+            X: =DS_Dropdown1_5.X+DS_Dropdown1_5.Width+Parent.Width*0.01
+            Y: =(Parent.Height-Self.Height)/2
+            ZIndex: =12
+
+        DS_Dropdown1_5 As dropdown:
+            BorderColor: =RGBA(107, 29, 94, 0.55)
+            BorderThickness: =1
+            ChevronBackground: =RGBA(255, 255, 255, 0.52)
+            ChevronFill: =RGBA(107, 29, 94, 1)
+            ChevronHoverBackground: |-
+                =ColorFade(ColorValue("#6b1d5e"), -20%)
+            Color: =RGBA(107, 29, 94, 1)
+            Height: =Parent.Height*.5
+            HoverFill: =RGBA(107, 29, 94, 0.27)
+            Items: |-
+                =[Blank(),{ label:"Name", value:"app_fullname" }, { label:"Scheduled Date", value:"app_scheduledate" }, { label:"Application Date", value:"createdon" } ]
+            PressedFill: =RGBA(107, 29, 94, 1)
+            SelectionFill: =RGBA(107, 29, 94, 1)
+            Size: =10
+            Width: =Parent.Width*.22
+            X: =DS_Label72_3.X+DS_Label72_3.Width
+            Y: =(Parent.Height-Self.Height)/2
+            ZIndex: =15
+
+        DS_Label72_3 As label:
+            Align: =Align.Right
+            Color: =RGBA(107, 29, 94, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =39
+            Size: =12
+            Text: ="Sort By  "
+            Width: =Parent.Width*.1
+            X: =DS_Dropdown1_3.X+DS_Dropdown1_3.Width+Parent.Width*0.01
+            Y: =(Parent.Height-Self.Height)/2
+            ZIndex: =16
+
+        Button1_1 As button:
+            BorderColor: |-
+                =ColorFade(ColorValue("#6b1d5e"), 70%)
+            Color: =RGBA(107, 29, 94, 1)
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =Parent.Height*.5
+            HoverBorderColor: |-
+                =ColorValue("#6b1d5e")
+            HoverFill: |-
+                =ColorValue("#6b1d5e")
+            OnSelect: |-
+                =Reset(DS_Dropdown1_3);
+                Reset(DS_Dropdown1_5);
+                Set(InReview,false);
+            PressedBorderColor: |-
+                =ColorValue("#6b1d5e")
+            PressedFill: |-
+                =ColorValue("#6b1d5e")
+            RadiusBottomLeft: =5
+            RadiusBottomRight: =5
+            RadiusTopLeft: =5
+            RadiusTopRight: =5
+            Size: =10
+            Text: ="Reset"
+            Width: |-
+                =
+                    Parent.Width*.05
+            X: =DS_Icon4_1.X-Self.Width-Parent.Width*.01
+            Y: =(Parent.Height-Self.Height)/2
+            ZIndex: =18
+
+    DS_Group1_1 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =8
+
+        DS_Container8_3 As groupContainer.manualLayoutContainer:
+            DropShadow: =DropShadow.Semilight
+            Fill: =RGBA(255, 246, 232, 1)
+            Height: =Parent.Height*.09
+            Width: =Parent.Width*.2
+            X: =DS_Container7_1.X
+            Y: =DS_Container7_1.Y+DS_Container7_1.Height+Parent.Height*.02
+            ZIndex: =5
+
+            DS_Label11_6 As label:
+                Color: =RGBA(82, 82, 82, 1)
+                FontWeight: =FontWeight.Bold
+                Size: =15
+                Text: ="IN-REVIEW"
+                Width: =Len(Self.Text)*Self.Size
+                X: =Parent.Width*.04
+                Y: =(Parent.Height-Self.Height)/2
+                ZIndex: =1
+
+            DS_Label11_7 As label:
+                Align: =Align.Right
+                Color: =RGBA(82, 82, 82, 1)
+                FontWeight: =FontWeight.Bold
+                PaddingRight: =20
+                Size: =15
+                Text: |+
+                    =CountIf('Identification Details',  Text(Application_Status) = "In-Review")
+                    
+                X: =Parent.Width-Self.Width
+                Y: =(Parent.Height-Self.Height)/2
+                ZIndex: =2
+
+        DS_Container8_4 As groupContainer.manualLayoutContainer:
+            DropShadow: =DropShadow.Semilight
+            Fill: =RGBA(240, 247, 235, 1)
+            Height: =Parent.Height*.09
+            Width: =Parent.Width*.2
+            X: =(DS_Container8_3.Width+DS_Container8_3.X)+Parent.Width*.03
+            Y: =DS_Container7_1.Y+DS_Container7_1.Height+Parent.Height*.02
+            ZIndex: =6
+
+            DS_Label11_8 As label:
+                Color: =RGBA(82, 82, 82, 1)
+                FontWeight: =FontWeight.Bold
+                Size: =15
+                Text: ="VISITED"
+                Width: =Len(Self.Text)*Self.Size
+                X: =Parent.Width*.04
+                Y: =(Parent.Height-Self.Height)/2
+                ZIndex: =1
+
+            DS_Label11_9 As label:
+                Align: =Align.Right
+                Color: =RGBA(82, 82, 82, 1)
+                FontWeight: =FontWeight.Bold
+                PaddingRight: =20
+                Size: =15
+                Text: =CountIf('Identification Details',  Text(Application_Status) = "Visited")
+                X: =Parent.Width-Self.Width
+                Y: =(Parent.Height-Self.Height)/2
+                ZIndex: =2
+
+        DS_Container8_5 As groupContainer.manualLayoutContainer:
+            DropShadow: =DropShadow.Semilight
+            Fill: =RGBA(252, 237, 237, 1)
+            Height: =Parent.Height*.09
+            Width: =Parent.Width*.2
+            X: =(DS_Container8_4.Width+DS_Container8_4.X)+Parent.Width*.03
+            Y: =DS_Container7_1.Y+DS_Container7_1.Height+Parent.Height*.02
+            ZIndex: =7
+
+            DS_Label11_10 As label:
+                Color: =RGBA(82, 82, 82, 1)
+                FontWeight: =FontWeight.Bold
+                Size: =15
+                Text: ="NEW"
+                Width: =Len(Self.Text)*Self.Size*2
+                X: =Parent.Width*.04
+                Y: =(Parent.Height-Self.Height)/2
+                ZIndex: =1
+
+            DS_Label11_11 As label:
+                Align: =Align.Right
+                Color: =RGBA(82, 82, 82, 1)
+                FontWeight: =FontWeight.Bold
+                PaddingRight: =20
+                Size: =15
+                Text: =CountIf('Identification Details',  Text(Application_Status) = "New")
+                X: =Parent.Width-Self.Width
+                Y: =(Parent.Height-Self.Height)/2
+                ZIndex: =2
+
+    DS_Container10_1 As groupContainer.manualLayoutContainer:
+        DropShadow: =DropShadow.None
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =Parent.Height*0.53
+        Width: =DS_Container7_1.Width
+        X: =DS_Container7_1.X
+        Y: =DS_Container9_1.Y+DS_Container9_1.Height+Parent.Height*0.001
+        ZIndex: =9
+
+        DS_Rectangle4_1 As rectangle:
+            Fill: =RGBA(219, 219, 219, 1)
+            Height: =2
+            Width: =Parent.Width*.95
+            X: =(Parent.Width-Self.Width)/2
+            Y: =DS_img_xebiaLogo_4.Y+DS_img_xebiaLogo_4.Height+Parent.Height*.015
+            ZIndex: =1
+
+        DS_Label13_5 As label:
+            Align: =Align.Center
+            Color: =RGBA(107, 29, 94, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =50
+            OnSelect: =
+            Size: =12
+            Text: ="Application number"
+            Width: =Parent.Width*.2
+            X: =Parent.Width*.01
+            Y: =Parent.Height*.02
+            ZIndex: =2
+
+        DS_Label13_6 As label:
+            Align: =Align.Center
+            Color: =RGBA(107, 29, 94, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =50
+            Size: =12
+            Text: ="Name"
+            Width: =Parent.Width*.2
+            X: =DS_Label13_5.Width+DS_Label13_5.X
+            Y: =Parent.Height*.02
+            ZIndex: =3
+
+        DS_Label13_7 As label:
+            Align: =Align.Center
+            Color: =RGBA(107, 29, 94, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =50
+            Size: =12
+            Text: ="Application Date"
+            Width: =Parent.Width*.2
+            X: =DS_Label13_6.X+DS_Label13_6.Width
+            Y: =Parent.Height*.02
+            ZIndex: =4
+
+        DS_Label13_8 As label:
+            Align: =Align.Center
+            Color: =RGBA(107, 29, 94, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =50
+            Size: =12
+            Text: ="Schedule Date"
+            Width: =Parent.Width*.19
+            X: =DS_Label13_7.X+DS_Label13_7.Width
+            Y: =Parent.Height*.02
+            ZIndex: =5
+
+        DS_Label13_9 As label:
+            Align: =Align.Center
+            Color: =RGBA(107, 29, 94, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =50
+            Size: =12
+            Text: ="Status"
+            Width: =Parent.Width*.19
+            X: =DS_Label13_8.X+DS_Label13_8.Width
+            Y: =Parent.Height*.02
+            ZIndex: =6
+
+        "Gallery1_1 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
+            AccessibleLabel: ="No Item to display"
+            DelayItemLoading: =true
+            Height: =Parent.Height-Self.Y
+            ItemAccessibleLabel: ="No Item To display"
+            Items: |-
+                =SortByColumns(
+                    Filter(
+                        'Identification Details',
+                        If(
+                            IsBlank(DS_Dropdown1_3.Selected.Value),
+                            If(
+                                InReview,
+                                Application_Status in "In-Review",
+                                true
+                            ),
+                            Application_Status in DS_Dropdown1_3.Selected.Value
+                        )
+                       // 'Created By'.cre
+                    ),
+                    sorting,
+                    If(
+                        order,
+                        SortOrder.Descending,
+                        SortOrder.Ascending
+                    )
+                )
+            Layout: =Layout.Vertical
+            LoadingSpinner: =LoadingSpinner.Data
+            LoadingSpinnerColor: |-
+                =ColorValue("#6b1d5e")
+            OnSelect: |-
+                =If(
+                    Or( ThisItem.Application_Status = ApplicationStatus.'In-Review',ThisItem.Application_Status = ApplicationStatus.New),
+                    Navigate(OpenAccountScreen)
+                )
+            Selectable: =false
+            ShowScrollbar: =false
+            TemplatePadding: =0
+            TemplateSize: =57
+            Transition: =Transition.Pop
+            Width: =Parent.Width
+            Y: =71.54239999999999
+            ZIndex: =7
+
+            DS_Label14_1 As label:
+                Align: =Align.Center
+                Color: =RGBA(107, 29, 94, 1)
+                FontWeight: =FontWeight.Semibold
+                OnSelect: =Select(Parent)
+                Size: =11
+                Text: =ThisItem.ApplicationNumber
+                Width: =Parent.Width*.15
+                X: =DS_Label11_10.X+(DS_Label13_5.Width-Self.Width)/2
+                Y: =(Gallery1_1.TemplateHeight-Self.Height)/2
+                ZIndex: =1
+
+            DS_Label15_1 As label:
+                Align: =Align.Center
+                Color: =RGBA(107, 29, 94, 1)
+                FontWeight: =FontWeight.Semibold
+                OnSelect: =Select(Parent)
+                Size: =11
+                Text: =ThisItem.'Full Name'
+                Width: =Parent.Width*.2
+                X: =DS_Label13_6.X
+                Y: =(Gallery1_1.TemplateHeight-Self.Height)/2
+                ZIndex: =2
+
+            DS_Label19_3 As label:
+                Align: =Align.Center
+                Color: =RGBA(107, 29, 94, 1)
+                FontWeight: =FontWeight.Semibold
+                OnSelect: =Select(Parent)
+                Size: =11
+                Text: |
+                    =Text(DateTimeValue(ThisItem.'Created On'),  "[$-en-US]dd mmm' yy")
+                Width: =Parent.Width*.2
+                X: =DS_Label13_7.X
+                Y: =(Gallery1_1.TemplateHeight-Self.Height)/2
+                ZIndex: =4
+
+            DS_Label19_5 As label:
+                Align: =Align.Center
+                Color: |
+                    =If(
+                        Text(ThisItem.Application_Status) = "In-Process",
+                        ColorValue("#0071b3"),
+                        If(
+                            Text(ThisItem.Application_Status) = "New",
+                            ColorValue("#377b59"),
+                            ColorValue("#a40e0e")
+                        )
+                    )
+                FontWeight: =FontWeight.Semibold
+                OnSelect: =Select(Parent)
+                Size: =11
+                Text: |
+                    =ThisItem.Application_Status
+                Width: =Parent.Width*.2
+                X: =DS_Label13_9.X
+                Y: =(Gallery1_1.TemplateHeight-Self.Height)/2
+                ZIndex: =6
+
+            DS_Label19_4 As label:
+                Align: =Align.Center
+                Color: =RGBA(107, 29, 94, 1)
+                FontWeight: =FontWeight.Semibold
+                OnSelect: =Select(Parent)
+                Size: =11
+                Text: |
+                    =Text(DateTimeValue(ThisItem.'Schedule Date'),  "[$-en-US]dd mmm' yyyy hh:mm")
+                Width: =Parent.Width*.2
+                X: =DS_Label13_8.X
+                Y: =(Gallery1_1.TemplateHeight-Self.Height)/2
+                ZIndex: =7
+
+            DS_Rectangle78_1 As rectangle:
+                Fill: =RGBA(107, 29, 94, 0.75)
+                Height: =2
+                OnSelect: =Select(Parent)
+                Width: =DS_Rectangle4_1.Width
+                X: =DS_Rectangle4_1.X
+                Y: =Gallery1_1.TemplateHeight-Self.Height
+                ZIndex: =8
+
+            DS_Rectangle2_4 As rectangle:
+                Fill: =RGBA(107, 29, 94, 0.45)
+                Height: =Gallery1_1.TemplateHeight*.75
+                OnSelect: =Select(Parent)
+                Width: =2
+                X: =DS_Rectangle4_1.X
+                Y: =Gallery1_1.TemplateHeight-Self.Height
+                ZIndex: =9
+
+            DS_Rectangle2_5 As rectangle:
+                Fill: =RGBA(107, 29, 94, 0.45)
+                Height: =Gallery1_1.TemplateHeight*.75
+                OnSelect: =Select(Parent)
+                Width: =2
+                X: =DS_Rectangle4_1.X+DS_Rectangle4_1.Width-Self.Width
+                Y: =Gallery1_1.TemplateHeight-Self.Height
+                ZIndex: =10
+

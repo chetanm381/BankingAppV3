@@ -1,0 +1,10 @@
+[
+  {
+    "ApiId": "/providers/microsoft.powerapps/apis/shared_logicflows",
+    "FlowNameId": "91cdaaa4-df35-4fd7-ae5f-16ea500cb043",
+    "Name": "PanCardFileUploadocr",
+    "ServiceKind": "ConnectedWadl",
+    "Type": "ServiceInfo",
+    "WorkflowEntityId": "39639087-69b0-ee11-a569-6045bdaa8a35"
+  }
+]

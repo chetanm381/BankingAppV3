@@ -1,0 +1,192 @@
+{
+  "0a2ea090-cff8-4477-8f23-68dd0bc4c013": {
+    "connectionRef": {
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1664/1.0.1664.3477/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "d4b61222-22bf-4e01-babd-49247594f618": {
+          "value": "shared_office365"
+        },
+        "dca28d40-2a19-4cad-bcfa-50ac45c294d3": {
+          "value": "shared_commondataserviceforapps"
+        },
+        "workflowEntityId": {
+          "value": "7a3d35a7-3eb1-ee11-a569-6045bdaa8a35"
+        },
+        "workflowName": {
+          "value": "3ff78d5f-d8d4-462e-ad15-3c93320085b4"
+        }
+      },
+      "parameterHintsV2": {
+        "shared_commondataserviceforapps": {
+          "value": "dca28d40-2a19-4cad-bcfa-50ac45c294d3"
+        },
+        "shared_office365": {
+          "value": "d4b61222-22bf-4e01-babd-49247594f618"
+        },
+        "workflowEntityId": {
+          "value": "7a3d35a7-3eb1-ee11-a569-6045bdaa8a35"
+        },
+        "workflowName": {
+          "value": "3ff78d5f-d8d4-462e-ad15-3c93320085b4"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "SendEmailAccountProcessed"
+    ],
+    "dependencies": {
+      "shared_commondataserviceforapps": "dca28d40-2a19-4cad-bcfa-50ac45c294d3",
+      "shared_office365": "d4b61222-22bf-4e01-babd-49247594f618"
+    },
+    "dependents": [],
+    "id": "0a2ea090-cff8-4477-8f23-68dd0bc4c013"
+  },
+  "22f8fa1c-f941-4992-97ad-7750d240b033": {
+    "connectionRef": {
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1664/1.0.1664.3477/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "dca28d40-2a19-4cad-bcfa-50ac45c294d3": {
+          "value": "shared_commondataserviceforapps"
+        },
+        "workflowEntityId": {
+          "value": "39639087-69b0-ee11-a569-6045bdaa8a35"
+        },
+        "workflowName": {
+          "value": "acd0fba8-98e0-cee3-bd15-a2f5046ca027"
+        }
+      },
+      "parameterHintsV2": {
+        "shared_commondataserviceforapps": {
+          "value": "dca28d40-2a19-4cad-bcfa-50ac45c294d3"
+        },
+        "workflowEntityId": {
+          "value": "39639087-69b0-ee11-a569-6045bdaa8a35"
+        },
+        "workflowName": {
+          "value": "acd0fba8-98e0-cee3-bd15-a2f5046ca027"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "PanCardFileUploadocr"
+    ],
+    "dependencies": {
+      "shared_commondataserviceforapps": "dca28d40-2a19-4cad-bcfa-50ac45c294d3"
+    },
+    "dependents": [],
+    "id": "22f8fa1c-f941-4992-97ad-7750d240b033"
+  },
+  "990eedd9-e76a-474e-a77a-45927cbb0447": {
+    "connectionRef": {
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1664/1.0.1664.3477/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "dca28d40-2a19-4cad-bcfa-50ac45c294d3": {
+          "value": "shared_commondataserviceforapps"
+        },
+        "workflowEntityId": {
+          "value": "f7b546d2-4db0-ee11-a569-6045bdaa8a35"
+        },
+        "workflowName": {
+          "value": "658b087e-f35c-d9f8-99da-d749f24c0302"
+        }
+      },
+      "parameterHintsV2": {
+        "shared_commondataserviceforapps": {
+          "value": "dca28d40-2a19-4cad-bcfa-50ac45c294d3"
+        },
+        "workflowEntityId": {
+          "value": "f7b546d2-4db0-ee11-a569-6045bdaa8a35"
+        },
+        "workflowName": {
+          "value": "658b087e-f35c-d9f8-99da-d749f24c0302"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "FileUpload"
+    ],
+    "dependencies": {
+      "shared_commondataserviceforapps": "dca28d40-2a19-4cad-bcfa-50ac45c294d3"
+    },
+    "dependents": [],
+    "id": "990eedd9-e76a-474e-a77a-45927cbb0447"
+  },
+  "cae46ba5-af31-4373-a3fc-1bede7ff7044": {
+    "connectionRef": {
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1664/1.0.1664.3477/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "dca28d40-2a19-4cad-bcfa-50ac45c294d3": {
+          "value": "shared_commondataserviceforapps"
+        },
+        "workflowEntityId": {
+          "value": "170d1454-47b0-ee11-a569-6045bdaa8a35"
+        },
+        "workflowName": {
+          "value": "7dccccc7-8767-0a3c-01d2-42e6cc88ce15"
+        }
+      },
+      "parameterHintsV2": {
+        "shared_commondataserviceforapps": {
+          "value": "dca28d40-2a19-4cad-bcfa-50ac45c294d3"
+        },
+        "workflowEntityId": {
+          "value": "170d1454-47b0-ee11-a569-6045bdaa8a35"
+        },
+        "workflowName": {
+          "value": "7dccccc7-8767-0a3c-01d2-42e6cc88ce15"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "UploadAadharCard"
+    ],
+    "dependencies": {
+      "shared_commondataserviceforapps": "dca28d40-2a19-4cad-bcfa-50ac45c294d3"
+    },
+    "dependents": [],
+    "id": "cae46ba5-af31-4373-a3fc-1bede7ff7044"
+  },
+  "d4b61222-22bf-4e01-babd-49247594f618": {
+    "connectionRef": {
+      "displayName": "Office 365 Outlook",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1669/1.0.1669.3522/office365/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_office365"
+    },
+    "datasets": {},
+    "dataSources": [],
+    "dependencies": {},
+    "dependents": [
+      "0a2ea090-cff8-4477-8f23-68dd0bc4c013"
+    ],
+    "id": "d4b61222-22bf-4e01-babd-49247594f618"
+  },
+  "dca28d40-2a19-4cad-bcfa-50ac45c294d3": {
+    "connectionRef": {
+      "displayName": "Microsoft Dataverse",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1673/1.0.1673.3557/commondataserviceforapps/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_commondataserviceforapps"
+    },
+    "datasets": {},
+    "dataSources": [],
+    "dependencies": {},
+    "dependents": [
+      "cae46ba5-af31-4373-a3fc-1bede7ff7044",
+      "990eedd9-e76a-474e-a77a-45927cbb0447",
+      "22f8fa1c-f941-4992-97ad-7750d240b033",
+      "0a2ea090-cff8-4477-8f23-68dd0bc4c013"
+    ],
+    "id": "dca28d40-2a19-4cad-bcfa-50ac45c294d3"
+  }
+}

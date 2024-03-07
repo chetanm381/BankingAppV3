@@ -1,0 +1,145 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "app_identificationdetailses",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "app_identificationdetails",
+    "MaxGetRowsCount": 500,
+    "Name": "Identification Details",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "{Attachments}": "Attachments",
+      "app_address": "Address",
+      "app_adhaarcardimage": "Adhaar Card Image",
+      "app_application_status": "Application_Status",
+      "app_applicationnumber": "ApplicationNumber",
+      "app_applicationstage": "ApplicationStage",
+      "app_dateofbirth": "Date of Birth",
+      "app_emailid": "Email ID",
+      "app_firstname": "First Name",
+      "app_fullname": "Full Name",
+      "app_id": "Id",
+      "app_identificationdetails_Annotations": "Notes",
+      "app_IdentificationDetails_app_Identificat": "Verification Otps",
+      "app_identificationdetails_AsyncOperations": "System Jobs",
+      "app_identificationdetails_BulkDeleteFailures": "Bulk Delete Failures",
+      "app_identificationdetails_DuplicateBaseRecord": "Duplicate Records (app_identificationdetails_DuplicateBaseRecord)",
+      "app_identificationdetails_DuplicateMatchingRecord": "Duplicate Records (app_identificationdetails_DuplicateMatchingRecord)",
+      "app_identificationdetails_FileAttachments": "FileAttachments",
+      "app_identificationdetails_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "app_identificationdetails_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "app_identificationdetails_ProcessSession": "Process Sessions",
+      "app_identificationdetails_SyncErrors": "Sync Errors",
+      "app_identificationdetailsid": "Identification Details",
+      "app_kycvideo": "KYC Video",
+      "app_lastname": "Last Name",
+      "app_middlename": "Middle Name",
+      "app_mobilenumber": "Mobile Number",
+      "app_otpsend": "OTP Send",
+      "app_pancardimage": "PAN Card Image",
+      "app_pannumber": "PAN Number",
+      "app_passportnumber": "Adhaar Number",
+      "app_photo": "Photo",
+      "app_racedancecountryabroad": "Racedance Country Abroad",
+      "app_scheduledate": "Schedule Date",
+      "app_signaturephoto": "Signature Photo",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Identification Details",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Identification Details (Views)",
+    "Name": "_app_identificationdetails_views",
+    "RelatedEntityName": "Identification Details",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "44b09a8c-434f-4dab-81c9-cd9f5149a86b": "Identification Details Lookup View",
+      "57c6c675-9303-47d5-a39a-952ccf38a7ef": "Identification Details Associated View",
+      "89d60913-2757-454a-a56e-4c5793a1a367": "Active Identification Details",
+      "b2139f48-f8ad-ee11-a569-6045bdaa8a35": "Application Status",
+      "b84ec897-f52c-4b34-8e07-68df636c85f1": "Inactive Identification Details",
+      "f4d08ff3-c81d-4aa1-b262-09e4a55febc9": "Identification Details Advanced Find View"
+    }
+  },
+  {
+    "DisplayName": "ApplicationStatus",
+    "Name": "app_applicationstatus",
+    "OptionSetInfoNameMapping": {
+      "1": "New",
+      "2": "In-Review",
+      "3": "Visited",
+      "4": "Account-Opened"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": true,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "app_application_status",
+        "OptionSetReferenceEntityName": "Identification Details"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "app_application_status",
+    "RelatedEntityName": "Identification Details",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status (Identification Details)",
+    "Name": "app_identificationdetails_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Identification Details"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Identification Details",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Identification Details)",
+    "Name": "app_identificationdetails_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Identification Details"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Identification Details",
+    "Type": "OptionSetInfo"
+  }
+]

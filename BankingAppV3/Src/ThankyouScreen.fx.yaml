@@ -1,0 +1,130 @@
+ThankyouScreen As screen:
+
+    TS_HeaderContainer As groupContainer.manualLayoutContainer:
+        BorderStyle: =BorderStyle.None
+        DropShadow: =DropShadow.None
+        Height: =Parent.Height*.08
+        Width: =Parent.Width
+        ZIndex: =1
+
+        TS_img_xebiaLogo_2 As image:
+            Height: =Parent.Height*.80
+            Image: ='download (7) 1'
+            PaddingBottom: =5
+            PaddingLeft: =5
+            PaddingTop: =5
+            Width: =153
+            Y: =(Parent.Height-Self.Height)/2
+            ZIndex: =1
+
+        TS_lbl_HomeTab_2 As label:
+            Align: =Align.Center
+            Color: =RGBA(107, 29, 94, 1)
+            FontWeight: =FontWeight.Semibold
+            Height: =35
+            Size: =11
+            Text: ="Home"
+            Width: =100
+            X: =TS_btn_createApp_2.X-Self.Width-Parent.Width*.015
+            Y: =(Parent.Height-Self.Height)/2
+            ZIndex: =2
+
+        TS_btn_createApp_2 As button:
+            BorderColor: =RGBA(107, 29, 94, 1)
+            Color: =RGBA(107, 29, 94, 1)
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =35
+            HoverFill: =ColorFade(Self.BorderColor, 20%)
+            RadiusBottomLeft: =50
+            RadiusBottomRight: =50
+            RadiusTopLeft: =50
+            RadiusTopRight: =50
+            Size: =11
+            Text: ="Check Application Status"
+            Width: =220
+            X: =Parent.Width-Self.Width-Parent.Width*.02
+            Y: =(Parent.Height-Self.Height)/2
+            ZIndex: =3
+
+    TS_doorstepbankingContainer_1 As groupContainer.manualLayoutContainer:
+        BorderStyle: =BorderStyle.None
+        DropShadow: =DropShadow.None
+        Fill: =RGBA(252, 242, 247, 1)
+        Height: =Parent.Height*.08
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Width: =Parent.Width
+        Y: =TS_HeaderContainer.Y+TS_HeaderContainer.Height
+        ZIndex: =2
+
+        TS_doorstepbankingLabel As label:
+            Color: =RGBA(107, 29, 94, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =61.44
+            Size: =20
+            Text: ="DOOR STEP BANKING"
+            Width: =520
+            X: =Parent.Width*.02
+            ZIndex: =1
+
+    TS_ContainerForThankYouPop As groupContainer.manualLayoutContainer:
+        Fill: =RGBA(219, 219, 219, 0.71)
+        Height: =Parent.Height
+        Width: =Parent.Width
+        ZIndex: =3
+
+        TS_PopUpContainerDetails As groupContainer.manualLayoutContainer:
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =Parent.Height*.70
+            RadiusBottomLeft: =20
+            RadiusBottomRight: =20
+            RadiusTopLeft: =20
+            RadiusTopRight: =20
+            Width: =Parent.Width*.40
+            X: =(Parent.Width-Self.Width)/2
+            Y: =(Parent.Height-Self.Height)/2
+            ZIndex: =1
+
+            TS_ThankYouLabel As label:
+                Align: =Align.Center
+                Color: =RGBA(107, 29, 94, 1)
+                FontWeight: =FontWeight.Semibold
+                Height: =132
+                Size: =20
+                Text: ="The Account Opening Detail have been successfully captured."
+                Width: =Parent.Width*.80
+                X: =(Parent.Width-Self.Width)/2
+                Y: =TS_ThankYouLabel_1.Y+TS_ThankYouLabel_1.Height
+                ZIndex: =1
+
+            TS_ThankYouLabel_1 As label:
+                Align: =Align.Center
+                Color: =RGBA(107, 29, 94, 1)
+                FontWeight: =FontWeight.Semibold
+                Size: =20
+                Text: ="Thank You"
+                Width: =Parent.Width*.80
+                X: =(Parent.Width-Self.Width)/2
+                Y: =TS_popupImage.Y+TS_popupImage.Height+Parent.Height*.02
+                ZIndex: =2
+
+            TS_ThankYouLabel_2 As label:
+                Align: =Align.Center
+                Color: =RGBA(107, 29, 94, 1)
+                Size: =15
+                Text: ="Account will be opened shortly."
+                Width: =Parent.Width*.80
+                X: =(Parent.Width-Self.Width)/2
+                Y: =TS_ThankYouLabel.Y+TS_ThankYouLabel.Height+Parent.Height*.03
+                ZIndex: =3
+
+            TS_popupImage As image:
+                Height: =Parent.Height*.40
+                Image: ='Group 2422'
+                Width: =Parent.Width*0.35
+                X: =(Parent.Width-Self.Width)/2
+                Y: =Parent.Height*.05
+                ZIndex: =4
+

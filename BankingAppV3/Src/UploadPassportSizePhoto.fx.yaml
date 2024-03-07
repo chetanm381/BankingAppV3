@@ -1,0 +1,713 @@
+UploadPassportSizePhoto As screen:
+
+    UPS_BgContainer_1 As groupContainer.verticalAutoLayoutContainer:
+        Height: =Parent.Height
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutMode: =LayoutMode.Auto
+        LayoutOverflowY: =LayoutOverflow.Scroll
+        Width: =Parent.Width
+        ZIndex: =1
+
+        UPS_HeaderContainer_1 As groupContainer.manualLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
+            BorderStyle: =BorderStyle.None
+            DropShadow: =DropShadow.None
+            FillPortions: =0
+            Height: =Parent.Height*.08
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            Width: =Parent.Width
+            ZIndex: =2
+
+            UPS_img_xebiaLogo_3 As image:
+                Height: =Parent.Height*.80
+                Image: ='download (7) 1'
+                PaddingBottom: =5
+                PaddingLeft: =5
+                PaddingTop: =5
+                Width: =153
+                Y: =(Parent.Height-Self.Height)/2
+                ZIndex: =1
+
+            UPS_userimage_9 As image:
+                Height: =50
+                Image: =User().Image
+                RadiusBottomLeft: =50
+                RadiusBottomRight: =50
+                RadiusTopLeft: =50
+                RadiusTopRight: =50
+                Width: =50
+                X: =Parent.Width-Self.Width-Parent.Width*.01
+                Y: =(Parent.Height-Self.Height)/2
+                ZIndex: =2
+
+            UPS_Button1_11 As button:
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =0
+                Color: =RGBA(107, 29, 94, 1)
+                Fill: =RGBA(252, 242, 247, 1)
+                Height: =30
+                HoverFill: =ColorFade(Self.Color, 20%)
+                OnSelect: =Navigate('Dashboard Screen',ScreenTransition.CoverRight)
+                RadiusBottomLeft: =5
+                RadiusBottomRight: =5
+                RadiusTopLeft: =5
+                RadiusTopRight: =5
+                Size: =9
+                Text: ="Home"
+                Width: =100
+                X: =UPS_userimage_9.X-Self.Width-Parent.Width*.015
+                Y: =(Parent.Height-Self.Height)/2
+                ZIndex: =3
+
+            Label6_2 As label:
+                Align: =Align.Center
+                Color: =RGBA(107, 29, 94, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =61
+                Size: =25
+                Text: ="DOOR STEP BANKING"
+                Width: =Parent.Width/2
+                X: =(Parent.Width-Self.Width)/2
+                Y: =(Parent.Height-Self.Height)/2
+                ZIndex: =4
+
+        UPS_ScrollableContainer_1 As groupContainer.manualLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
+            DropShadow: =DropShadow.None
+            FillPortions: =0
+            Height: =Parent.Height*.92
+            LayoutMinHeight: =1000
+            LayoutMinWidth: =250
+            Width: =Parent.Width
+            Y: =UPS_HeaderContainer_1.Height
+            ZIndex: =4
+
+            UPS_Container11_2 As groupContainer.manualLayoutContainer:
+                BorderStyle: =BorderStyle.None
+                DropShadow: =DropShadow.None
+                Fill: =RGBA(107, 29, 94, 1)
+                Height: =Parent.Height*0.25
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Width: =Parent.Width
+                ZIndex: =1
+
+                PDUD_Milstone_8 As group:
+                    Height: =5
+                    Width: =5
+                    X: =39.2200000002731
+                    Y: =40
+                    ZIndex: =32
+
+                    PFD_Circle1_20 As circle:
+                        Fill: =RGBA(252, 242, 247, 1)
+                        Height: =Parent.Width*0.030
+                        Width: =Parent.Width*0.030
+                        X: =Container12.X+Parent.Width*0.03
+                        Y: =(Container12.Y+Container11.Y-Self.Width-30)/2
+                        ZIndex: =1
+
+                    PDF_Label8_97 As label:
+                        Align: =Align.Center
+                        Color: =RGBA(255, 255, 255, 1)
+                        Height: =30
+                        Size: =10
+                        Text: ="Document Upload"
+                        Width: =193
+                        X: =PFD_Circle1_20.X+(PFD_Circle1_20.Width-Self.Width)/2
+                        Y: =PFD_Circle1_20.Y+PFD_Circle1_20.Height
+                        ZIndex: =2
+
+                    PFD_Rectangle1_20 As rectangle:
+                        Fill: =If(First(data_application).ApplicationStage>1, RGBA(252, 242, 247, 1),ColorFade(Color.Gray,60%))
+                        Height: =2
+                        Width: =Parent.Width*0.0785714285714
+                        X: =PFD_Circle1_20.X+PFD_Circle1_20.Width+Parent.Width*.005
+                        Y: =PFD_Circle1_20.Y+(PFD_Circle1_20.Height-Self.Height)/2
+                        ZIndex: =3
+
+                    PFD_Circle2_20 As circle:
+                        Fill: =If(First(data_application).ApplicationStage>1, RGBA(252, 242, 247, 1),ColorFade(Color.Gray,60%))
+                        Height: =Parent.Width*0.030
+                        Width: =Parent.Width*0.030
+                        X: =PFD_Rectangle1_20.X+PFD_Rectangle1_20.Width+Parent.Width*.005
+                        Y: =(Container12.Y+Container11.Y-Self.Width-30)/2
+                        ZIndex: =4
+
+                    PFD_Rectangle3_20 As rectangle:
+                        Fill: =If(First(data_application).ApplicationStage>2, RGBA(252, 242, 247, 1),ColorFade(Color.Gray,60%))
+                        Height: =2
+                        Width: =Parent.Width*0.0785714285714
+                        X: =PFD_Circle2_20.X+PFD_Circle2_20.Width+Parent.Width*.005
+                        Y: =PFD_Circle1_20.Y+(PFD_Circle1_20.Height-Self.Height)/2
+                        ZIndex: =5
+
+                    PFD_Circle3_20 As circle:
+                        Fill: =If(First(data_application).ApplicationStage>2, RGBA(252, 242, 247, 1),ColorFade(Color.Gray,60%))
+                        Height: =Parent.Width*0.030
+                        Width: =Parent.Width*0.030
+                        X: =PFD_Rectangle3_20.X+PFD_Rectangle3_20.Width+Parent.Width*.005
+                        Y: =(Container12.Y+Container11.Y-Self.Width-30)/2
+                        ZIndex: =6
+
+                    PFD_Rectangle4_20 As rectangle:
+                        Fill: =If(First(data_application).ApplicationStage>3, RGBA(252, 242, 247, 1),ColorFade(Color.Gray,60%))
+                        Height: =2
+                        Width: =Parent.Width*0.0785714285714
+                        X: =PFD_Circle3_20.X+PFD_Circle3_20.Width+Parent.Width*.005
+                        Y: =PFD_Circle1_20.Y+(PFD_Circle1_20.Height-Self.Height)/2
+                        ZIndex: =7
+
+                    PFD_Rectangle5_20 As rectangle:
+                        Fill: =If(First(data_application).ApplicationStage>4, RGBA(252, 242, 247, 1),ColorFade(Color.Gray,60%))
+                        Height: =2
+                        Width: =Parent.Width*0.0785714285714
+                        X: =PFD_Circle4_20.X+PFD_Circle4_20.Width+Parent.Width*.005
+                        Y: =PFD_Circle1_20.Y+(PFD_Circle1_20.Height-Self.Height)/2
+                        ZIndex: =8
+
+                    PFD_Circle4_20 As circle:
+                        Fill: =If(First(data_application).ApplicationStage>3, RGBA(252, 242, 247, 1),ColorFade(Color.Gray,60%))
+                        Height: =Parent.Width*0.030
+                        Width: =Parent.Width*0.030
+                        X: =PFD_Rectangle4_20.X+PFD_Rectangle4_20.Width+Parent.Width*.005
+                        Y: =(Container12.Y+Container11.Y-Self.Width-30)/2
+                        ZIndex: =9
+
+                    PFD_Circle5_20 As circle:
+                        Fill: =If(First(data_application).ApplicationStage>4, RGBA(252, 242, 247, 1),ColorFade(Color.Gray,60%))
+                        Height: =Parent.Width*0.030
+                        Width: =Parent.Width*0.030
+                        X: =PFD_Rectangle5_20.X+PFD_Rectangle5_20.Width+Parent.Width*.005
+                        Y: =(Container12.Y+Container11.Y-Self.Width-30)/2
+                        ZIndex: =10
+
+                    PFD_Rectangle6_20 As rectangle:
+                        Fill: =If(First(data_application).ApplicationStage>5, RGBA(252, 242, 247, 1),ColorFade(Color.Gray,60%))
+                        Height: =2
+                        Width: =Parent.Width*0.0785714285714
+                        X: =PFD_Circle5_20.X+PFD_Circle5_20.Width+Parent.Width*.005
+                        Y: =PFD_Circle1_20.Y+(PFD_Circle1_20.Height-Self.Height)/2
+                        ZIndex: =11
+
+                    PFD_Circle6_12 As circle:
+                        Fill: =If(First(data_application).ApplicationStage>5, RGBA(252, 242, 247, 1),ColorFade(Color.Gray,60%))
+                        Height: =Parent.Width*0.030
+                        Width: =Parent.Width*0.030
+                        X: =PFD_Rectangle6_20.X+PFD_Rectangle6_20.Width+Parent.Width*.005
+                        Y: =(Container12.Y+Container11.Y-Self.Width-30)/2
+                        ZIndex: =12
+
+                    PFD_Rectangle7_12 As rectangle:
+                        Fill: =If(First(data_application).ApplicationStage>6, RGBA(252, 242, 247, 1),ColorFade(Color.Gray,60%))
+                        Height: =2
+                        Width: =Parent.Width*0.0785714285714
+                        X: =PFD_Circle6_12.X+PFD_Circle6_12.Width+Parent.Width*.005
+                        Y: =PFD_Circle1_20.Y+(PFD_Circle1_20.Height-Self.Height)/2
+                        ZIndex: =13
+
+                    PFD_Circle8_12 As circle:
+                        Fill: =If(First(data_application).ApplicationStage>6, RGBA(252, 242, 247, 1),ColorFade(Color.Gray,60%))
+                        Height: =Parent.Width*0.030
+                        Width: =Parent.Width*0.030
+                        X: =PFD_Rectangle7_12.X+PFD_Rectangle7_12.Width+Parent.Width*.005
+                        Y: =(Container12.Y+Container11.Y-Self.Width-30)/2
+                        ZIndex: =14
+
+                    PDF_Label8_95 As label:
+                        Align: =Align.Center
+                        Color: =RGBA(255, 255, 255, 1)
+                        Height: =30
+                        Size: =10
+                        Text: ="Signature Upload"
+                        Width: =193
+                        X: =PFD_Circle8_12.X+(PFD_Circle8_12.Width-Self.Width)/2
+                        Y: =PFD_Circle1_20.Y+PFD_Circle1_20.Height
+                        ZIndex: =15
+
+                    PDF_Label8_98 As label:
+                        Align: =Align.Center
+                        Color: =RGBA(255, 255, 255, 1)
+                        Height: =30
+                        Size: =10
+                        Text: ="KYC Verification"
+                        Width: =193
+                        X: =PFD_Circle5_20.X+(PFD_Circle5_20.Width-Self.Width)/2
+                        Y: =PFD_Circle1_20.Y+PFD_Circle1_20.Height
+                        ZIndex: =16
+
+                    PDF_Label8_99 As label:
+                        Align: =Align.Center
+                        Color: =RGBA(255, 255, 255, 1)
+                        Height: =30
+                        Size: =10
+                        Text: ="KYC Video Upload"
+                        Width: =193
+                        X: =PFD_Circle4_20.X+(PFD_Circle4_20.Width-Self.Width)/2
+                        Y: =PFD_Circle1_20.Y+PFD_Circle1_20.Height
+                        ZIndex: =17
+
+                    PDF_Label8_100 As label:
+                        Align: =Align.Center
+                        Color: =RGBA(255, 255, 255, 1)
+                        Height: =30
+                        Size: =10
+                        Text: ="Photo Upload"
+                        Width: =193
+                        X: =PFD_Circle3_20.X+(PFD_Circle3_20.Width-Self.Width)/2
+                        Y: =PFD_Circle1_20.Y+PFD_Circle1_20.Height
+                        ZIndex: =18
+
+                    PDF_Label8_101 As label:
+                        Align: =Align.Center
+                        Color: =RGBA(255, 255, 255, 1)
+                        Height: =30
+                        Size: =10
+                        Text: ="Media Verification"
+                        Width: =193
+                        X: =PFD_Circle6_12.X+(PFD_Circle6_12.Width-Self.Width)/2
+                        Y: =PFD_Circle1_20.Y+PFD_Circle1_20.Height
+                        ZIndex: =19
+
+                    PDF_Label8_102 As label:
+                        Align: =Align.Center
+                        Color: =RGBA(255, 255, 255, 1)
+                        Height: =30
+                        Size: =10
+                        Text: ="Personal Details"
+                        Width: =193
+                        X: =PFD_Circle2_20.X+(PFD_Circle2_20.Width-Self.Width)/2
+                        Y: =PFD_Circle1_20.Y+PFD_Circle1_20.Height
+                        ZIndex: =20
+
+                    PFD_Circle9_12 As circle:
+                        Fill: =If(First(data_application).ApplicationStage>7, RGBA(252, 242, 247, 1),ColorFade(Color.Gray,60%))
+                        Height: =Parent.Width*0.030
+                        Width: =Parent.Width*0.030
+                        X: =PFD_Rectangle8_12.X+PFD_Rectangle8_12.Width+Parent.Width*.005
+                        Y: =(Container12.Y+Container11.Y-Self.Width-30)/2
+                        ZIndex: =21
+
+                    PFD_Rectangle8_12 As rectangle:
+                        Fill: =If(First(data_application).ApplicationStage>7, RGBA(252, 242, 247, 1),ColorFade(Color.Gray,60%))
+                        Height: =2
+                        Width: =Parent.Width*0.0785714285714
+                        X: =PFD_Circle8_12.X+PFD_Circle8_12.Width+Parent.Width*.005
+                        Y: =PFD_Circle1_20.Y+(PFD_Circle1_20.Height-Self.Height)/2
+                        ZIndex: =22
+
+                    PDF_Label8_103 As label:
+                        Align: =Align.Center
+                        Color: =RGBA(255, 255, 255, 1)
+                        Height: =30
+                        Size: =10
+                        Text: ="Customer Summary"
+                        Width: =193
+                        X: =PFD_Circle9_12.X+(PFD_Circle9_12.Width-Self.Width)/2
+                        Y: =PFD_Circle1_20.Y+PFD_Circle1_20.Height
+                        ZIndex: =23
+
+                    PDUD_Icon2_67 As icon.Check:
+                        Color: =RGBA(107, 29, 94, 1)
+                        DisplayMode: =
+                        Height: =Parent.Width*0.020
+                        Icon: =Icon.CheckBadge
+                        Visible: =If(First(data_application).ApplicationStage>0,true,false)
+                        Width: =Parent.Width*0.03
+                        X: =PFD_Circle1_20.X+(PFD_Circle1_20.Width-Self.Width)/2
+                        Y: =PFD_Circle1_20.Y+(PFD_Circle1_20.Height-Self.Height)/2
+                        ZIndex: =24
+
+                    PDUD_Icon2_68 As icon.Check:
+                        Color: =RGBA(107, 29, 94, 1)
+                        DisplayMode: =
+                        Height: =Parent.Width*0.020
+                        Icon: =Icon.CheckBadge
+                        Visible: =If(First(data_application).ApplicationStage>1,true,false)
+                        Width: =Parent.Width*0.035
+                        X: =PFD_Circle2_20.X+(PFD_Circle2_20.Width-Self.Width)/2
+                        Y: =PFD_Circle1_20.Y+(PFD_Circle1_20.Height-Self.Height)/2
+                        ZIndex: =25
+
+                    PDUD_Icon2_69 As icon.Check:
+                        Color: =RGBA(107, 29, 94, 1)
+                        DisplayMode: =
+                        Height: =Parent.Width*0.020
+                        Icon: =Icon.CheckBadge
+                        Visible: =If(First(data_application).ApplicationStage>2,true,false)
+                        Width: =Parent.Width*0.035
+                        X: =PFD_Circle3_20.X+(PFD_Circle3_20.Width-Self.Width)/2
+                        Y: =PFD_Circle1_20.Y+(PFD_Circle1_20.Height-Self.Height)/2
+                        ZIndex: =26
+
+                    PDUD_Icon2_70 As icon.Check:
+                        Color: =RGBA(107, 29, 94, 1)
+                        DisplayMode: =
+                        Height: =Parent.Width*0.020
+                        Icon: =Icon.CheckBadge
+                        Visible: =If(First(data_application).ApplicationStage>3,true,false)
+                        Width: =Parent.Width*0.035
+                        X: =PFD_Circle4_20.X+(PFD_Circle4_20.Width-Self.Width)/2
+                        Y: =PFD_Circle1_20.Y+(PFD_Circle1_20.Height-Self.Height)/2
+                        ZIndex: =27
+
+                    PDUD_Icon2_71 As icon.Check:
+                        Color: =RGBA(107, 29, 94, 1)
+                        DisplayMode: =
+                        Height: =Parent.Width*0.020
+                        Icon: =Icon.CheckBadge
+                        Visible: =If(First(data_application).ApplicationStage>4,true,false)
+                        Width: =Parent.Width*0.035
+                        X: =PFD_Circle5_20.X+(PFD_Circle5_20.Width-Self.Width)/2
+                        Y: =PFD_Circle1_20.Y+(PFD_Circle1_20.Height-Self.Height)/2
+                        ZIndex: =28
+
+                    PDUD_Icon2_72 As icon.Check:
+                        Color: =RGBA(107, 29, 94, 1)
+                        DisplayMode: =
+                        Height: =Parent.Width*0.020
+                        Icon: =Icon.CheckBadge
+                        Visible: =If(First(data_application).ApplicationStage>5,true,false)
+                        Width: =Parent.Width*0.035
+                        X: =PFD_Circle6_12.X+(PFD_Circle6_12.Width-Self.Width)/2
+                        Y: =PFD_Circle1_20.Y+(PFD_Circle1_20.Height-Self.Height)/2
+                        ZIndex: =29
+
+                    PDUD_Icon2_73 As icon.Check:
+                        Color: =RGBA(107, 29, 94, 1)
+                        DisplayMode: =
+                        Height: =Parent.Width*0.020
+                        Icon: =Icon.CheckBadge
+                        Visible: =If(First(data_application).ApplicationStage>6,true,false)
+                        Width: =Parent.Width*0.035
+                        X: =PFD_Circle8_12.X+(PFD_Circle8_12.Width-Self.Width)/2
+                        Y: =PFD_Circle1_20.Y+(PFD_Circle1_20.Height-Self.Height)/2
+                        ZIndex: =30
+
+                    PDUD_Icon2_74 As icon.Check:
+                        Color: =RGBA(107, 29, 94, 1)
+                        DisplayMode: =
+                        Height: =Parent.Width*0.020
+                        Icon: =Icon.CheckBadge
+                        Visible: =If(First(data_application).ApplicationStage>=7,true,false)
+                        Width: =Parent.Width*0.035
+                        X: =PFD_Circle9_12.X+(PFD_Circle9_12.Width-Self.Width)/2
+                        Y: =PFD_Circle1_20.Y+(PFD_Circle1_20.Height-Self.Height)/2
+                        ZIndex: =31
+
+            UPS_Container12_2 As groupContainer.manualLayoutContainer:
+                BorderColor: =RGBA(219, 219, 219, 1)
+                BorderStyle: =BorderStyle.None
+                DropShadow: =DropShadow.Regular
+                Fill: =RGBA(255, 255, 255, 1)
+                Height: =UploadSignaturePhotoScreen.Height*.75
+                RadiusBottomLeft: =20
+                RadiusBottomRight: =20
+                RadiusTopLeft: =20
+                RadiusTopRight: =20
+                Width: =Parent.Width*.90
+                X: =(Parent.Width-Self.Width)/2
+                Y: =UPS_Container11_2.Height*.6
+                ZIndex: =2
+
+                UPS_Label2_2 As label:
+                    Color: =RGBA(107, 29, 94, 1)
+                    FontWeight: =FontWeight.Bold
+                    Text: ="Upload Passport Size Photo"
+                    Width: =318
+                    X: =UPS_Rectangle1_2.X
+                    Y: =Parent.Height*0.015
+                    ZIndex: =1
+
+                UPS_Rectangle1_2 As rectangle:
+                    Fill: =RGBA(202, 202, 202, 1)
+                    Height: =2
+                    Width: =Parent.Width*.94
+                    X: =(Parent.Width-Self.Width)/2
+                    Y: =UPS_Label2_2.Y+UPS_Label2_2.Height+Parent.Height*.015
+                    ZIndex: =2
+
+                UPS_Container1_2 As groupContainer.manualLayoutContainer:
+                    BorderColor: =RGBA(107, 29, 94, 1)
+                    BorderStyle: =BorderStyle.Dashed
+                    BorderThickness: =2
+                    DropShadow: =DropShadow.None
+                    Fill: =RGBA(255, 255, 255, 1)
+                    Height: =Parent.Height*.7
+                    Width: =Parent.Width*0.55
+                    X: =UPS_Container3_2.X+UPS_Container3_2.Width+Parent.Width*0.03
+                    Y: =UPS_Rectangle1_2.Y+UPS_Rectangle1_2.Height+Parent.Height*0.02
+                    ZIndex: =6
+
+                    UPS_Button3_3 As button:
+                        Fill: =RGBA(107, 29, 94, 1)
+                        FontWeight: =FontWeight.Bold
+                        HoverFill: |-
+                            =ColorFade(ColorValue("#6B1D5E"), 20%)
+                        OnSelect: |
+                            =//UploadAadharCard.Run("ID-1",{file:{
+                            //contentBytes: First(DataCardValue6.Attachments).Value,
+                            //name : "file"
+                            //}})
+                        RadiusBottomLeft: =5
+                        RadiusBottomRight: =5
+                        RadiusTopLeft: =5
+                        RadiusTopRight: =5
+                        Size: =12
+                        Text: ="Upload"
+                        Visible: =false
+                        Width: =Parent.Width*.25
+                        X: =(Parent.Width-Self.Width)/2
+                        Y: =Parent.Height-Self.Height-Parent.Height*0.10
+                        ZIndex: =1
+
+                    UPS_Label8_4 As label:
+                        Align: =Align.Center
+                        Size: =9
+                        Text: ="Drop file here/click to upload"
+                        Width: =UPS_Image1_4.Width
+                        X: =UPS_Image1_4.X
+                        Y: =UPS_Image1_4.Y+UPS_Image1_4.Height
+                        ZIndex: =2
+
+                    DataCardValue6 As attachments:
+                        AddAttachmentText: ="Upload file"
+                        BorderColor: =RGBA(107, 29, 94, 1)
+                        BorderStyle: =BorderStyle.None
+                        BorderThickness: =1
+                        Color: =RGBA(107, 29, 94, 1)
+                        DropTargetBorderColor: |-
+                            =ColorValue("#6B1D5E")
+                        DropTargetBorderThickness: =1
+                        DropTargetTextColor: |-
+                            =ColorValue("#6B1D5E")
+                        FontWeight: =FontWeight.Semibold
+                        Height: =Parent.Height*.70
+                        HoverColor: =RGBA(255, 255, 255, 1)
+                        HoverFill: =ColorFade(Self.HoverBorderColor,30%)
+                        IsInDataCard: =true
+                        ItemFill: |-
+                            =ColorValue("#6B1D5E")
+                        ItemHoverColor: =Color.White
+                        ItemHoverFill: |-
+                            =ColorFade(ColorValue("#6B1D5E"),40%)
+                        ItemPressedColor: =ColorFade(Self.HoverColor,70%)
+                        ItemPressedFill: =ColorFade(Self.HoverFill,70%)
+                        Items: =
+                        MaxAttachments: =1
+                        MaxAttachmentsText: =""
+                        NoAttachmentsText: ="Drop or Drag/ Click here to Upload file"
+                        PaddingBottom: =5
+                        PaddingLeft: =UPS_Image1_4.X-UPS_Image1_4.Width/2
+                        PaddingRight: =5
+                        PaddingTop: =UPS_Image1_4.Y+UPS_Image1_4.Height
+                        PressedColor: =ColorFade(Self.HoverColor,70%)
+                        PressedFill: =ColorFade(Self.HoverFill,70%)
+                        Size: =10
+                        Tooltip: =
+                        Width: =Parent.Width*.75
+                        X: =(Parent.Width-Self.Width)/2
+                        Y: =Parent.Height*0.1
+                        ZIndex: =3
+
+                    UPS_Image1_4 As image:
+                        Height: =Parent.Height*0.25
+                        Image: ='cloud-computing (1)'
+                        Width: =Parent.Width*0.25
+                        X: =(Parent.Width-Self.Width)/2
+                        Y: =Parent.Height*0.2
+                        ZIndex: =4
+
+                    UPS__Image1111_1 As image:
+                        Fill: =RGBA(255, 255, 255, 1)
+                        Height: =DataCardValue6.Height
+                        Image: =If(IsBlank(First(DataCardValue6.Attachments)),SampleImage,First(DataCardValue6.Attachments).Value)
+                        Visible: =Not(IsBlank(First(DataCardValue6.Attachments)))
+                        Width: =DataCardValue6.Width
+                        X: =DataCardValue6.X
+                        Y: =DataCardValue6.Y
+                        ZIndex: =5
+
+                    UPS_Icon31111_1 As icon.Cancel:
+                        Color: =RGBA(107, 29, 94, 1)
+                        Height: =40
+                        Icon: =Icon.Cancel
+                        OnSelect: =Reset(DataCardValue6)
+                        Visible: =Not(IsBlank(First(DataCardValue6.Attachments)))
+                        Width: =40
+                        X: =Parent.Width*.97-Self.Width
+                        Y: =Parent.Height*0.12-Self.Height
+                        ZIndex: =6
+
+                UPS_Container3_2 As groupContainer.manualLayoutContainer:
+                    BorderStyle: =BorderStyle.None
+                    DropShadow: =DropShadow.None
+                    Fill: =RGBA(255, 255, 255, 1)
+                    Height: =Parent.Height*.75
+                    Width: =Parent.Width*.35
+                    X: =Parent.Width*.04
+                    Y: =UPS_Rectangle1_2.Y+UPS_Rectangle1_2.Height+Parent.Height*0.02
+                    ZIndex: =7
+
+                    ULV_Container5_4 As groupContainer.manualLayoutContainer:
+                        DropShadow: =DropShadow.None
+                        Fill: =RGBA(255, 255, 255, 1)
+                        Height: =Parent.Height*.9
+                        Width: =Parent.Width*.9
+                        X: =(Parent.Width-Self.Width)/2
+                        Y: =(Parent.Height-Self.Height)/2+Parent.Height*.03
+                        ZIndex: =1
+
+                        KVV_Label6_9 As label:
+                            Color: =RGBA(107, 29, 94, 1)
+                            FontWeight: =FontWeight.Semibold
+                            Height: =50
+                            Size: =12
+                            Text: ="1.Use standard dimensions (2x2 inches)."
+                            Width: =Parent.Width
+                            ZIndex: =1
+
+                        KVV_Label6_10 As label:
+                            Color: =RGBA(107, 29, 94, 1)
+                            FontWeight: =FontWeight.Semibold
+                            Height: =44
+                            Text: ="2.Ensure a clear, neutral background."
+                            Width: =Parent.Width
+                            Y: =33
+                            ZIndex: =2
+
+                        KVV_Label6_11 As label:
+                            Color: =RGBA(107, 29, 94, 1)
+                            FontWeight: =FontWeight.Semibold
+                            Height: =44
+                            Text: ="3.Capture a front-facing view with a neutral expression."
+                            Width: =Parent.Width
+                            Y: =77
+                            ZIndex: =3
+
+                        KVV_Label6_12 As label:
+                            Color: =RGBA(107, 29, 94, 1)
+                            FontWeight: =FontWeight.Semibold
+                            Height: =44
+                            Text: ="4.Eyes should be open and visible."
+                            Width: =Parent.Width
+                            Y: =121
+                            ZIndex: =4
+
+                        KVV_Label6_13 As label:
+                            Color: =RGBA(107, 29, 94, 1)
+                            FontWeight: =FontWeight.Semibold
+                            Height: =44
+                            Text: ="5.Wear normal clothing; avoid accessories that obscure the face."
+                            Width: =Parent.Width
+                            Y: =165
+                            ZIndex: =5
+
+                        KVV_Label6_14 As label:
+                            Color: =RGBA(107, 29, 94, 1)
+                            FontWeight: =FontWeight.Semibold
+                            Height: =44
+                            Text: ="6.Submit a recent, high-resolution photo."
+                            Width: =Parent.Width
+                            Y: =209
+                            ZIndex: =6
+
+                        KVV_Label6_15 As label:
+                            Color: =RGBA(107, 29, 94, 1)
+                            FontWeight: =FontWeight.Semibold
+                            Height: =44
+                            Text: ="7.If digital, use a common format (e.g., JPEG)."
+                            Width: =Parent.Width
+                            Y: =253
+                            ZIndex: =7
+
+                        KVV_Label6_16 As label:
+                            Color: =RGBA(107, 29, 94, 1)
+                            FontWeight: =FontWeight.Semibold
+                            Height: =44
+                            Text: ="8.Follow specific KYC guidelines provided by the institution or authority."
+                            Width: =Parent.Width
+                            Y: =297
+                            ZIndex: =8
+
+                    KVV_Label6_17 As label:
+                        Color: =RGBA(107, 29, 94, 1)
+                        FontWeight: =FontWeight.Bold
+                        Height: =44
+                        Size: =14
+                        Text: ="Instructions"
+                        Width: =Parent.Width
+                        ZIndex: =2
+
+                UPS_Button2_5 As button:
+                    DisplayMode: |-
+                        =
+                        
+                        
+                        If(
+                           
+                             
+                           IsEmpty(DataCardValue6.Attachments)
+                          ,
+                         
+                            DisplayMode.Disabled ,  DisplayMode.Edit
+                        )
+                    Fill: =RGBA(11, 163, 54, 1)
+                    HoverFill: |-
+                        =ColorFade(ColorValue("#0ba336"), -20%)
+                    OnSelect: |-
+                        =
+                        Patch(
+                            'Identification Details',
+                            LookUp('Identification Details',Id=Idfordata),
+                            {
+                                Photo: {FileName:"file" , Value:First(DataCardValue6.Attachments).Value},ApplicationStage:3
+                            }
+                        );Reset(USP_DataCardValue6_2);
+                        ClearCollect(data_application,LookUp('Identification Details',Id=Idfordata));
+                        
+                        Navigate(UploadLiveVideoScreen,ScreenTransition.Cover);
+                    RadiusBottomLeft: =5
+                    RadiusBottomRight: =5
+                    RadiusTopLeft: =5
+                    RadiusTopRight: =5
+                    Size: =11
+                    Text: ="Next"
+                    Width: =Parent.Width*.08
+                    X: =Parent.Width-Self.Width-Parent.Width*0.03
+                    Y: =(UPS_Container1_2.Y+UPS_Container1_2.Height)+(Parent.Height-(UPS_Container1_2.Y+UPS_Container1_2.Height)-Self.Height)/2
+                    ZIndex: =8
+
+                UPS_Button2_4 As button:
+                    BorderColor: |-
+                        =ColorFade(ColorValue("#6B1D5E"), -15%)
+                    Color: =RGBA(107, 29, 94, 1)
+                    Fill: =RGBA(255, 255, 255, 1)
+                    HoverColor: =RGBA(107, 29, 94, 1)
+                    HoverFill: |-
+                        =ColorFade(ColorValue("#A6A6A6"), 80%)
+                    OnSelect: =Set(popupvisibility,Blank());Back()
+                    RadiusBottomLeft: =5
+                    RadiusBottomRight: =5
+                    RadiusTopLeft: =5
+                    RadiusTopRight: =5
+                    Size: =11
+                    Text: ="Back"
+                    Width: =Parent.Width*.08
+                    X: =Parent.Width-UPS_Button2_5.Width-Self.Width-Parent.Width*0.05
+                    Y: =(UPS_Container1_2.Y+UPS_Container1_2.Height)+(Parent.Height-(UPS_Container1_2.Y+UPS_Container1_2.Height)-Self.Height)/2
+                    ZIndex: =9
+
+                UPS_Label8 As label:
+                    Color: =RGBA(255, 0, 0, 1)
+                    Height: =18
+                    Size: =10
+                    Text: ="Please Upload a clear photo in JPG format & Image should be in < 10MB."
+                    Width: =491
+                    X: =UPS_Container1_2.X
+                    Y: =(UPS_Container1_2.Height+UPS_Container1_2.Y)+Parent.Height*0.015
+                    ZIndex: =10
+

@@ -1,0 +1,18 @@
+App As appinfo:
+    BackEnabled: =true
+    OnStart: |-
+        =Set(ThankyouPopUp,false);
+        Set(SelectedSortField , DS_Dropdown1_1.Selected.Value);
+        Set(typeofnotification, "");
+        Set(messageNotification,"")
+    StartScreen: |
+        ='Dashboard Screen'
+    Theme: =PowerAppsTheme
+
+    Host As hostControl.DefaultHostControlVariant:
+        OnCancel: =false
+        OnEdit: =false
+        OnNew: =false
+        OnSave: =false
+        OnView: =false
+

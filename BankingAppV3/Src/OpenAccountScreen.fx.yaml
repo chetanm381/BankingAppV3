@@ -1,0 +1,701 @@
+OpenAccountScreen As screen:
+    OnVisible: |-
+        =Set(Ic,"Invalid");
+        UpdateContext({lclTimerStart:true});
+        UpdateContext({lclTimerRepeat:true});
+        Set(messageNotification,"");
+        UpdateContext
+        ({lclSwitchID:
+        1
+        });
+        SetFocus
+        (
+        OA_TextInput2_6
+        )
+
+    OA_BgContainer_1 As groupContainer.verticalAutoLayoutContainer:
+        Height: =Parent.Height
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutMode: =LayoutMode.Auto
+        LayoutOverflowY: =LayoutOverflow.Scroll
+        Width: =Parent.Width
+        ZIndex: =1
+
+        OA_HeaderContainer_1 As groupContainer.manualLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
+            BorderStyle: =BorderStyle.None
+            DropShadow: =DropShadow.None
+            FillPortions: =0
+            Height: =Parent.Height*.08
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            Width: =Parent.Width
+            ZIndex: =2
+
+            img_xebiaLogo_2 As image:
+                Height: =Parent.Height*.80
+                Image: ='download (7) 1'
+                PaddingBottom: =5
+                PaddingLeft: =5
+                PaddingTop: =5
+                Width: =153
+                Y: =(Parent.Height-Self.Height)/2
+                ZIndex: =1
+
+            USP_userimage_3 As image:
+                Height: =50
+                Image: =User().Image
+                RadiusBottomLeft: =50
+                RadiusBottomRight: =50
+                RadiusTopLeft: =50
+                RadiusTopRight: =50
+                Width: =50
+                X: =Parent.Width-Self.Width-Parent.Width*.01
+                Y: =(Parent.Height-Self.Height)/2
+                ZIndex: =2
+
+            USP_Button1_5 As button:
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =0
+                Color: =RGBA(107, 29, 94, 1)
+                Fill: =RGBA(252, 242, 247, 1)
+                Height: =30
+                HoverFill: =ColorFade(Self.Color, 20%)
+                OnSelect: =Navigate('Dashboard Screen',ScreenTransition.CoverRight)
+                RadiusBottomLeft: =5
+                RadiusBottomRight: =5
+                RadiusTopLeft: =5
+                RadiusTopRight: =5
+                Size: =9
+                Text: ="Home"
+                Width: =100
+                X: =USP_userimage_3.X-Self.Width-Parent.Width*.015
+                Y: =(Parent.Height-Self.Height)/2
+                ZIndex: =3
+
+            Label6_9 As label:
+                Align: =Align.Center
+                Color: =RGBA(107, 29, 94, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =61
+                Size: =25
+                Text: ="DOOR STEP BANKING"
+                Width: =Parent.Width/2
+                X: =(Parent.Width-Self.Width)/2
+                Y: =(Parent.Height-Self.Height)/2
+                ZIndex: =4
+
+        OA_ScrollableContainer_1 As groupContainer.manualLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
+            FillPortions: =0
+            Height: =Parent.Height*.92
+            LayoutMinHeight: =1000
+            LayoutMinWidth: =250
+            Width: =Parent.Width
+            Y: =OA_HeaderContainer_1.Height
+            ZIndex: =4
+
+            OA_Container11_1 As groupContainer.manualLayoutContainer:
+                BorderStyle: =BorderStyle.None
+                DropShadow: =DropShadow.None
+                Fill: =RGBA(107, 29, 94, 1)
+                Height: =Parent.Height*.20
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Width: =Parent.Width
+                ZIndex: =1
+
+                OA_Label1_1 As label:
+                    Color: =RGBA(255, 255, 255, 1)
+                    DisplayMode: =DisplayMode.View
+                    FontWeight: =FontWeight.Bold
+                    Height: =64
+                    Size: =20
+                    Text: ="DOOR STEP BANKING"
+                    Width: =520
+                    X: =Parent.Width*.02
+                    Y: =Parent.Height*.1
+                    ZIndex: =1
+
+            OA_Container12_1 As groupContainer.manualLayoutContainer:
+                BorderColor: =RGBA(219, 219, 219, 1)
+                BorderStyle: =BorderStyle.None
+                DropShadow: =DropShadow.Regular
+                Fill: =RGBA(255, 255, 255, 1)
+                Height: =OpenAccountScreen.Height*.75
+                RadiusBottomLeft: =20
+                RadiusBottomRight: =20
+                RadiusTopLeft: =20
+                RadiusTopRight: =20
+                Width: =Parent.Width*.90
+                X: =(Parent.Width-Self.Width)/2
+                Y: =OA_Container11_1.Height*.55
+                ZIndex: =2
+
+                OA_Container5 As groupContainer.manualLayoutContainer:
+                    DropShadow: =DropShadow.None
+                    Fill: =RGBA(252, 242, 247, 1)
+                    Height: =Parent.Height
+                    Width: =Parent.Width*.25
+                    ZIndex: =1
+
+                    OA_Label6 As label:
+                        Color: =RGBA(107, 29, 94, 1)
+                        FontWeight: =FontWeight.Semibold
+                        Height: =30
+                        Size: =12
+                        Text: ="A Few Click Away From"
+                        Width: =198
+                        X: =OA_Label6_1.X
+                        Y: =Parent.Height*.15
+                        ZIndex: =1
+
+                    OA_Label6_1 As label:
+                        Color: =RGBA(107, 29, 94, 1)
+                        Font: =Font.'Segoe UI'
+                        FontWeight: =FontWeight.Bold
+                        Height: =81
+                        Size: =20
+                        Text: ="OPENING AN ACCOUNT"
+                        Width: =198
+                        X: =(Parent.Width-Self.Width)/2
+                        Y: =OA_Label6.Height+OA_Label6.Y
+                        ZIndex: =2
+
+                    OA_Image1 As image:
+                        BorderStyle: =BorderStyle.None
+                        Height: =Parent.Height*.5
+                        Image: ='Banknote-rafiki'
+                        Width: =Parent.Width
+                        X: =Parent.Width-Self.Width
+                        Y: =288
+                        ZIndex: =3
+
+                OA_Container6 As groupContainer.manualLayoutContainer:
+                    DropShadow: =DropShadow.None
+                    Height: =Parent.Height
+                    Width: =Parent.Width-OA_Container5.Width
+                    X: =OA_Container5.X+OA_Container5.Width
+                    ZIndex: =2
+
+                    OA_HtmlText1 As htmlViewer:
+                        DisplayMode: =DisplayMode.View
+                        Height: =119
+                        HtmlText: |-
+                            ="<p style='color: #6b1d5e; text-align: center'> Please enter customer agent visit code recieved on registered 
+                            Email ID </p> "
+                        Size: =17
+                        Width: =Parent.Width*.55
+                        X: =(Parent.Width-Self.Width)/2+Parent.Width*.02
+                        Y: =OA_Label6.Y+Parent.Height*.055
+                        ZIndex: =2
+
+                    OA_Label2_2 As label:
+                        Color: =RGBA(107, 29, 94, 1)
+                        FontWeight: =FontWeight.Bold
+                        Text: ="OTP Verification"
+                        Width: =318
+                        X: =OA_Rectangle1_2.X
+                        Y: =Parent.Height*0.015
+                        ZIndex: =3
+
+                    OA_Rectangle1_2 As rectangle:
+                        Fill: =RGBA(202, 202, 202, 1)
+                        Height: =2
+                        Width: =Parent.Width*.94
+                        X: =(Parent.Width-Self.Width)/2
+                        Y: =OA_Label2_2.Y+OA_Label2_2.Height+Parent.Height*.015
+                        ZIndex: =4
+
+                    OA_Button2_6 As button:
+                        DisplayMode: =If(messageNotification="OTP Verified",DisplayMode.Edit,DisplayMode.Disabled)
+                        Fill: =RGBA(11, 163, 54, 1)
+                        HoverFill: |-
+                            =ColorFade(ColorValue("#0ba336"), -20%)
+                        OnSelect: |-
+                            =Reset(OA_TextInput2_6);
+                            Reset(OA_TextInput2_8);
+                            Reset(OA_TextInput2_9);
+                            Reset(OA_TextInput2_10);
+                            Reset(OA_TextInput2_7);
+                            Reset(OA_TextInput2_11);
+                            Reset(PDUD_aadharCard);
+                            Reset(PDUD_pancard);
+                            Set(
+                                visibility,
+                                false
+                            );
+                            ClearCollect(
+                                data_application,
+                                LookUp(
+                                    'Identification Details',
+                                    Id = Idfordata
+                                )
+                            );
+                            
+                            Set(popupvisibility,Blank());
+                            Switch(
+                                First(data_application).ApplicationStage,
+                                1,
+                                Navigate(
+                                    PersonalDetailsUploadDocumentsScreen,
+                                    ScreenTransition.CoverRight
+                                ),
+                                2,
+                              
+                            
+                            
+                                Navigate(
+                                    PersonalDetailsFormScreen,
+                                    ScreenTransition.CoverRight
+                                );
+                                ,
+                                3,
+                                Navigate(
+                                    UploadPassportSizePhoto,
+                                    ScreenTransition.CoverRight
+                                );
+                                ,
+                                4,
+                                Navigate(
+                                    UploadLiveVideoScreen,
+                                    ScreenTransition.CoverRight
+                                );
+                                ,
+                                5,
+                                Navigate(
+                                    KYCVerificationVideoScreen,
+                                    ScreenTransition.CoverRight
+                                );
+                                ,
+                                6,
+                                Navigate(
+                                    'MatchPhoto&VideoScreen',
+                                    ScreenTransition.CoverRight
+                                );
+                                ,
+                                7,
+                                Navigate(
+                                    UploadSignaturePhotoScreen,
+                                    ScreenTransition.CoverRight
+                                );
+                                ,
+                                8,
+                                Navigate(
+                                    'CustomerProfile Screen',
+                                    ScreenTransition.CoverRight
+                                );
+                                ,
+                                Navigate(
+                                    PersonalDetailsUploadDocumentsScreen,
+                                    ScreenTransition.CoverRight
+                                );
+                                
+                            );
+                            //Navigate(PersonalDetailsUploadDocumentsScreen,ScreenTransition.CoverRight);
+                        RadiusBottomLeft: =5
+                        RadiusBottomRight: =5
+                        RadiusTopLeft: =5
+                        RadiusTopRight: =5
+                        Size: =11
+                        Text: ="Submit"
+                        Width: =Parent.Width*.1
+                        X: =Parent.Width-Self.Width-Parent.Width*0.03
+                        Y: =(MPV_Container1_2.Y+MPV_Container1_2.Height)+(Parent.Height-(MPV_Container1_2.Y+MPV_Container1_2.Height)-Self.Height)/2
+                        ZIndex: =14
+
+                    OA_Button2_7 As button:
+                        BorderColor: |-
+                            =ColorFade(ColorValue("#6B1D5E"), -15%)
+                        Color: =RGBA(107, 29, 94, 1)
+                        Fill: =RGBA(255, 255, 255, 1)
+                        HoverColor: =RGBA(107, 29, 94, 1)
+                        HoverFill: |-
+                            =ColorFade(ColorValue("#A6A6A6"), 80%)
+                        OnSelect: =Back()
+                        RadiusBottomLeft: =5
+                        RadiusBottomRight: =5
+                        RadiusTopLeft: =5
+                        RadiusTopRight: =5
+                        Size: =11
+                        Text: ="Back"
+                        Width: =Parent.Width*.09
+                        X: =Parent.Width-OA_Button2_6.Width-Self.Width-Parent.Width*0.05
+                        Y: =(MPV_Container1_2.Y+MPV_Container1_2.Height)+(Parent.Height-(MPV_Container1_2.Y+MPV_Container1_2.Height)-Self.Height)/2
+                        ZIndex: =15
+
+                    OA_Label8_1 As label:
+                        Align: =Align.Center
+                        Color: =RGBA(107, 29, 94, 1)
+                        FontWeight: =FontWeight.Bold
+                        Height: =30
+                        Size: =11
+                        Text: ="Enter OTP you recieved on Email"
+                        Visible: =false
+                        Width: =Parent.Width*.55
+                        X: |+
+                            =(Parent.Width-Self.Width)/2+Parent.Width*.02
+                            
+                        Y: =OA_HtmlText1.Y+OA_HtmlText1.Height+Parent.Height*.05
+                        ZIndex: =17
+
+                    OA_TextInput2_6 As text:
+                        Align: =Align.Center
+                        BorderColor: =RGBA(107, 29, 94, 1)
+                        Color: =RGBA(107, 29, 94, 1)
+                        Default: =""
+                        FontWeight: =FontWeight.Bold
+                        Format: =TextFormat.Number
+                        Height: =60
+                        HoverBorderColor: =RGBA(107, 29, 94, 1)
+                        HoverFill: =ColorFade( RGBA(107, 29, 94, 1),70%)
+                        MaxLength: =1
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        Size: =15
+                        Width: =60
+                        X: =(OA_TextInput2_8.X)-Self.Width-Parent.Width*0.025
+                        Y: =OA_Label8_1.Y+OA_Label8_1.Height+Parent.Height*0.001
+                        ZIndex: =18
+
+                    OA_TextInput2_7 As text:
+                        Align: =Align.Center
+                        BorderColor: =RGBA(107, 29, 94, 1)
+                        Color: =RGBA(107, 29, 94, 1)
+                        Default: =""
+                        FontWeight: =FontWeight.Bold
+                        Format: =TextFormat.Number
+                        Height: =60
+                        HoverBorderColor: =RGBA(107, 29, 94, 1)
+                        HoverFill: =ColorFade( RGBA(107, 29, 94, 1),70%)
+                        MaxLength: =1
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        Size: =15
+                        Width: =60
+                        X: =OA_TextInput2_10.X+OA_TextInput2_10.Width+Parent.Width*0.025
+                        Y: =OA_Label8_1.Y+OA_Label8_1.Height+Parent.Height*0.001
+                        ZIndex: =19
+
+                    OA_TextInput2_8 As text:
+                        Align: =Align.Center
+                        BorderColor: =RGBA(107, 29, 94, 1)
+                        Color: =RGBA(107, 29, 94, 1)
+                        Default: =""
+                        FontWeight: =FontWeight.Bold
+                        Format: =TextFormat.Number
+                        Height: =60
+                        HoverBorderColor: =RGBA(107, 29, 94, 1)
+                        HoverFill: =ColorFade( RGBA(107, 29, 94, 1),70%)
+                        MaxLength: =1
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        Size: =15
+                        Width: =60
+                        X: =(OA_TextInput2_9.X)-Self.Width-Parent.Width*0.025
+                        Y: =OA_Label8_1.Y+OA_Label8_1.Height+Parent.Height*0.001
+                        ZIndex: =20
+
+                    OA_TextInput2_9 As text:
+                        Align: =Align.Center
+                        BorderColor: =RGBA(107, 29, 94, 1)
+                        Color: =RGBA(107, 29, 94, 1)
+                        Default: =""
+                        FontWeight: =FontWeight.Bold
+                        Format: =TextFormat.Number
+                        Height: =60
+                        HoverBorderColor: =RGBA(107, 29, 94, 1)
+                        HoverFill: =ColorFade( RGBA(107, 29, 94, 1),70%)
+                        MaxLength: =1
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        Size: =15
+                        Width: =60
+                        X: =(Parent.Width-Self.Width)/2-Parent.Width*0.0125
+                        Y: =OA_Label8_1.Y+OA_Label8_1.Height+Parent.Height*0.001
+                        ZIndex: =21
+
+                    OA_TextInput2_10 As text:
+                        Align: =Align.Center
+                        BorderColor: =RGBA(107, 29, 94, 1)
+                        Color: =RGBA(107, 29, 94, 1)
+                        Default: =""
+                        FontWeight: =FontWeight.Bold
+                        Format: =TextFormat.Number
+                        Height: =60
+                        HoverBorderColor: =RGBA(107, 29, 94, 1)
+                        HoverFill: =ColorFade( RGBA(107, 29, 94, 1),70%)
+                        MaxLength: =1
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        Size: =15
+                        Width: =60
+                        X: =(Parent.Width+Self.Width)/2+Parent.Width*0.0125
+                        Y: =OA_Label8_1.Y+OA_Label8_1.Height+Parent.Height*0.001
+                        ZIndex: =22
+
+                    OA_TextInput2_11 As text:
+                        Align: =Align.Center
+                        BorderColor: =RGBA(107, 29, 94, 1)
+                        Color: =RGBA(107, 29, 94, 1)
+                        Default: =""
+                        FontWeight: =FontWeight.Bold
+                        Format: =TextFormat.Number
+                        Height: =60
+                        HoverBorderColor: =RGBA(107, 29, 94, 1)
+                        HoverFill: =ColorFade( RGBA(107, 29, 94, 1),70%)
+                        MaxLength: =1
+                        OnChange: =
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        Size: =15
+                        Width: =60
+                        X: =OA_TextInput2_7.X+OA_TextInput2_7.Width+Parent.Width*0.025
+                        Y: =OA_Label8_1.Y+OA_Label8_1.Height+Parent.Height*0.001
+                        ZIndex: =23
+
+                    OA_Label9_1 As label:
+                        Align: =Align.Right
+                        Color: =RGBA(107, 29, 94, 1)
+                        FontWeight: =FontWeight.Bold
+                        PaddingRight: =0
+                        Size: =9
+                        Text: ="Verify OTP"
+                        Underline: =true
+                        Visible: =false
+                        Width: =Parent.Width*.40
+                        X: =OA_TextInput2_11.X+OA_TextInput2_11.Width-Self.Width
+                        Y: =OA_TextInput2_11.Y+OA_TextInput2_11.Height+Parent.Height*0.01
+                        ZIndex: =24
+
+                    OA_Icon1 As icon.Check:
+                        Color: =If(messageNotification="OTP Verified",RGBA(12, 204, 67, 1),Color.Red)
+                        Height: =50
+                        Icon: =If(messageNotification="OTP Verified",Icon.Check,Icon.Cancel)
+                        Visible: =visibility
+                        Width: =50
+                        X: =OA_TextInput2_11.X+OA_TextInput2_11.Width+Parent.Width*0.025
+                        Y: =OA_Label8_1.Y+OA_Label8_1.Height+Parent.Height*0.015
+                        ZIndex: =25
+
+                    OA_Button2_8 As button:
+                        BorderColor: |-
+                            =ColorFade(ColorValue("#6B1D5E"), -15%)
+                        BorderStyle: =BorderStyle.None
+                        BorderThickness: =0
+                        Color: =RGBA(0, 0, 0, 0)
+                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                        DisabledFill: =RGBA(0, 0, 0, 0)
+                        Fill: =RGBA(0, 0, 0, 0)
+                        HoverBorderColor: =RGBA(0,0,0,0)
+                        HoverColor: =RGBA(0, 0, 0, 0)
+                        HoverFill: =RGBA(0,0,0,0)
+                        OnSelect: |
+                            =Set(
+                                Entered_otp,
+                                Concatenate(
+                                    OA_TextInput2_6.Text,
+                                    OA_TextInput2_8.Text,
+                                    OA_TextInput2_9.Text,
+                                    OA_TextInput2_10.Text,
+                                    OA_TextInput2_7.Text,
+                                    OA_TextInput2_11.Text
+                                )
+                            );
+                            Set(
+                                data_record,
+                                LookUp(
+                                    'Identification Details',
+                                    'OTP Send' = Value(Entered_otp)
+                                )
+                            );
+                            Set(
+                                Idfordata,
+                                data_record.Id
+                            );
+                            If(
+                                IsBlank(
+                                    LookUp(
+                                        'Identification Details',
+                                        'OTP Send' = Value(Entered_otp)
+                                    )
+                                ),
+                                Concurrent(
+                                    Set(
+                                        typeofnotification,
+                                        'Toast Notification_1'.NotificationTypes.Error
+                                    ),
+                                    Set(
+                                        messageNotification,
+                                        "OTP Invalid"
+                                    ),
+                                    Reset('Toast Notification_1')
+                                );
+                             Set(visibility,false);
+                             
+                                Set(
+                                    Ic,
+                                    "Invalid"
+                                );
+                                Reset(OA_TextInput2_6);
+                                Reset(OA_TextInput2_8);
+                                Reset(OA_TextInput2_9);
+                                Reset(OA_TextInput2_10);
+                                Reset(OA_TextInput2_7);
+                                Reset(OA_TextInput2_11);
+                                ,
+                                Concurrent(
+                                    Set(
+                                        typeofnotification,
+                                        'Toast Notification_1'.NotificationTypes.Success
+                                    ),
+                                    Set(
+                                        messageNotification,
+                                        "OTP Verified"
+                                    ),
+                                    Reset('Toast Notification_1')
+                                );
+                               Set(visibility,true);
+                                Set(
+                                    Ic,
+                                    "Valid"
+                                )
+                            );
+                        PressedBorderColor: =RGBA(0,0,0,0)
+                        PressedColor: =RGBA(0,0,0,0)
+                        PressedFill: =RGBA(0,0,0,0)
+                        RadiusBottomLeft: =20
+                        RadiusBottomRight: =20
+                        RadiusTopLeft: =20
+                        RadiusTopRight: =20
+                        Size: =11
+                        Text: =""
+                        Tooltip: ="Click to Verify"
+                        Visible: =false
+                        Width: =Parent.Width*.09
+                        X: =OA_Label9_1.X+OA_Label9_1.Width-Self.Width
+                        Y: =OA_Label9_1.Y
+                        ZIndex: =26
+
+                    "'Toast Notification_1' As 'Toast Notification'":
+                        Icons: |-
+                            ={
+                                Success: $"data:image/svg+xml; utf-8, { EncodeUrl($"<svg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='512' height='512' x='0' y='0' viewBox='0 0 512 512' style='enable-background:new 0 0 512 512' xml:space='preserve' class=''><g>
+                            <ellipse xmlns='http://www.w3.org/2000/svg' style='' cx='256' cy='256' rx='256' ry='255.832' fill='#ffffff' data-original='#32bea6' class=''></ellipse>
+                            <polygon xmlns='http://www.w3.org/2000/svg' style='' points='235.472,392.08 114.432,297.784 148.848,253.616 223.176,311.52 345.848,134.504   391.88,166.392 ' fill='{ 'Toast Notification_1'.Styles.Colors.Success }' data-original='#ffffff'></polygon></g></svg>") }",
+                                Warning: $"data:image/svg+xml; utf-8, { EncodeUrl($"<svg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='512' height='512' x='0' y='0' viewBox='0 0 128 128' style='enable-background:new 0 0 512 512' xml:space='preserve' class='hovered-paths'><g><g xmlns='http://www.w3.org/2000/svg'><path d='m56.463 14.337-49.563 92.307c-2.8 5.217 1.273 11.356 7.537 11.356h99.126c6.264 0 10.338-6.139 7.537-11.356l-49.563-92.307c-3.106-5.783-11.968-5.783-15.074 0z' fill='#ffffff' data-original='#ffffff' class='hovered-path'></path><g fill='{ 'Toast Notification_1'.Styles.Colors.Warning }'><path d='m64 31.726a5.418 5.418 0 0 0 -5.5 5.45l1.017 44.289a4.422 4.422 0 0 0 4.483 4.261 4.422 4.422 0 0 0 4.482-4.261l1.018-44.289a5.418 5.418 0 0 0 -5.5-5.45z' fill='{ 'Toast Notification_1'.Styles.Colors.Warning }' data-original='{ 'Toast Notification_1'.Styles.Colors.Warning }'></path><circle cx='64' cy='100.222' r='6' fill='{ 'Toast Notification_1'.Styles.Colors.Warning }' data-original='{ 'Toast Notification_1'.Styles.Colors.Warning }'></circle></g></g></g></svg>") }",
+                                Error: $"data:image/svg+xml; utf-8, { EncodeUrl($"<svg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='512' height='512' x='0' y='0' viewBox='0 0 512 512' style='enable-background:new 0 0 512 512' xml:space='preserve' class=''><g>
+                            <ellipse xmlns='http://www.w3.org/2000/svg' style='' cx='256' cy='256' rx='256' ry='255.832' fill='#ffffff' data-original='#e04f5f' class=''></ellipse>
+                            <g xmlns='http://www.w3.org/2000/svg' transform='matrix(-0.7071 0.7071 -0.7071 -0.7071 77.26 32)'>
+                            <rect x='3.98' y='-427.615' style='' width='55.992' height='285.672' fill='{ 'Toast Notification_1'.Styles.Colors.Error }' data-original='#ffffff' class=''></rect>
+                            <rect x='-110.828' y='-312.815' style='' width='285.672' height='55.992' fill='{ 'Toast Notification_1'.Styles.Colors.Error }' data-original='#ffffff' class=''></rect>
+                            </g></g></svg>") }",
+                                Info: $"data:image/svg+xml; utf-8, { EncodeUrl($"<svg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='512' height='512' x='0' y='0' viewBox='0 0 512 512' style='enable-background:new 0 0 512 512' xml:space='preserve' class=''><g>
+                            <g xmlns='http://www.w3.org/2000/svg'><g><g><path d='M290.211,360.727c-5.234,0.488-10.489-0.693-15.011-3.375c-3.304-3.392-4.888-8.101-4.305-12.8     c0.122-3.912,0.589-7.806,1.396-11.636c0.781-4.394,1.79-8.744,3.025-13.033l13.731-47.244c1.416-4.663,2.352-9.459,2.793-14.313     c0-5.236,0.698-8.844,0.698-10.938c0.292-9.333-3.693-18.289-10.822-24.32c-8.769-6.732-19.689-10.041-30.72-9.309     c-7.905,0.119-15.749,1.413-23.273,3.84c-8.223,2.56-16.873,5.624-25.949,9.193l-3.956,15.36     c2.676-0.931,5.935-1.978,9.658-3.142c3.552-1.052,7.234-1.601,10.938-1.629c5.196-0.563,10.426,0.713,14.778,3.607     c2.956,3.527,4.343,8.109,3.84,12.684c-0.013,3.913-0.442,7.814-1.28,11.636c-0.815,4.073-1.862,8.378-3.142,12.916     l-13.847,47.476c-1.116,4.413-2.009,8.879-2.676,13.382c-0.544,3.855-0.816,7.743-0.815,11.636     c-0.057,9.397,4.24,18.291,11.636,24.087c8.904,6.837,19.98,10.226,31.185,9.542c7.89,0.162,15.753-0.978,23.273-3.375     c6.594-2.25,15.399-5.469,26.415-9.658l3.724-14.662c-2.984,1.238-6.057,2.249-9.193,3.025     C298.346,360.583,294.274,360.935,290.211,360.727z' fill='#ffffff' data-original='#ffffff' class=''></path><path d='M304.756,136.727c-6.333-5.816-14.677-8.945-23.273-8.727c-8.591-0.194-16.927,2.932-23.273,8.727     c-11.632,10.03-12.931,27.591-2.9,39.224c0.894,1.037,1.863,2.006,2.9,2.9c13.252,11.853,33.294,11.853,46.545,0     c11.632-10.129,12.851-27.769,2.722-39.401C306.635,138.481,305.725,137.571,304.756,136.727z' fill='#ffffff' data-original='#ffffff' class=''></path><path d='M256,0C114.615,0,0,114.615,0,256s114.615,256,256,256s256-114.615,256-256S397.385,0,256,0z M256,488.727     C127.468,488.727,23.273,384.532,23.273,256S127.468,23.273,256,23.273S488.727,127.468,488.727,256S384.532,488.727,256,488.727     z' fill='#ffffff' data-original='#ffffff' class=''></path></g></g></g></g></svg>") }"
+                            }
+                        NotificationMessage: =messageNotification
+                        NotificationType: =typeofnotification
+                        Visible: =Self.OutIsShowNotification
+                        Width: ='Toast Notification_1'.NotificationWidth
+                        X: =Parent.Width-Self.Width-Parent.Width*0.015
+                        Y: =Parent.Height*0.015
+                        ZIndex: =27
+
+                    Timer1 As timer:
+                        AutoPause: =false
+                        AutoStart: =lclTimerStart
+                        Duration: =2000
+                        OnTimerEnd: |-
+                            =Set(
+                                Entered_otp,
+                                Concatenate(
+                                    OA_TextInput2_6.Text,
+                                    OA_TextInput2_8.Text,
+                                    OA_TextInput2_9.Text,
+                                    OA_TextInput2_10.Text,
+                                    OA_TextInput2_7.Text,
+                                    OA_TextInput2_11.Text
+                                )
+                            );
+                            If(
+                                Not(IsBlank(Label1.Text)),
+                                If(
+                                    IsBlank(
+                            
+                                        LookUp(
+                                            'Identification Details',
+                                            'OTP Send' = Value(Entered_otp)
+                                        )
+                                    ),
+                                    Concurrent(
+                                        Set(
+                                            typeofnotification,
+                                            'Toast Notification_1'.NotificationTypes.Error
+                                        ),
+                                        Set(
+                                            messageNotification,
+                                            "OTP Invalid"
+                                        ),
+                                        Reset('Toast Notification_1')
+                                    );
+                                    Set(
+                                        visibility,
+                                        false
+                                    );
+                                    Set(
+                                        Ic,
+                                        "Invalid"
+                                    );
+                                    Reset(OA_TextInput2_6);
+                                    Reset(OA_TextInput2_8);
+                                    Reset(OA_TextInput2_9);
+                                    Reset(OA_TextInput2_10);
+                                    Reset(OA_TextInput2_7);
+                                    Reset(OA_TextInput2_11);
+                                    ,
+                                    Concurrent(
+                                        Set(
+                                            typeofnotification,
+                                            'Toast Notification_1'.NotificationTypes.Success
+                                        ),
+                                        Set(
+                                            messageNotification,
+                                            "OTP Verified"
+                                        ),
+                                        Reset('Toast Notification_1')
+                                    );
+                                    Set(
+                                        visibility,
+                                        true
+                                    );
+                                    Set(
+                                        Ic,
+                                        "Valid"
+                                    );
+                                    Set(Idfordata,LookUp(
+                                            'Identification Details',
+                                            'OTP Send' = Value(Entered_otp)
+                                        ).Id);
+                                        Set(data_record,LookUp(
+                                            'Identification Details',
+                                            'OTP Send' = Value(Entered_otp)
+                                        ))
+                                );UpdateContext({lclTimerStart: false});UpdateContext({lclTimerRepeat: false}),UpdateContext({lclTimerRepeat: true})
+                                
+                                
+                            )
+                        Repeat: =lclTimerRepeat
+                        Visible: =false
+                        X: =15
+                        Y: =174
+                        ZIndex: =28
+
+                    Label1 As label:
+                        Text: =OA_TextInput2_11.Text
+                        Visible: =false
+                        X: =51
+                        Y: =91
+                        ZIndex: =29
+

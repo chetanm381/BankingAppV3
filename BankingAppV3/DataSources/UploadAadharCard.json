@@ -1,0 +1,10 @@
+[
+  {
+    "ApiId": "/providers/microsoft.powerapps/apis/shared_logicflows",
+    "FlowNameId": "ab162f25-b893-4d0b-b081-589c02c37c58",
+    "Name": "UploadAadharCard",
+    "ServiceKind": "ConnectedWadl",
+    "Type": "ServiceInfo",
+    "WorkflowEntityId": "170d1454-47b0-ee11-a569-6045bdaa8a35"
+  }
+]
