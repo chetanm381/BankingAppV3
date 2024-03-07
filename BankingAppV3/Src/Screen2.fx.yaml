@@ -779,6 +779,7 @@ Screen2 As screen:
                 ZIndex: =14
 
         Container18 As groupContainer.verticalAutoLayoutContainer:
+            DropShadow: =DropShadow.None
             FillPortions: =0
             Height: =Parent.Height-con_UserName_NDS.Height-con_KPI_NDS.Height-Container13.Height
             LayoutMinHeight: =100
@@ -790,91 +791,203 @@ Screen2 As screen:
 
             Container20 As groupContainer.manualLayoutContainer:
                 AlignInContainer: =AlignInContainer.SetByContainer
+                DropShadow: =DropShadow.None
                 Height: =Parent.Height
                 LayoutMinHeight: =100
-                LayoutMinWidth: =Gallery8.Width
+                LayoutMinWidth: =Gallery1_2.Width
                 ZIndex: =1
 
-                "Gallery8 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
-                    DelayItemLoading: =true
-                    Height: =409
-                    Items: =CustomGallerySample
-                    Layout: =Layout.Vertical
-                    LoadingSpinner: =LoadingSpinner.Data
-                    TemplatePadding: =0
-                    TemplateSize: =80
-                    Width: =1800
-                    ZIndex: =1
+                Container21 As groupContainer.manualLayoutContainer:
+                    DropShadow: =DropShadow.None
+                    Height: =Parent.Height*.15
+                    Width: =Gallery1_2.Width
+                    ZIndex: =2
 
-                    Label18 As label:
-                        OnSelect: =Select(Parent)
-                        Text: =ThisItem.SampleHeading
-                        X: =16
-                        Y: =24
-                        ZIndex: =1
-
-                    Label19 As label:
-                        OnSelect: =Select(Parent)
-                        Text: =ThisItem.SampleText
-                        X: =215
-                        Y: =24
+                    DS_Rectangle4_2 As rectangle:
+                        Fill: =RGBA(219, 219, 219, 1)
+                        Height: =2
+                        Width: =Parent.Width*.95
+                        X: =(Parent.Width-Self.Width)/2
+                        Y: =DS_img_xebiaLogo_3.Y+DS_img_xebiaLogo_3.Height+Parent.Height*.015
                         ZIndex: =2
 
-                    Label20 As label:
-                        OnSelect: =Select(Parent)
-                        Text: =ThisItem.SampleText
-                        X: =427
-                        Y: =24
+                    DS_Label13_10 As label:
+                        Align: =Align.Center
+                        Color: =RGBA(107, 29, 94, 1)
+                        FontWeight: =FontWeight.Bold
+                        Height: =50
+                        OnSelect: =
+                        Size: =12
+                        Text: ="Application number"
+                        Width: =Parent.Width*.1
+                        X: =Parent.Width*.01
+                        Y: =Parent.Height*.02
                         ZIndex: =3
 
-                    Label20_1 As label:
-                        OnSelect: =Select(Parent)
-                        Text: =ThisItem.SampleText
-                        X: =607
-                        Y: =24
+                    DS_Label13_11 As label:
+                        Align: =Align.Center
+                        Color: =RGBA(107, 29, 94, 1)
+                        FontWeight: =FontWeight.Bold
+                        Height: =50
+                        Size: =12
+                        Text: ="Name"
+                        Width: =Parent.Width*.1
+                        X: =DS_Label13_10.Width+DS_Label13_10.X
+                        Y: =Parent.Height*.02
                         ZIndex: =4
 
-                    Label20_2 As label:
-                        OnSelect: =Select(Parent)
-                        Text: =ThisItem.SampleText
-                        X: =781
-                        Y: =24
+                    DS_Label13_12 As label:
+                        Align: =Align.Center
+                        Color: =RGBA(107, 29, 94, 1)
+                        FontWeight: =FontWeight.Bold
+                        Height: =50
+                        Size: =12
+                        Text: ="Application Date"
+                        Width: =Parent.Width*.1
+                        X: =DS_Label13_11.X+DS_Label13_11.Width
+                        Y: =Parent.Height*.02
                         ZIndex: =5
 
-                    Label20_3 As label:
-                        OnSelect: =Select(Parent)
-                        Text: =ThisItem.SampleText
-                        X: =950
-                        Y: =24
+                    DS_Label13_13 As label:
+                        Align: =Align.Center
+                        Color: =RGBA(107, 29, 94, 1)
+                        FontWeight: =FontWeight.Bold
+                        Height: =50
+                        Size: =12
+                        Text: ="Schedule Date"
+                        Width: =Parent.Width*.1
+                        X: =DS_Label13_12.X+DS_Label13_12.Width
+                        Y: =Parent.Height*.02
                         ZIndex: =6
 
-                    Label20_4 As label:
-                        OnSelect: =Select(Parent)
-                        Text: =ThisItem.SampleText
-                        X: =1112
-                        Y: =24
+                    DS_Label13_14 As label:
+                        Align: =Align.Center
+                        Color: =RGBA(107, 29, 94, 1)
+                        FontWeight: =FontWeight.Bold
+                        Height: =50
+                        Size: =12
+                        Text: ="Status"
+                        Width: =Parent.Width*.1
+                        X: =DS_Label13_13.X+DS_Label13_13.Width
+                        Y: =Parent.Height*.02
                         ZIndex: =7
 
-                    Label20_5 As label:
-                        OnSelect: =Select(Parent)
-                        Text: =ThisItem.SampleText
-                        X: =1262
-                        Y: =24
-                        ZIndex: =8
+                "Gallery1_2 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
+                    AccessibleLabel: ="No Item to display"
+                    DelayItemLoading: =true
+                    Height: =Parent.Height*.8
+                    ItemAccessibleLabel: ="No Item To display"
+                    Items: |-
+                        =SortByColumns(
+                            Filter(
+                                'Identification Details',
+                                If(
+                                    IsBlank(DS_Dropdown1_3.Selected.Value),
+                                    If(
+                                        InReview,
+                                        Application_Status in "In-Review",
+                                        true
+                                    ),
+                                    Application_Status in DS_Dropdown1_3.Selected.Value
+                                )
+                               // 'Created By'.cre
+                            ),
+                            sorting,
+                            If(
+                                order,
+                                SortOrder.Descending,
+                                SortOrder.Ascending
+                            )
+                        )
+                    Layout: =Layout.Vertical
+                    LoadingSpinner: =LoadingSpinner.Data
+                    LoadingSpinnerColor: |-
+                        =ColorValue("#6b1d5e")
+                    OnSelect: |-
+                        =If(
+                            Or( ThisItem.Application_Status = ApplicationStatus.'In-Review',ThisItem.Application_Status = ApplicationStatus.New),
+                            Navigate(OpenAccountScreen)
+                        )
+                    Selectable: =false
+                    ShowScrollbar: =false
+                    TemplatePadding: =0
+                    TemplateSize: =57
+                    Transition: =Transition.Pop
+                    Width: =2000
+                    Y: =82
+                    ZIndex: =3
 
-                    Label20_6 As label:
+                    DS_Label14_2 As label:
+                        Align: =Align.Center
+                        Color: =RGBA(107, 29, 94, 1)
+                        FontWeight: =FontWeight.Semibold
                         OnSelect: =Select(Parent)
-                        Text: =ThisItem.SampleText
-                        X: =1424
-                        Y: =24
-                        ZIndex: =9
+                        Size: =11
+                        Text: =ThisItem.ApplicationNumber
+                        Width: =Parent.Width*.15
+                        X: =DS_Label11_10.X+(DS_Label13_5.Width-Self.Width)/2
+                        Y: =(Gallery1_2.TemplateHeight-Self.Height)/2
+                        ZIndex: =1
 
-                    Label20_7 As label:
+                    DS_Label15_2 As label:
+                        Align: =Align.Center
+                        Color: =RGBA(107, 29, 94, 1)
+                        FontWeight: =FontWeight.Semibold
                         OnSelect: =Select(Parent)
-                        Text: =ThisItem.SampleText
-                        X: =1596
-                        Y: =24
-                        ZIndex: =10
+                        Size: =11
+                        Text: =ThisItem.'Full Name'
+                        Width: =Parent.Width*.2
+                        X: =DS_Label13_6.X
+                        Y: =(Gallery1_2.TemplateHeight-Self.Height)/2
+                        ZIndex: =2
+
+                    DS_Label19_6 As label:
+                        Align: =Align.Center
+                        Color: =RGBA(107, 29, 94, 1)
+                        FontWeight: =FontWeight.Semibold
+                        OnSelect: =Select(Parent)
+                        Size: =11
+                        Text: |
+                            =Text(DateTimeValue(ThisItem.'Created On'),  "[$-en-US]dd mmm' yy")
+                        Width: =Parent.Width*.2
+                        X: =DS_Label13_7.X
+                        Y: =(Gallery1_2.TemplateHeight-Self.Height)/2
+                        ZIndex: =4
+
+                    DS_Label19_8 As label:
+                        Align: =Align.Center
+                        Color: |
+                            =If(
+                                Text(ThisItem.Application_Status) = "In-Process",
+                                ColorValue("#0071b3"),
+                                If(
+                                    Text(ThisItem.Application_Status) = "New",
+                                    ColorValue("#377b59"),
+                                    ColorValue("#a40e0e")
+                                )
+                            )
+                        FontWeight: =FontWeight.Semibold
+                        OnSelect: =Select(Parent)
+                        Size: =11
+                        Text: |
+                            =ThisItem.Application_Status
+                        Width: =Parent.Width*.2
+                        X: =DS_Label13_9.X
+                        Y: =(Gallery1_2.TemplateHeight-Self.Height)/2
+                        ZIndex: =6
+
+                    DS_Label19_7 As label:
+                        Align: =Align.Center
+                        Color: =RGBA(107, 29, 94, 1)
+                        FontWeight: =FontWeight.Semibold
+                        OnSelect: =Select(Parent)
+                        Size: =11
+                        Text: |
+                            =Text(DateTimeValue(ThisItem.'Schedule Date'),  "[$-en-US]dd mmm' yyyy hh:mm")
+                        Width: =Parent.Width*.2
+                        X: =DS_Label13_8.X
+                        Y: =(Gallery1_2.TemplateHeight-Self.Height)/2
+                        ZIndex: =7
 
     shp_Seperator As rectangle:
         Fill: =RGBA(107, 29, 94, 1)

@@ -814,6 +814,46 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "Screen2.con_Main_NDS.Container18.Container20.Gallery1_2.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen2.con_Main_NDS.Container18.Container20.Gallery1_2.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 258,
+                  "charOffset": 69,
+                  "snippet": {
+                    "text": "If(\n            IsBlank(DS_Dropdown1_3.Selected.Value),\n            If(\n                InReview,\n                Application_Status in \"In-Review\",\n                true\n            ),\n            Application_Status in DS_Dropdown1_3.Selected.Value\n        )"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "Screen2",
+                "type": "Screen2.con_Main_NDS.Container18.Container20.Gallery1_2"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "If"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "'Toast Notification 2'.Gallery2.AccessibleLabel"
                 }
               ],
@@ -3511,49 +3551,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen2.con_Main_NDS.Container18.Container20.Gallery8.AccessibleLabel"
+                  "fullyQualifiedName": "Screen2.con_Main_NDS.Container18.Container20.Gallery1_2.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen2.con_Main_NDS.Container18.Container20.Gallery8.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Screen2",
-                "type": "Screen2.con_Main_NDS.Container18.Container20.Gallery8"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen2.con_Main_NDS.Container18.Container20.Gallery8.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen2.con_Main_NDS.Container18.Container20.Gallery8.TabIndex",
+                  "fullyQualifiedName": "Screen2.con_Main_NDS.Container18.Container20.Gallery1_2.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Screen2",
-                "type": "Screen2.con_Main_NDS.Container18.Container20.Gallery8"
+                "type": "Screen2.con_Main_NDS.Container18.Container20.Gallery1_2"
               }
             }
           ],
@@ -5984,6 +5994,216 @@
                 "member": "Y",
                 "module": "Screen2",
                 "type": "Screen2.shp_Seperator"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen2.con_Main_NDS.Container18.Container20.Gallery1_2.DS_Label19_8.X"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen2.con_Main_NDS.Container18.Container20.Gallery1_2.DS_Label19_8.X",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "X",
+                "module": "Screen2",
+                "type": "Screen2.con_Main_NDS.Container18.Container20.Gallery1_2.DS_Label19_8"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen2.con_Main_NDS.Container18.Container20.Gallery1_2.DS_Label15_2.X"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen2.con_Main_NDS.Container18.Container20.Gallery1_2.DS_Label15_2.X",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "X",
+                "module": "Screen2",
+                "type": "Screen2.con_Main_NDS.Container18.Container20.Gallery1_2.DS_Label15_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen2.con_Main_NDS.Container18.Container20.Gallery1_2.DS_Label19_7.X"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen2.con_Main_NDS.Container18.Container20.Gallery1_2.DS_Label19_7.X",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "X",
+                "module": "Screen2",
+                "type": "Screen2.con_Main_NDS.Container18.Container20.Gallery1_2.DS_Label19_7"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen2.con_Main_NDS.Container18.Container20.Gallery1_2.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen2.con_Main_NDS.Container18.Container20.Gallery1_2.Items",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "Screen2",
+                "type": "Screen2.con_Main_NDS.Container18.Container20.Gallery1_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen2.con_Main_NDS.Container18.Container20.Gallery1_2.DS_Label19_6.X"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen2.con_Main_NDS.Container18.Container20.Gallery1_2.DS_Label19_6.X",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "X",
+                "module": "Screen2",
+                "type": "Screen2.con_Main_NDS.Container18.Container20.Gallery1_2.DS_Label19_6"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen2.con_Main_NDS.Container18.Container20.Gallery1_2.DS_Label14_2.X"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen2.con_Main_NDS.Container18.Container20.Gallery1_2.DS_Label14_2.X",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "X",
+                "module": "Screen2",
+                "type": "Screen2.con_Main_NDS.Container18.Container20.Gallery1_2.DS_Label14_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen2.con_Main_NDS.Container18.Container20.Container21.DS_Rectangle4_2.Y"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen2.con_Main_NDS.Container18.Container20.Container21.DS_Rectangle4_2.Y",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Y",
+                "module": "Screen2",
+                "type": "Screen2.con_Main_NDS.Container18.Container20.Container21.DS_Rectangle4_2"
               }
             }
           ],
