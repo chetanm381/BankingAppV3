@@ -412,7 +412,7 @@
                 Color: =RGBA(82, 82, 82, 1)
                 FontWeight: =FontWeight.Bold
                 Size: =15
-                Text: ="NEW"
+                Text: ="Lead"
                 Width: =Len(Self.Text)*Self.Size*2
                 X: =Parent.Width*.04
                 Y: =(Parent.Height-Self.Height)/2
