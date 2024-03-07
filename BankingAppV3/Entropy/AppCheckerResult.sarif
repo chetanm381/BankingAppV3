@@ -854,6 +854,96 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "'Toast Notification'.cntNotificationWrapper.icoCloseNotification.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Toast Notification'.cntNotificationWrapper.icoCloseNotification.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Toast Notification",
+                "type": "'Toast Notification'.cntNotificationWrapper.icoCloseNotification"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Toast Notification'.cntNotificationWrapper.icoCloseNotification.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Toast Notification'.cntNotificationWrapper.icoCloseNotification.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Toast Notification",
+                "type": "'Toast Notification'.cntNotificationWrapper.icoCloseNotification"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Toast Notification'.cntNotificationWrapper.btnNotificationLoading.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Toast Notification'.cntNotificationWrapper.btnNotificationLoading.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Toast Notification",
+                "type": "'Toast Notification'.cntNotificationWrapper.btnNotificationLoading"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "'Toast Notification 2'.Gallery2.AccessibleLabel"
                 }
               ],
@@ -968,305 +1058,6 @@
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
           "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Toast Notification'.cntNotificationWrapper.icoCloseNotification.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Toast Notification'.cntNotificationWrapper.icoCloseNotification.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Toast Notification",
-                "type": "'Toast Notification'.cntNotificationWrapper.icoCloseNotification"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Toast Notification'.cntNotificationWrapper.icoCloseNotification.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Toast Notification'.cntNotificationWrapper.icoCloseNotification.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Toast Notification",
-                "type": "'Toast Notification'.cntNotificationWrapper.icoCloseNotification"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Toast Notification'.cntNotificationWrapper.btnNotificationLoading.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Toast Notification'.cntNotificationWrapper.btnNotificationLoading.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Toast Notification",
-                "type": "'Toast Notification'.cntNotificationWrapper.btnNotificationLoading"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen1"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen1",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "module": "Screen1",
-                "type": "Screen1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Low"
-          },
-          "ruleId": "acc-ReadableScreenNameNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "KYCVerificationVideoScreen.KVV_BgContainer_3.KVV_ScrollableContainer_3.KVV_Container12_4.KVV_Container3_4.KVV_Container5_4.KVV_Video1.ClosedCaptionsUrl"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "KYCVerificationVideoScreen.KVV_BgContainer_3.KVV_ScrollableContainer_3.KVV_Container12_4.KVV_Container3_4.KVV_Container5_4.KVV_Video1.ClosedCaptionsUrl",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "ClosedCaptionsUrl",
-                "module": "KYCVerificationVideoScreen",
-                "type": "KYCVerificationVideoScreen.KVV_BgContainer_3.KVV_ScrollableContainer_3.KVV_Container12_4.KVV_Container3_4.KVV_Container5_4.KVV_Video1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-CaptionsNeeded",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "KYCVerificationVideoScreen.KVV_BgContainer_3.KVV_ScrollableContainer_3.KVV_Container12_4.KVV_Container3_4.KVV_Container5_4.KVV_Video1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "KYCVerificationVideoScreen.KVV_BgContainer_3.KVV_ScrollableContainer_3.KVV_Container12_4.KVV_Container3_4.KVV_Container5_4.KVV_Video1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "KYCVerificationVideoScreen",
-                "type": "KYCVerificationVideoScreen.KVV_BgContainer_3.KVV_ScrollableContainer_3.KVV_Container12_4.KVV_Container3_4.KVV_Container5_4.KVV_Video1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "KYCVerificationVideoScreen.KVV_BgContainer_3.KVV_ScrollableContainer_3.KVV_Container12_4.KVV_Container1_4.KVV_Container5_5.KVV_Spinner1_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "KYCVerificationVideoScreen.KVV_BgContainer_3.KVV_ScrollableContainer_3.KVV_Container12_4.KVV_Container1_4.KVV_Container5_5.KVV_Spinner1_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "KYCVerificationVideoScreen",
-                "type": "KYCVerificationVideoScreen.KVV_BgContainer_3.KVV_ScrollableContainer_3.KVV_Container12_4.KVV_Container1_4.KVV_Container5_5.KVV_Spinner1_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "UploadPassportSizePhoto.UPS_BgContainer_1.UPS_ScrollableContainer_1.UPS_Container12_2.UPS_Container1_2.UPS_Icon31111_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "UploadPassportSizePhoto.UPS_BgContainer_1.UPS_ScrollableContainer_1.UPS_Container12_2.UPS_Container1_2.UPS_Icon31111_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "UploadPassportSizePhoto",
-                "type": "UploadPassportSizePhoto.UPS_BgContainer_1.UPS_ScrollableContainer_1.UPS_Container12_2.UPS_Container1_2.UPS_Icon31111_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "UploadPassportSizePhoto.UPS_BgContainer_1.UPS_ScrollableContainer_1.UPS_Container12_2.UPS_Container1_2.UPS_Icon31111_1.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "UploadPassportSizePhoto.UPS_BgContainer_1.UPS_ScrollableContainer_1.UPS_Container12_2.UPS_Container1_2.UPS_Icon31111_1.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "UploadPassportSizePhoto",
-                "type": "UploadPassportSizePhoto.UPS_BgContainer_1.UPS_ScrollableContainer_1.UPS_Container12_2.UPS_Container1_2.UPS_Icon31111_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "UploadPassportSizePhoto.UPS_BgContainer_1.UPS_ScrollableContainer_1.UPS_Container12_2.UPS_Container1_2.DataCardValue6.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "UploadPassportSizePhoto.UPS_BgContainer_1.UPS_ScrollableContainer_1.UPS_Container12_2.UPS_Container1_2.DataCardValue6.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "UploadPassportSizePhoto",
-                "type": "UploadPassportSizePhoto.UPS_BgContainer_1.UPS_ScrollableContainer_1.UPS_Container12_2.UPS_Container1_2.DataCardValue6"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
         },
         {
           "locations": [
@@ -1483,6 +1274,35 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "Screen1"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen1",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "module": "Screen1",
+                "type": "Screen1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Low"
+          },
+          "ruleId": "acc-ReadableScreenNameNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "UploadLiveVideoScreen.ULV_BgContainer_2.ULV_ScrollableContainer_2.ULV_Container12_3.ULV_Container1_3.ULV_Container5_2.USP_Icon31111_1.AccessibleLabel"
                 }
               ],
@@ -1633,19 +1453,79 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'MatchPhoto&VideoScreen'.MPV_BgContainer_1.MPV_ScrollableContainer_1.MPV_Container12_2.MPV_Container1_2.MPV_Container5_1.Spinner1.AccessibleLabel"
+                  "fullyQualifiedName": "KYCVerificationVideoScreen.KVV_BgContainer_3.KVV_ScrollableContainer_3.KVV_Container12_4.KVV_Container3_4.KVV_Container5_4.KVV_Video1.ClosedCaptionsUrl"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'MatchPhoto&VideoScreen'.MPV_BgContainer_1.MPV_ScrollableContainer_1.MPV_Container12_2.MPV_Container1_2.MPV_Container5_1.Spinner1.AccessibleLabel",
+                  "fullyQualifiedName": "KYCVerificationVideoScreen.KVV_BgContainer_3.KVV_ScrollableContainer_3.KVV_Container12_4.KVV_Container3_4.KVV_Container5_4.KVV_Video1.ClosedCaptionsUrl",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "ClosedCaptionsUrl",
+                "module": "KYCVerificationVideoScreen",
+                "type": "KYCVerificationVideoScreen.KVV_BgContainer_3.KVV_ScrollableContainer_3.KVV_Container12_4.KVV_Container3_4.KVV_Container5_4.KVV_Video1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-CaptionsNeeded",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "KYCVerificationVideoScreen.KVV_BgContainer_3.KVV_ScrollableContainer_3.KVV_Container12_4.KVV_Container3_4.KVV_Container5_4.KVV_Video1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "KYCVerificationVideoScreen.KVV_BgContainer_3.KVV_ScrollableContainer_3.KVV_Container12_4.KVV_Container3_4.KVV_Container5_4.KVV_Video1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "MatchPhoto&VideoScreen",
-                "type": "'MatchPhoto&VideoScreen'.MPV_BgContainer_1.MPV_ScrollableContainer_1.MPV_Container12_2.MPV_Container1_2.MPV_Container5_1.Spinner1"
+                "module": "KYCVerificationVideoScreen",
+                "type": "KYCVerificationVideoScreen.KVV_BgContainer_3.KVV_ScrollableContainer_3.KVV_Container12_4.KVV_Container3_4.KVV_Container5_4.KVV_Video1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "KYCVerificationVideoScreen.KVV_BgContainer_3.KVV_ScrollableContainer_3.KVV_Container12_4.KVV_Container1_4.KVV_Container5_5.KVV_Spinner1_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "KYCVerificationVideoScreen.KVV_BgContainer_3.KVV_ScrollableContainer_3.KVV_Container12_4.KVV_Container1_4.KVV_Container5_5.KVV_Spinner1_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "KYCVerificationVideoScreen",
+                "type": "KYCVerificationVideoScreen.KVV_BgContainer_3.KVV_ScrollableContainer_3.KVV_Container12_4.KVV_Container1_4.KVV_Container5_5.KVV_Spinner1_1"
               }
             }
           ],
@@ -1706,6 +1586,36 @@
                 "member": "AccessibleLabel",
                 "module": "MatchPhoto&VideoScreen",
                 "type": "'MatchPhoto&VideoScreen'.MPV_BgContainer_1.MPV_ScrollableContainer_1.MPV_Container12_2.MPV_Container3_2.MPV_Container5.MPV_Video2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'MatchPhoto&VideoScreen'.MPV_BgContainer_1.MPV_ScrollableContainer_1.MPV_Container12_2.MPV_Container1_2.MPV_Container5_1.Spinner1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'MatchPhoto&VideoScreen'.MPV_BgContainer_1.MPV_ScrollableContainer_1.MPV_Container12_2.MPV_Container1_2.MPV_Container5_1.Spinner1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "MatchPhoto&VideoScreen",
+                "type": "'MatchPhoto&VideoScreen'.MPV_BgContainer_1.MPV_ScrollableContainer_1.MPV_Container12_2.MPV_Container1_2.MPV_Container5_1.Spinner1"
               }
             }
           ],
@@ -3311,36 +3221,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen2.con_Main_NDS.Container13.Container15.DS_Dropdown1_6.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen2.con_Main_NDS.Container13.Container15.DS_Dropdown1_6.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Screen2",
-                "type": "Screen2.con_Main_NDS.Container13.Container15.DS_Dropdown1_6"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "Screen2.con_Main_NDS.Container13.Container15.TextInput2.AccessibleLabel"
                 }
               ],
@@ -3371,109 +3251,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen2.con_Main_NDS.Container15_1.DS_Dropdown1_8.AccessibleLabel"
+                  "fullyQualifiedName": "Screen2.con_Main_NDS.Container13.Container15.DS_Dropdown1_6.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen2.con_Main_NDS.Container15_1.DS_Dropdown1_8.AccessibleLabel",
+                  "fullyQualifiedName": "Screen2.con_Main_NDS.Container13.Container15.DS_Dropdown1_6.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Screen2",
-                "type": "Screen2.con_Main_NDS.Container15_1.DS_Dropdown1_8"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen2.con_Main_NDS.Container15_1.DatePickerCanvas1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen2.con_Main_NDS.Container15_1.DatePickerCanvas1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Screen2",
-                "type": "Screen2.con_Main_NDS.Container15_1.DatePickerCanvas1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen2.con_Main_NDS.Container15_1.DS_Dropdown1_7.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen2.con_Main_NDS.Container15_1.DS_Dropdown1_7.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Screen2",
-                "type": "Screen2.con_Main_NDS.Container15_1.DS_Dropdown1_7"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen2.con_Main_NDS.Container15_1.DatePickerCanvas1_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen2.con_Main_NDS.Container15_1.DatePickerCanvas1_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Screen2",
-                "type": "Screen2.con_Main_NDS.Container15_1.DatePickerCanvas1_1"
+                "type": "Screen2.con_Main_NDS.Container13.Container15.DS_Dropdown1_6"
               }
             }
           ],
@@ -3575,6 +3365,216 @@
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
           "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen2.con_Main_NDS.Container15_1.DS_Dropdown1_8.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen2.con_Main_NDS.Container15_1.DS_Dropdown1_8.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Screen2",
+                "type": "Screen2.con_Main_NDS.Container15_1.DS_Dropdown1_8"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen2.con_Main_NDS.Container15_1.DS_Dropdown1_7.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen2.con_Main_NDS.Container15_1.DS_Dropdown1_7.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Screen2",
+                "type": "Screen2.con_Main_NDS.Container15_1.DS_Dropdown1_7"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen2.con_Main_NDS.Container15_1.DatePickerCanvas1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen2.con_Main_NDS.Container15_1.DatePickerCanvas1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Screen2",
+                "type": "Screen2.con_Main_NDS.Container15_1.DatePickerCanvas1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen2.con_Main_NDS.Container15_1.DatePickerCanvas1_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen2.con_Main_NDS.Container15_1.DatePickerCanvas1_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Screen2",
+                "type": "Screen2.con_Main_NDS.Container15_1.DatePickerCanvas1_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "UploadPassportSizePhoto.UPS_BgContainer_1.UPS_ScrollableContainer_1.UPS_Container12_2.UPS_Container1_2.UPS_Icon31111_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "UploadPassportSizePhoto.UPS_BgContainer_1.UPS_ScrollableContainer_1.UPS_Container12_2.UPS_Container1_2.UPS_Icon31111_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "UploadPassportSizePhoto",
+                "type": "UploadPassportSizePhoto.UPS_BgContainer_1.UPS_ScrollableContainer_1.UPS_Container12_2.UPS_Container1_2.UPS_Icon31111_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "UploadPassportSizePhoto.UPS_BgContainer_1.UPS_ScrollableContainer_1.UPS_Container12_2.UPS_Container1_2.UPS_Icon31111_1.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "UploadPassportSizePhoto.UPS_BgContainer_1.UPS_ScrollableContainer_1.UPS_Container12_2.UPS_Container1_2.UPS_Icon31111_1.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "UploadPassportSizePhoto",
+                "type": "UploadPassportSizePhoto.UPS_BgContainer_1.UPS_ScrollableContainer_1.UPS_Container12_2.UPS_Container1_2.UPS_Icon31111_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "UploadPassportSizePhoto.UPS_BgContainer_1.UPS_ScrollableContainer_1.UPS_Container12_2.UPS_Container1_2.DataCardValue6.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "UploadPassportSizePhoto.UPS_BgContainer_1.UPS_ScrollableContainer_1.UPS_Container12_2.UPS_Container1_2.DataCardValue6.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "UploadPassportSizePhoto",
+                "type": "UploadPassportSizePhoto.UPS_BgContainer_1.UPS_ScrollableContainer_1.UPS_Container12_2.UPS_Container1_2.DataCardValue6"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
         },
         {
           "locations": [
@@ -3845,6 +3845,276 @@
           },
           "ruleId": "app-UnusedMediaResources",
           "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "UploadLiveVideoScreen.ULV_BgContainer_2.ULV_ScrollableContainer_2.ULV_Container11_3.PFD_Circle1_17.X"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "UploadLiveVideoScreen.ULV_BgContainer_2.ULV_ScrollableContainer_2.ULV_Container11_3.PFD_Circle1_17.X",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "X",
+                "module": "UploadLiveVideoScreen",
+                "type": "UploadLiveVideoScreen.ULV_BgContainer_2.ULV_ScrollableContainer_2.ULV_Container11_3.PFD_Circle1_17"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "UploadLiveVideoScreen.ULV_BgContainer_2.ULV_ScrollableContainer_2.ULV_Container11_3.PFD_Circle1_17.Y"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "UploadLiveVideoScreen.ULV_BgContainer_2.ULV_ScrollableContainer_2.ULV_Container11_3.PFD_Circle1_17.Y",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Y",
+                "module": "UploadLiveVideoScreen",
+                "type": "UploadLiveVideoScreen.ULV_BgContainer_2.ULV_ScrollableContainer_2.ULV_Container11_3.PFD_Circle1_17"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "UploadLiveVideoScreen.ULV_BgContainer_2.ULV_ScrollableContainer_2.ULV_Container11_3.PFD_Circle2_17.Y"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "UploadLiveVideoScreen.ULV_BgContainer_2.ULV_ScrollableContainer_2.ULV_Container11_3.PFD_Circle2_17.Y",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Y",
+                "module": "UploadLiveVideoScreen",
+                "type": "UploadLiveVideoScreen.ULV_BgContainer_2.ULV_ScrollableContainer_2.ULV_Container11_3.PFD_Circle2_17"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "UploadLiveVideoScreen.ULV_BgContainer_2.ULV_ScrollableContainer_2.ULV_Container11_3.PFD_Circle3_17.Y"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "UploadLiveVideoScreen.ULV_BgContainer_2.ULV_ScrollableContainer_2.ULV_Container11_3.PFD_Circle3_17.Y",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Y",
+                "module": "UploadLiveVideoScreen",
+                "type": "UploadLiveVideoScreen.ULV_BgContainer_2.ULV_ScrollableContainer_2.ULV_Container11_3.PFD_Circle3_17"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "UploadLiveVideoScreen.ULV_BgContainer_2.ULV_ScrollableContainer_2.ULV_Container11_3.PFD_Circle4_17.Y"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "UploadLiveVideoScreen.ULV_BgContainer_2.ULV_ScrollableContainer_2.ULV_Container11_3.PFD_Circle4_17.Y",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Y",
+                "module": "UploadLiveVideoScreen",
+                "type": "UploadLiveVideoScreen.ULV_BgContainer_2.ULV_ScrollableContainer_2.ULV_Container11_3.PFD_Circle4_17"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "UploadLiveVideoScreen.ULV_BgContainer_2.ULV_ScrollableContainer_2.ULV_Container11_3.PFD_Circle5_17.Y"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "UploadLiveVideoScreen.ULV_BgContainer_2.ULV_ScrollableContainer_2.ULV_Container11_3.PFD_Circle5_17.Y",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Y",
+                "module": "UploadLiveVideoScreen",
+                "type": "UploadLiveVideoScreen.ULV_BgContainer_2.ULV_ScrollableContainer_2.ULV_Container11_3.PFD_Circle5_17"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "UploadLiveVideoScreen.ULV_BgContainer_2.ULV_ScrollableContainer_2.ULV_Container11_3.PFD_Circle6_17.Y"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "UploadLiveVideoScreen.ULV_BgContainer_2.ULV_ScrollableContainer_2.ULV_Container11_3.PFD_Circle6_17.Y",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Y",
+                "module": "UploadLiveVideoScreen",
+                "type": "UploadLiveVideoScreen.ULV_BgContainer_2.ULV_ScrollableContainer_2.ULV_Container11_3.PFD_Circle6_17"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "UploadLiveVideoScreen.ULV_BgContainer_2.ULV_ScrollableContainer_2.ULV_Container11_3.PFD_Circle8_17.Y"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "UploadLiveVideoScreen.ULV_BgContainer_2.ULV_ScrollableContainer_2.ULV_Container11_3.PFD_Circle8_17.Y",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Y",
+                "module": "UploadLiveVideoScreen",
+                "type": "UploadLiveVideoScreen.ULV_BgContainer_2.ULV_ScrollableContainer_2.ULV_Container11_3.PFD_Circle8_17"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "UploadLiveVideoScreen.ULV_BgContainer_2.ULV_ScrollableContainer_2.ULV_Container11_3.PFD_Circle9_17.Y"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "UploadLiveVideoScreen.ULV_BgContainer_2.ULV_ScrollableContainer_2.ULV_Container11_3.PFD_Circle9_17.Y",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Y",
+                "module": "UploadLiveVideoScreen",
+                "type": "UploadLiveVideoScreen.ULV_BgContainer_2.ULV_ScrollableContainer_2.ULV_Container11_3.PFD_Circle9_17"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 9
         },
         {
           "locations": [
@@ -4134,576 +4404,6 @@
                 "member": "Height",
                 "module": "KYCVerificationVideoScreen",
                 "type": "KYCVerificationVideoScreen.KVV_BgContainer_3.KVV_ScrollableContainer_3.KVV_Container12_4"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 9
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "UploadPassportSizePhoto.UPS_BgContainer_1.UPS_ScrollableContainer_1.UPS_Container11_2.PFD_Circle1_20.X"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "UploadPassportSizePhoto.UPS_BgContainer_1.UPS_ScrollableContainer_1.UPS_Container11_2.PFD_Circle1_20.X",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "X",
-                "module": "UploadPassportSizePhoto",
-                "type": "UploadPassportSizePhoto.UPS_BgContainer_1.UPS_ScrollableContainer_1.UPS_Container11_2.PFD_Circle1_20"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 9
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "UploadPassportSizePhoto.UPS_BgContainer_1.UPS_ScrollableContainer_1.UPS_Container11_2.PFD_Circle1_20.Y"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "UploadPassportSizePhoto.UPS_BgContainer_1.UPS_ScrollableContainer_1.UPS_Container11_2.PFD_Circle1_20.Y",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "Y",
-                "module": "UploadPassportSizePhoto",
-                "type": "UploadPassportSizePhoto.UPS_BgContainer_1.UPS_ScrollableContainer_1.UPS_Container11_2.PFD_Circle1_20"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 9
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "UploadPassportSizePhoto.UPS_BgContainer_1.UPS_ScrollableContainer_1.UPS_Container11_2.PFD_Circle2_20.Y"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "UploadPassportSizePhoto.UPS_BgContainer_1.UPS_ScrollableContainer_1.UPS_Container11_2.PFD_Circle2_20.Y",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "Y",
-                "module": "UploadPassportSizePhoto",
-                "type": "UploadPassportSizePhoto.UPS_BgContainer_1.UPS_ScrollableContainer_1.UPS_Container11_2.PFD_Circle2_20"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 9
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "UploadPassportSizePhoto.UPS_BgContainer_1.UPS_ScrollableContainer_1.UPS_Container11_2.PFD_Circle3_20.Y"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "UploadPassportSizePhoto.UPS_BgContainer_1.UPS_ScrollableContainer_1.UPS_Container11_2.PFD_Circle3_20.Y",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "Y",
-                "module": "UploadPassportSizePhoto",
-                "type": "UploadPassportSizePhoto.UPS_BgContainer_1.UPS_ScrollableContainer_1.UPS_Container11_2.PFD_Circle3_20"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 9
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "UploadPassportSizePhoto.UPS_BgContainer_1.UPS_ScrollableContainer_1.UPS_Container11_2.PFD_Circle4_20.Y"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "UploadPassportSizePhoto.UPS_BgContainer_1.UPS_ScrollableContainer_1.UPS_Container11_2.PFD_Circle4_20.Y",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "Y",
-                "module": "UploadPassportSizePhoto",
-                "type": "UploadPassportSizePhoto.UPS_BgContainer_1.UPS_ScrollableContainer_1.UPS_Container11_2.PFD_Circle4_20"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 9
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "UploadPassportSizePhoto.UPS_BgContainer_1.UPS_ScrollableContainer_1.UPS_Container11_2.PFD_Circle5_20.Y"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "UploadPassportSizePhoto.UPS_BgContainer_1.UPS_ScrollableContainer_1.UPS_Container11_2.PFD_Circle5_20.Y",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "Y",
-                "module": "UploadPassportSizePhoto",
-                "type": "UploadPassportSizePhoto.UPS_BgContainer_1.UPS_ScrollableContainer_1.UPS_Container11_2.PFD_Circle5_20"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 9
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "UploadPassportSizePhoto.UPS_BgContainer_1.UPS_ScrollableContainer_1.UPS_Container11_2.PFD_Circle6_12.Y"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "UploadPassportSizePhoto.UPS_BgContainer_1.UPS_ScrollableContainer_1.UPS_Container11_2.PFD_Circle6_12.Y",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "Y",
-                "module": "UploadPassportSizePhoto",
-                "type": "UploadPassportSizePhoto.UPS_BgContainer_1.UPS_ScrollableContainer_1.UPS_Container11_2.PFD_Circle6_12"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 9
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "UploadPassportSizePhoto.UPS_BgContainer_1.UPS_ScrollableContainer_1.UPS_Container11_2.PFD_Circle8_12.Y"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "UploadPassportSizePhoto.UPS_BgContainer_1.UPS_ScrollableContainer_1.UPS_Container11_2.PFD_Circle8_12.Y",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "Y",
-                "module": "UploadPassportSizePhoto",
-                "type": "UploadPassportSizePhoto.UPS_BgContainer_1.UPS_ScrollableContainer_1.UPS_Container11_2.PFD_Circle8_12"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 9
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "UploadPassportSizePhoto.UPS_BgContainer_1.UPS_ScrollableContainer_1.UPS_Container11_2.PFD_Circle9_12.Y"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "UploadPassportSizePhoto.UPS_BgContainer_1.UPS_ScrollableContainer_1.UPS_Container11_2.PFD_Circle9_12.Y",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "Y",
-                "module": "UploadPassportSizePhoto",
-                "type": "UploadPassportSizePhoto.UPS_BgContainer_1.UPS_ScrollableContainer_1.UPS_Container11_2.PFD_Circle9_12"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 9
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "UploadPassportSizePhoto.UPS_BgContainer_1.UPS_ScrollableContainer_1.UPS_Container12_2.Height"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "UploadPassportSizePhoto.UPS_BgContainer_1.UPS_ScrollableContainer_1.UPS_Container12_2.Height",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "Height",
-                "module": "UploadPassportSizePhoto",
-                "type": "UploadPassportSizePhoto.UPS_BgContainer_1.UPS_ScrollableContainer_1.UPS_Container12_2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 9
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "UploadLiveVideoScreen.ULV_BgContainer_2.ULV_ScrollableContainer_2.ULV_Container11_3.PFD_Circle1_17.X"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "UploadLiveVideoScreen.ULV_BgContainer_2.ULV_ScrollableContainer_2.ULV_Container11_3.PFD_Circle1_17.X",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "X",
-                "module": "UploadLiveVideoScreen",
-                "type": "UploadLiveVideoScreen.ULV_BgContainer_2.ULV_ScrollableContainer_2.ULV_Container11_3.PFD_Circle1_17"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 9
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "UploadLiveVideoScreen.ULV_BgContainer_2.ULV_ScrollableContainer_2.ULV_Container11_3.PFD_Circle1_17.Y"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "UploadLiveVideoScreen.ULV_BgContainer_2.ULV_ScrollableContainer_2.ULV_Container11_3.PFD_Circle1_17.Y",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "Y",
-                "module": "UploadLiveVideoScreen",
-                "type": "UploadLiveVideoScreen.ULV_BgContainer_2.ULV_ScrollableContainer_2.ULV_Container11_3.PFD_Circle1_17"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 9
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "UploadLiveVideoScreen.ULV_BgContainer_2.ULV_ScrollableContainer_2.ULV_Container11_3.PFD_Circle2_17.Y"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "UploadLiveVideoScreen.ULV_BgContainer_2.ULV_ScrollableContainer_2.ULV_Container11_3.PFD_Circle2_17.Y",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "Y",
-                "module": "UploadLiveVideoScreen",
-                "type": "UploadLiveVideoScreen.ULV_BgContainer_2.ULV_ScrollableContainer_2.ULV_Container11_3.PFD_Circle2_17"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 9
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "UploadLiveVideoScreen.ULV_BgContainer_2.ULV_ScrollableContainer_2.ULV_Container11_3.PFD_Circle3_17.Y"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "UploadLiveVideoScreen.ULV_BgContainer_2.ULV_ScrollableContainer_2.ULV_Container11_3.PFD_Circle3_17.Y",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "Y",
-                "module": "UploadLiveVideoScreen",
-                "type": "UploadLiveVideoScreen.ULV_BgContainer_2.ULV_ScrollableContainer_2.ULV_Container11_3.PFD_Circle3_17"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 9
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "UploadLiveVideoScreen.ULV_BgContainer_2.ULV_ScrollableContainer_2.ULV_Container11_3.PFD_Circle4_17.Y"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "UploadLiveVideoScreen.ULV_BgContainer_2.ULV_ScrollableContainer_2.ULV_Container11_3.PFD_Circle4_17.Y",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "Y",
-                "module": "UploadLiveVideoScreen",
-                "type": "UploadLiveVideoScreen.ULV_BgContainer_2.ULV_ScrollableContainer_2.ULV_Container11_3.PFD_Circle4_17"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 9
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "UploadLiveVideoScreen.ULV_BgContainer_2.ULV_ScrollableContainer_2.ULV_Container11_3.PFD_Circle5_17.Y"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "UploadLiveVideoScreen.ULV_BgContainer_2.ULV_ScrollableContainer_2.ULV_Container11_3.PFD_Circle5_17.Y",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "Y",
-                "module": "UploadLiveVideoScreen",
-                "type": "UploadLiveVideoScreen.ULV_BgContainer_2.ULV_ScrollableContainer_2.ULV_Container11_3.PFD_Circle5_17"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 9
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "UploadLiveVideoScreen.ULV_BgContainer_2.ULV_ScrollableContainer_2.ULV_Container11_3.PFD_Circle6_17.Y"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "UploadLiveVideoScreen.ULV_BgContainer_2.ULV_ScrollableContainer_2.ULV_Container11_3.PFD_Circle6_17.Y",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "Y",
-                "module": "UploadLiveVideoScreen",
-                "type": "UploadLiveVideoScreen.ULV_BgContainer_2.ULV_ScrollableContainer_2.ULV_Container11_3.PFD_Circle6_17"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 9
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "UploadLiveVideoScreen.ULV_BgContainer_2.ULV_ScrollableContainer_2.ULV_Container11_3.PFD_Circle8_17.Y"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "UploadLiveVideoScreen.ULV_BgContainer_2.ULV_ScrollableContainer_2.ULV_Container11_3.PFD_Circle8_17.Y",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "Y",
-                "module": "UploadLiveVideoScreen",
-                "type": "UploadLiveVideoScreen.ULV_BgContainer_2.ULV_ScrollableContainer_2.ULV_Container11_3.PFD_Circle8_17"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 9
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "UploadLiveVideoScreen.ULV_BgContainer_2.ULV_ScrollableContainer_2.ULV_Container11_3.PFD_Circle9_17.Y"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "UploadLiveVideoScreen.ULV_BgContainer_2.ULV_ScrollableContainer_2.ULV_Container11_3.PFD_Circle9_17.Y",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "Y",
-                "module": "UploadLiveVideoScreen",
-                "type": "UploadLiveVideoScreen.ULV_BgContainer_2.ULV_ScrollableContainer_2.ULV_Container11_3.PFD_Circle9_17"
               }
             }
           ],
@@ -5891,6 +5591,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "Screen2.shp_Seperator.Y"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen2.shp_Seperator.Y",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Y",
+                "module": "Screen2",
+                "type": "Screen2.shp_Seperator"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "Screen2.con_Main_NDS.Y"
                 }
               ],
@@ -5981,126 +5711,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen2.shp_Seperator.Y"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen2.shp_Seperator.Y",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "Y",
-                "module": "Screen2",
-                "type": "Screen2.shp_Seperator"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 9
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen2.con_Main_NDS.Container18.Container20.Gallery1_2.DS_Label19_8.X"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen2.con_Main_NDS.Container18.Container20.Gallery1_2.DS_Label19_8.X",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "X",
-                "module": "Screen2",
-                "type": "Screen2.con_Main_NDS.Container18.Container20.Gallery1_2.DS_Label19_8"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 9
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen2.con_Main_NDS.Container18.Container20.Gallery1_2.DS_Label15_2.X"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen2.con_Main_NDS.Container18.Container20.Gallery1_2.DS_Label15_2.X",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "X",
-                "module": "Screen2",
-                "type": "Screen2.con_Main_NDS.Container18.Container20.Gallery1_2.DS_Label15_2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 9
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen2.con_Main_NDS.Container18.Container20.Gallery1_2.DS_Label19_7.X"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen2.con_Main_NDS.Container18.Container20.Gallery1_2.DS_Label19_7.X",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "X",
-                "module": "Screen2",
-                "type": "Screen2.con_Main_NDS.Container18.Container20.Gallery1_2.DS_Label19_7"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 9
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "Screen2.con_Main_NDS.Container18.Container20.Gallery1_2.Items"
                 }
               ],
@@ -6131,19 +5741,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen2.con_Main_NDS.Container18.Container20.Gallery1_2.DS_Label19_6.X"
+                  "fullyQualifiedName": "UploadPassportSizePhoto.UPS_BgContainer_1.UPS_ScrollableContainer_1.UPS_Container11_2.PFD_Circle1_20.X"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen2.con_Main_NDS.Container18.Container20.Gallery1_2.DS_Label19_6.X",
+                  "fullyQualifiedName": "UploadPassportSizePhoto.UPS_BgContainer_1.UPS_ScrollableContainer_1.UPS_Container11_2.PFD_Circle1_20.X",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "X",
-                "module": "Screen2",
-                "type": "Screen2.con_Main_NDS.Container18.Container20.Gallery1_2.DS_Label19_6"
+                "module": "UploadPassportSizePhoto",
+                "type": "UploadPassportSizePhoto.UPS_BgContainer_1.UPS_ScrollableContainer_1.UPS_Container11_2.PFD_Circle1_20"
               }
             }
           ],
@@ -6161,19 +5771,259 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen2.con_Main_NDS.Container18.Container20.Container21.DS_Rectangle4_2.Y"
+                  "fullyQualifiedName": "UploadPassportSizePhoto.UPS_BgContainer_1.UPS_ScrollableContainer_1.UPS_Container11_2.PFD_Circle1_20.Y"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen2.con_Main_NDS.Container18.Container20.Container21.DS_Rectangle4_2.Y",
+                  "fullyQualifiedName": "UploadPassportSizePhoto.UPS_BgContainer_1.UPS_ScrollableContainer_1.UPS_Container11_2.PFD_Circle1_20.Y",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "Y",
-                "module": "Screen2",
-                "type": "Screen2.con_Main_NDS.Container18.Container20.Container21.DS_Rectangle4_2"
+                "module": "UploadPassportSizePhoto",
+                "type": "UploadPassportSizePhoto.UPS_BgContainer_1.UPS_ScrollableContainer_1.UPS_Container11_2.PFD_Circle1_20"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "UploadPassportSizePhoto.UPS_BgContainer_1.UPS_ScrollableContainer_1.UPS_Container11_2.PFD_Circle2_20.Y"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "UploadPassportSizePhoto.UPS_BgContainer_1.UPS_ScrollableContainer_1.UPS_Container11_2.PFD_Circle2_20.Y",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Y",
+                "module": "UploadPassportSizePhoto",
+                "type": "UploadPassportSizePhoto.UPS_BgContainer_1.UPS_ScrollableContainer_1.UPS_Container11_2.PFD_Circle2_20"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "UploadPassportSizePhoto.UPS_BgContainer_1.UPS_ScrollableContainer_1.UPS_Container11_2.PFD_Circle3_20.Y"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "UploadPassportSizePhoto.UPS_BgContainer_1.UPS_ScrollableContainer_1.UPS_Container11_2.PFD_Circle3_20.Y",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Y",
+                "module": "UploadPassportSizePhoto",
+                "type": "UploadPassportSizePhoto.UPS_BgContainer_1.UPS_ScrollableContainer_1.UPS_Container11_2.PFD_Circle3_20"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "UploadPassportSizePhoto.UPS_BgContainer_1.UPS_ScrollableContainer_1.UPS_Container11_2.PFD_Circle4_20.Y"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "UploadPassportSizePhoto.UPS_BgContainer_1.UPS_ScrollableContainer_1.UPS_Container11_2.PFD_Circle4_20.Y",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Y",
+                "module": "UploadPassportSizePhoto",
+                "type": "UploadPassportSizePhoto.UPS_BgContainer_1.UPS_ScrollableContainer_1.UPS_Container11_2.PFD_Circle4_20"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "UploadPassportSizePhoto.UPS_BgContainer_1.UPS_ScrollableContainer_1.UPS_Container11_2.PFD_Circle5_20.Y"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "UploadPassportSizePhoto.UPS_BgContainer_1.UPS_ScrollableContainer_1.UPS_Container11_2.PFD_Circle5_20.Y",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Y",
+                "module": "UploadPassportSizePhoto",
+                "type": "UploadPassportSizePhoto.UPS_BgContainer_1.UPS_ScrollableContainer_1.UPS_Container11_2.PFD_Circle5_20"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "UploadPassportSizePhoto.UPS_BgContainer_1.UPS_ScrollableContainer_1.UPS_Container11_2.PFD_Circle6_12.Y"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "UploadPassportSizePhoto.UPS_BgContainer_1.UPS_ScrollableContainer_1.UPS_Container11_2.PFD_Circle6_12.Y",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Y",
+                "module": "UploadPassportSizePhoto",
+                "type": "UploadPassportSizePhoto.UPS_BgContainer_1.UPS_ScrollableContainer_1.UPS_Container11_2.PFD_Circle6_12"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "UploadPassportSizePhoto.UPS_BgContainer_1.UPS_ScrollableContainer_1.UPS_Container11_2.PFD_Circle8_12.Y"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "UploadPassportSizePhoto.UPS_BgContainer_1.UPS_ScrollableContainer_1.UPS_Container11_2.PFD_Circle8_12.Y",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Y",
+                "module": "UploadPassportSizePhoto",
+                "type": "UploadPassportSizePhoto.UPS_BgContainer_1.UPS_ScrollableContainer_1.UPS_Container11_2.PFD_Circle8_12"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "UploadPassportSizePhoto.UPS_BgContainer_1.UPS_ScrollableContainer_1.UPS_Container11_2.PFD_Circle9_12.Y"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "UploadPassportSizePhoto.UPS_BgContainer_1.UPS_ScrollableContainer_1.UPS_Container11_2.PFD_Circle9_12.Y",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Y",
+                "module": "UploadPassportSizePhoto",
+                "type": "UploadPassportSizePhoto.UPS_BgContainer_1.UPS_ScrollableContainer_1.UPS_Container11_2.PFD_Circle9_12"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "UploadPassportSizePhoto.UPS_BgContainer_1.UPS_ScrollableContainer_1.UPS_Container12_2.Height"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "UploadPassportSizePhoto.UPS_BgContainer_1.UPS_ScrollableContainer_1.UPS_Container12_2.Height",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Height",
+                "module": "UploadPassportSizePhoto",
+                "type": "UploadPassportSizePhoto.UPS_BgContainer_1.UPS_ScrollableContainer_1.UPS_Container12_2"
               }
             }
           ],

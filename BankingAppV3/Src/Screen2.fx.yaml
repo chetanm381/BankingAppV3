@@ -692,6 +692,7 @@ Screen2 As screen:
                 ZIndex: =9
 
             "DatePickerCanvas1 As 'Date picker'":
+                BasePaletteColor: =
                 DisplayMode: =DisplayMode.Edit
                 FontColor: =RGBA(107, 29, 94, 1)
                 Height: =32
@@ -799,7 +800,7 @@ Screen2 As screen:
 
                 Container21 As groupContainer.manualLayoutContainer:
                     DropShadow: =DropShadow.None
-                    Height: =Parent.Height*.15
+                    Height: =Parent.Height*.12
                     Width: =Gallery1_2.Width
                     ZIndex: =2
 
@@ -808,74 +809,91 @@ Screen2 As screen:
                         Height: =2
                         Width: =Parent.Width*.95
                         X: =(Parent.Width-Self.Width)/2
-                        Y: =DS_img_xebiaLogo_3.Y+DS_img_xebiaLogo_3.Height+Parent.Height*.015
+                        Y: =DS_Label13_10.Y+DS_Label13_10.Height+Parent.Height*.15
                         ZIndex: =2
 
                     DS_Label13_10 As label:
                         Align: =Align.Center
                         Color: =RGBA(107, 29, 94, 1)
                         FontWeight: =FontWeight.Bold
-                        Height: =50
                         OnSelect: =
                         Size: =12
                         Text: ="Application number"
-                        Width: =Parent.Width*.1
+                        Width: =Parent.Width*.085
                         X: =Parent.Width*.03
-                        Y: =Parent.Height*.02
+                        Y: =(Parent.Height-Self.Height)/2
                         ZIndex: =3
 
                     DS_Label13_11 As label:
                         Align: =Align.Center
                         Color: =RGBA(107, 29, 94, 1)
                         FontWeight: =FontWeight.Bold
-                        Height: =50
                         Size: =12
-                        Text: ="Name"
-                        Width: =Parent.Width*.08
+                        Text: ="Applicant Name"
+                        Width: =Parent.Width*.09
                         X: =DS_Label13_10.Width+DS_Label13_10.X
-                        Y: =Parent.Height*.02
+                        Y: =(Parent.Height-Self.Height)/2
                         ZIndex: =4
 
                     DS_Label13_12 As label:
                         Align: =Align.Center
                         Color: =RGBA(107, 29, 94, 1)
                         FontWeight: =FontWeight.Bold
-                        Height: =50
                         Size: =12
-                        Text: ="Application Date"
-                        Width: =Parent.Width*.1
+                        Text: ="Applied Date"
+                        Width: =Parent.Width*.07
                         X: =DS_Label13_11.X+DS_Label13_11.Width
-                        Y: =Parent.Height*.02
+                        Y: =(Parent.Height-Self.Height)/2
                         ZIndex: =5
 
                     DS_Label13_13 As label:
                         Align: =Align.Center
                         Color: =RGBA(107, 29, 94, 1)
                         FontWeight: =FontWeight.Bold
-                        Height: =50
                         Size: =12
-                        Text: ="Schedule Date"
+                        Text: ="Address"
                         Width: =Parent.Width*.1
                         X: =DS_Label13_12.X+DS_Label13_12.Width
-                        Y: =Parent.Height*.02
+                        Y: =(Parent.Height-Self.Height)/2
                         ZIndex: =6
 
                     DS_Label13_14 As label:
                         Align: =Align.Center
                         Color: =RGBA(107, 29, 94, 1)
                         FontWeight: =FontWeight.Bold
-                        Height: =50
                         Size: =12
-                        Text: ="Status"
-                        Width: =Parent.Width*.1
+                        Text: ="Pincode"
+                        Width: =Parent.Width*.06
                         X: =DS_Label13_13.X+DS_Label13_13.Width
-                        Y: =Parent.Height*.02
+                        Y: =(Parent.Height-Self.Height)/2
                         ZIndex: =7
+
+                    DS_Label13_15 As label:
+                        Align: =Align.Center
+                        Color: =RGBA(107, 29, 94, 1)
+                        FontWeight: =FontWeight.Bold
+                        Size: =12
+                        Text: ="State"
+                        Width: =Parent.Width*.07
+                        X: =DS_Label13_14.X+DS_Label13_14.Width
+                        Y: =(Parent.Height-Self.Height)/2
+                        ZIndex: =8
+
+                    DS_Label13_16 As label:
+                        Align: =Align.Center
+                        Color: =RGBA(107, 29, 94, 1)
+                        FontWeight: =FontWeight.Bold
+                        Size: =12
+                        Text: ="City"
+                        Width: =Parent.Width*.07
+                        X: =DS_Label13_15.X+DS_Label13_15.Width
+                        Y: =(Parent.Height-Self.Height)/2
+                        ZIndex: =9
 
                 "Gallery1_2 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
                     AccessibleLabel: ="No Item to display"
                     DelayItemLoading: =true
-                    Height: =Parent.Height*.8
+                    Height: =Parent.Height-Container21.Height
                     ItemAccessibleLabel: ="No Item To display"
                     Items: |-
                         =SortByColumns(
@@ -914,7 +932,7 @@ Screen2 As screen:
                     TemplateSize: =57
                     Transition: =Transition.Pop
                     Width: =2000
-                    Y: =82
+                    Y: =DS_Rectangle4_2.Y+DS_Rectangle4_2.Height
                     ZIndex: =3
 
                     DS_Label14_2 As label:
@@ -924,8 +942,9 @@ Screen2 As screen:
                         OnSelect: =Select(Parent)
                         Size: =11
                         Text: =ThisItem.ApplicationNumber
-                        Width: =Parent.Width*.06
+                        Width: =DS_Label13_10.Width
                         X: =DS_Label13_10.X
+                        Y: =(Gallery1_2.TemplateHeight-Self.Height)/2
                         ZIndex: =1
 
                     DS_Label15_2 As label:
@@ -935,8 +954,8 @@ Screen2 As screen:
                         OnSelect: =Select(Parent)
                         Size: =11
                         Text: =ThisItem.'Full Name'
-                        Width: =Parent.Width*.2
-                        X: =DS_Label13_6.X
+                        Width: =DS_Label13_11.Width
+                        X: =DS_Label13_11.X
                         Y: =(Gallery1_2.TemplateHeight-Self.Height)/2
                         ZIndex: =2
 
@@ -948,8 +967,8 @@ Screen2 As screen:
                         Size: =11
                         Text: |
                             =Text(DateTimeValue(ThisItem.'Created On'),  "[$-en-US]dd mmm' yy")
-                        Width: =Parent.Width*.2
-                        X: =DS_Label13_7.X
+                        Width: =DS_Label13_12.Width
+                        X: =DS_Label13_12.X
                         Y: =(Gallery1_2.TemplateHeight-Self.Height)/2
                         ZIndex: =4
 
@@ -970,8 +989,8 @@ Screen2 As screen:
                         Size: =11
                         Text: |
                             =ThisItem.Application_Status
-                        Width: =Parent.Width*.2
-                        X: =DS_Label13_9.X
+                        Width: =Parent.Width*.1
+                        X: =1220
                         Y: =(Gallery1_2.TemplateHeight-Self.Height)/2
                         ZIndex: =6
 
@@ -983,10 +1002,58 @@ Screen2 As screen:
                         Size: =11
                         Text: |
                             =Text(DateTimeValue(ThisItem.'Schedule Date'),  "[$-en-US]dd mmm' yyyy hh:mm")
-                        Width: =Parent.Width*.2
-                        X: =DS_Label13_8.X
+                        Width: =Parent.Width*.09
+                        X: =1093
                         Y: =(Gallery1_2.TemplateHeight-Self.Height)/2
                         ZIndex: =7
+
+                    DS_Label14_3 As label:
+                        Align: =Align.Center
+                        Color: =RGBA(107, 29, 94, 1)
+                        FontWeight: =FontWeight.Semibold
+                        OnSelect: =Select(Parent)
+                        Size: =11
+                        Text: =ThisItem.Address
+                        Width: =DS_Label13_13.Width
+                        X: =DS_Label13_13.X
+                        Y: =(Gallery1_2.TemplateHeight-Self.Height)/2
+                        ZIndex: =8
+
+                    DS_Label14_4 As label:
+                        Align: =Align.Center
+                        Color: =RGBA(107, 29, 94, 1)
+                        FontWeight: =FontWeight.Semibold
+                        OnSelect: =Select(Parent)
+                        Size: =11
+                        Text: =ThisItem.Address
+                        Width: =DS_Label13_14.Width
+                        X: =DS_Label13_14.X
+                        Y: =(Gallery1_2.TemplateHeight-Self.Height)/2
+                        ZIndex: =9
+
+                    DS_Label14_5 As label:
+                        Align: =Align.Center
+                        Color: =RGBA(107, 29, 94, 1)
+                        FontWeight: =FontWeight.Semibold
+                        OnSelect: =Select(Parent)
+                        Size: =11
+                        Text: =ThisItem.Address
+                        Width: =DS_Label13_15.Width
+                        X: =DS_Label13_15.X
+                        Y: =(Gallery1_2.TemplateHeight-Self.Height)/2
+                        ZIndex: =10
+
+                    DS_Label14_6 As label:
+                        Align: =Align.Center
+                        Color: =RGBA(107, 29, 94, 1)
+                        FontWeight: =FontWeight.Semibold
+                        OnSelect: =Select(Parent)
+                        Size: =11
+                        Text: =ThisItem.Address
+                        Width: =DS_Label13_16.Width
+                        X: =DS_Label13_16.X
+                        Y: =(Gallery1_2.TemplateHeight-Self.Height)/2
+                        ZIndex: =11
 
     shp_Seperator As rectangle:
         Fill: =RGBA(107, 29, 94, 1)
