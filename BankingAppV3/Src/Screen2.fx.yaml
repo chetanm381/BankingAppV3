@@ -859,7 +859,7 @@ Screen2 As screen:
                         Color: =RGBA(107, 29, 94, 1)
                         FontWeight: =FontWeight.Bold
                         OnSelect: =
-                        Size: =12
+                        Size: =If(App.ActiveScreen.Size<4,10,12)
                         Text: ="Application Number"
                         Width: =App.ActiveScreen.Width*.12
                         X: =App.ActiveScreen.Width*0.01
@@ -869,7 +869,7 @@ Screen2 As screen:
                     lbl_ApplicantNameHeader As label:
                         Color: =RGBA(107, 29, 94, 1)
                         FontWeight: =FontWeight.Bold
-                        Size: =12
+                        Size: =If(App.ActiveScreen.Size<4,10,12)
                         Text: ="Applicant Name"
                         Width: =App.ActiveScreen.Width*.12
                         X: =lbl_ApplicationNumberHeader.Width+lbl_ApplicationNumberHeader.X
@@ -880,7 +880,7 @@ Screen2 As screen:
                         Align: =Align.Center
                         Color: =RGBA(107, 29, 94, 1)
                         FontWeight: =FontWeight.Bold
-                        Size: =12
+                        Size: =If(App.ActiveScreen.Size<4,10,12)
                         Text: ="Applied Date"
                         Width: =App.ActiveScreen.Width*.12
                         X: =lbl_ApplicantNameHeader.X+lbl_ApplicantNameHeader.Width
@@ -891,7 +891,7 @@ Screen2 As screen:
                         Align: =Align.Center
                         Color: =RGBA(107, 29, 94, 1)
                         FontWeight: =FontWeight.Bold
-                        Size: =12
+                        Size: =If(App.ActiveScreen.Size<4,10,12)
                         Text: ="Address"
                         Width: =App.ActiveScreen.Width*.12
                         X: =lbl_AppliedDateHeader.X+lbl_AppliedDateHeader.Width
@@ -902,7 +902,7 @@ Screen2 As screen:
                         Align: =Align.Center
                         Color: =RGBA(107, 29, 94, 1)
                         FontWeight: =FontWeight.Bold
-                        Size: =12
+                        Size: =If(App.ActiveScreen.Size<4,10,12)
                         Text: ="Pincode"
                         Width: =App.ActiveScreen.Width*.12
                         X: =lbl_Adress.X+lbl_Adress.Width
@@ -913,7 +913,7 @@ Screen2 As screen:
                         Align: =Align.Center
                         Color: =RGBA(107, 29, 94, 1)
                         FontWeight: =FontWeight.Bold
-                        Size: =12
+                        Size: =If(App.ActiveScreen.Size<4,10,12)
                         Text: ="State"
                         Width: =App.ActiveScreen.Width*.12
                         X: =lbl_PincodeHeader.X+lbl_PincodeHeader.Width
@@ -924,7 +924,7 @@ Screen2 As screen:
                         Align: =Align.Center
                         Color: =RGBA(107, 29, 94, 1)
                         FontWeight: =FontWeight.Bold
-                        Size: =12
+                        Size: =If(App.ActiveScreen.Size<4,10,12)
                         Text: ="City"
                         Width: =App.ActiveScreen.Width*.12
                         X: =lbl_StateHeader.X+lbl_StateHeader.Width
@@ -935,7 +935,7 @@ Screen2 As screen:
                         Align: =Align.Center
                         Color: =RGBA(107, 29, 94, 1)
                         FontWeight: =FontWeight.Bold
-                        Size: =12
+                        Size: =If(App.ActiveScreen.Size<4,10,12)
                         Text: ="Status"
                         Width: =App.ActiveScreen.Width*.12
                         X: =lbl_cityHeader.X+lbl_cityHeader.Width
@@ -946,7 +946,7 @@ Screen2 As screen:
                         Align: =Align.Center
                         Color: =RGBA(107, 29, 94, 1)
                         FontWeight: =FontWeight.Bold
-                        Size: =12
+                        Size: =If(App.ActiveScreen.Size<4,10,12)
                         Text: ="Schedule Date"
                         Width: =App.ActiveScreen.Width*.12
                         X: =lbl_StatusHeader.X+lbl_StatusHeader.Width
@@ -1002,7 +1002,7 @@ Screen2 As screen:
                         Color: =RGBA(107, 29, 94, 1)
                         FontWeight: =FontWeight.Semibold
                         OnSelect: =Select(Parent)
-                        Size: =11
+                        Size: =If(App.ActiveScreen.Size<4,8,11)
                         Text: =ThisItem.ApplicationNumber
                         Width: =lbl_ApplicationNumberHeader.Width
                         X: =lbl_ApplicationNumberHeader.X
@@ -1010,10 +1010,11 @@ Screen2 As screen:
                         ZIndex: =1
 
                     lbl_ApplicantName As label:
+                        Align: =Align.Center
                         Color: =RGBA(107, 29, 94, 1)
                         FontWeight: =FontWeight.Semibold
                         OnSelect: =Select(Parent)
-                        Size: =11
+                        Size: =If(App.ActiveScreen.Size<4,8,11)
                         Text: =ThisItem.'Full Name'
                         Width: =lbl_ApplicantNameHeader.Width
                         X: =lbl_ApplicantNameHeader.X
@@ -1025,7 +1026,7 @@ Screen2 As screen:
                         Color: =RGBA(107, 29, 94, 1)
                         FontWeight: =FontWeight.Semibold
                         OnSelect: =Select(Parent)
-                        Size: =11
+                        Size: =If(App.ActiveScreen.Size<4,8,11)
                         Text: |
                             =Text(DateTimeValue(ThisItem.'Created On'),  "[$-en-US]dd mmm' yy")
                         Width: =lbl_AppliedDateHeader.Width
@@ -1047,7 +1048,7 @@ Screen2 As screen:
                             )
                         FontWeight: =FontWeight.Semibold
                         OnSelect: =Select(Parent)
-                        Size: =11
+                        Size: =If(App.ActiveScreen.Size<4,8,11)
                         Text: |
                             =ThisItem.Application_Status
                         Width: =lbl_StatusHeader.Width
@@ -1060,7 +1061,7 @@ Screen2 As screen:
                         Color: =RGBA(107, 29, 94, 1)
                         FontWeight: =FontWeight.Semibold
                         OnSelect: =Select(Parent)
-                        Size: =11
+                        Size: =If(App.ActiveScreen.Size<4,8,11)
                         Text: |
                             =Text(DateTimeValue(ThisItem.'Schedule Date'),  "[$-en-US]dd mmm' yyyy hh:mm")
                         Width: =lbl_ScheduleDateHeader.Width
@@ -1073,7 +1074,7 @@ Screen2 As screen:
                         Color: =RGBA(107, 29, 94, 1)
                         FontWeight: =FontWeight.Semibold
                         OnSelect: =Select(Parent)
-                        Size: =11
+                        Size: =If(App.ActiveScreen.Size<4,8,11)
                         Text: =ThisItem.Address
                         Width: =lbl_Adress.Width
                         X: =lbl_Adress.X
@@ -1085,8 +1086,8 @@ Screen2 As screen:
                         Color: =RGBA(107, 29, 94, 1)
                         FontWeight: =FontWeight.Semibold
                         OnSelect: =Select(Parent)
-                        Size: =11
-                        Text: =ThisItem.Address
+                        Size: =If(App.ActiveScreen.Size<4,8,11)
+                        Text: =ThisItem.'Pin Code'
                         Width: =lbl_PincodeHeader.Width
                         X: =lbl_PincodeHeader.X
                         Y: =(Gallery1_2.TemplateHeight-Self.Height)/2
@@ -1097,8 +1098,8 @@ Screen2 As screen:
                         Color: =RGBA(107, 29, 94, 1)
                         FontWeight: =FontWeight.Semibold
                         OnSelect: =Select(Parent)
-                        Size: =11
-                        Text: =ThisItem.Address
+                        Size: =If(App.ActiveScreen.Size<4,8,11)
+                        Text: =ThisItem.State.'Sate Name'
                         Width: =lbl_StateHeader.Width
                         X: =lbl_StateHeader.X
                         Y: =(Gallery1_2.TemplateHeight-Self.Height)/2
@@ -1109,8 +1110,8 @@ Screen2 As screen:
                         Color: =RGBA(107, 29, 94, 1)
                         FontWeight: =FontWeight.Semibold
                         OnSelect: =Select(Parent)
-                        Size: =11
-                        Text: =ThisItem.Address
+                        Size: =If(App.ActiveScreen.Size<4,8,11)
+                        Text: =ThisItem.CityState.'City Name'
                         Width: =lbl_cityHeader.Width
                         X: =lbl_cityHeader.X
                         Y: =(Gallery1_2.TemplateHeight-Self.Height)/2

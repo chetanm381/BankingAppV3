@@ -17,6 +17,20 @@
         "User form – Business": "c2413504-7eb2-4c59-a087-95d819866114",
         "User Hierarchy Tile Form": "c68d6c09-d7a7-4959-8d0f-44b8cff9b452"
       }
+    },
+    {
+      "Kind": "default.cds_app_city_forms",
+      "Namespace": "CityStates (Forms)",
+      "Values": {
+        "Information": "af29f07e-fbfc-4379-ab0e-a24206a33a89"
+      }
+    },
+    {
+      "Kind": "default.cds_app_state_forms",
+      "Namespace": "States (Forms)",
+      "Values": {
+        "Information": "aed7452f-9cd8-4311-a335-cc5d5b1ca292"
+      }
     }
   ]
 }

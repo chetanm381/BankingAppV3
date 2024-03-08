@@ -1,0 +1,99 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "app_cities",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "app_city",
+    "Name": "CityStates",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "app_city_AsyncOperations": "System Jobs",
+      "app_city_BulkDeleteFailures": "Bulk Delete Failures",
+      "app_city_DuplicateBaseRecord": "Duplicate Records (app_city_DuplicateBaseRecord)",
+      "app_city_DuplicateMatchingRecord": "Duplicate Records (app_city_DuplicateMatchingRecord)",
+      "app_city_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "app_city_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "app_city_ProcessSession": "Process Sessions",
+      "app_city_SyncErrors": "Sync Errors",
+      "app_cityid": "City",
+      "app_cityname": "City Name",
+      "app_cityno": "CityNo",
+      "app_IdentificationDetails_app_City_app_Ci": "Identification Details",
+      "app_State": "State",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "CityStates",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "CityStates (Views)",
+    "Name": "_app_city_views",
+    "RelatedEntityName": "CityStates",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "132ac0ae-5fdf-4979-be79-27229eb95261": "Active Cities",
+      "4da1d604-b6bc-4b4e-82cb-0537b9b9738f": "City Lookup View",
+      "9ae7968c-008a-4e24-b8d6-936d5b52e5e6": "City Advanced Find View",
+      "9bfdda8a-c11d-45f7-bb2f-40ff370874c3": "Inactive Cities",
+      "cb8c9233-70ac-47d8-822f-3ea9b3bc2837": "City Associated View"
+    }
+  },
+  {
+    "DisplayName": "Status (CityStates)",
+    "Name": "app_city_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "CityStates"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "CityStates",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (CityStates)",
+    "Name": "app_city_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "CityStates"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "CityStates",
+    "Type": "OptionSetInfo"
+  }
+]
