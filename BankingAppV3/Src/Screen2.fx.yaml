@@ -480,7 +480,7 @@ Screen2 As screen:
         Container13 As groupContainer.verticalAutoLayoutContainer:
             DropShadow: =DropShadow.None
             FillPortions: =
-            Height: =Parent.Height*.13
+            Height: =Parent.Height*.12
             LayoutAlignItems: =LayoutAlignItems.Center
             LayoutMinHeight: =100
             LayoutMinWidth: =Parent.Width
@@ -793,9 +793,12 @@ Screen2 As screen:
             Container20 As groupContainer.manualLayoutContainer:
                 AlignInContainer: =AlignInContainer.SetByContainer
                 DropShadow: =DropShadow.None
-                Height: =Parent.Height
+                FillPortions: =0
+                Height: =Parent.Height*.96
                 LayoutMinHeight: =100
                 LayoutMinWidth: =Gallery1_2.Width
+                PaddingTop: =5
+                Width: =Gallery1_2.Width
                 ZIndex: =1
 
                 Container21 As groupContainer.manualLayoutContainer:
@@ -819,18 +822,17 @@ Screen2 As screen:
                         OnSelect: =
                         Size: =12
                         Text: ="Application Number"
-                        Width: =Parent.Width*.089
+                        Width: =Parent.Width*.12
                         X: =Parent.Width*.03
                         Y: =(Parent.Height-Self.Height)/2
                         ZIndex: =3
 
                     lbl_ApplicantNameHeader As label:
-                        Align: =Align.Center
                         Color: =RGBA(107, 29, 94, 1)
                         FontWeight: =FontWeight.Bold
                         Size: =12
                         Text: ="Applicant Name"
-                        Width: =Parent.Width*.09
+                        Width: =Parent.Width*.12
                         X: =lbl_ApplicationNumberHeader.Width+lbl_ApplicationNumberHeader.X
                         Y: =(Parent.Height-Self.Height)/2
                         ZIndex: =4
@@ -841,7 +843,7 @@ Screen2 As screen:
                         FontWeight: =FontWeight.Bold
                         Size: =12
                         Text: ="Applied Date"
-                        Width: =Parent.Width*.07
+                        Width: =Parent.Width*.11
                         X: =lbl_ApplicantNameHeader.X+lbl_ApplicantNameHeader.Width
                         Y: =(Parent.Height-Self.Height)/2
                         ZIndex: =5
@@ -852,7 +854,7 @@ Screen2 As screen:
                         FontWeight: =FontWeight.Bold
                         Size: =12
                         Text: ="Address"
-                        Width: =Parent.Width*.1
+                        Width: =Parent.Width*.12
                         X: =lbl_AppliedDateHeader.X+lbl_AppliedDateHeader.Width
                         Y: =(Parent.Height-Self.Height)/2
                         ZIndex: =6
@@ -890,7 +892,7 @@ Screen2 As screen:
                         Y: =(Parent.Height-Self.Height)/2
                         ZIndex: =9
 
-                    lbl_cityHeader_1 As label:
+                    lbl_StatusHeader As label:
                         Align: =Align.Center
                         Color: =RGBA(107, 29, 94, 1)
                         FontWeight: =FontWeight.Bold
@@ -900,6 +902,17 @@ Screen2 As screen:
                         X: =lbl_cityHeader.X+lbl_cityHeader.Width
                         Y: =(Parent.Height-Self.Height)/2
                         ZIndex: =10
+
+                    lbl_ScheduleDateHeader As label:
+                        Align: =Align.Center
+                        Color: =RGBA(107, 29, 94, 1)
+                        FontWeight: =FontWeight.Bold
+                        Size: =12
+                        Text: ="Schedule Date"
+                        Width: =Parent.Width*.09
+                        X: =lbl_StatusHeader.X+lbl_StatusHeader.Width
+                        Y: =(Parent.Height-Self.Height)/2
+                        ZIndex: =11
 
                 "Gallery1_2 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
                     AccessibleLabel: ="No Item to display"
@@ -940,14 +953,12 @@ Screen2 As screen:
                     Selectable: =false
                     ShowScrollbar: =false
                     TemplatePadding: =0
-                    TemplateSize: =57
-                    Transition: =Transition.Pop
-                    Width: =2000
+                    TemplateSize: =60
+                    Width: =1600
                     Y: =DS_Rectangle4_2.Y+DS_Rectangle4_2.Height
                     ZIndex: =3
 
                     lbl_ApplicationNumber As label:
-                        Align: =Align.Center
                         Color: =RGBA(107, 29, 94, 1)
                         FontWeight: =FontWeight.Semibold
                         OnSelect: =Select(Parent)
@@ -959,7 +970,6 @@ Screen2 As screen:
                         ZIndex: =1
 
                     lbl_ApplicantName As label:
-                        Align: =Align.Center
                         Color: =RGBA(107, 29, 94, 1)
                         FontWeight: =FontWeight.Semibold
                         OnSelect: =Select(Parent)
@@ -1000,8 +1010,8 @@ Screen2 As screen:
                         Size: =11
                         Text: |
                             =ThisItem.Application_Status
-                        Width: =Parent.Width*.1
-                        X: =1220
+                        Width: =lbl_StatusHeader.Width
+                        X: =lbl_StatusHeader.X
                         Y: =(Gallery1_2.TemplateHeight-Self.Height)/2
                         ZIndex: =6
 
@@ -1013,8 +1023,8 @@ Screen2 As screen:
                         Size: =11
                         Text: |
                             =Text(DateTimeValue(ThisItem.'Schedule Date'),  "[$-en-US]dd mmm' yyyy hh:mm")
-                        Width: =Parent.Width*.09
-                        X: =1093
+                        Width: =lbl_ScheduleDateHeader.Width
+                        X: =lbl_ScheduleDateHeader.X
                         Y: =(Gallery1_2.TemplateHeight-Self.Height)/2
                         ZIndex: =7
 

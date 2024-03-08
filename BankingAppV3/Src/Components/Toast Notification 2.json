@@ -27,7 +27,7 @@
             "OptimizeForDevices": "Off",
             "Parent": "Gallery2",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 800,
+            "PublishOrderIndex": 801,
             "Rules": [
               {
                 "Category": "Design",
@@ -165,7 +165,7 @@
                 "OptimizeForDevices": "Off",
                 "Parent": "Container5",
                 "PersistMetaDataIDKey": false,
-                "PublishOrderIndex": 802,
+                "PublishOrderIndex": 803,
                 "Rules": [
                   {
                     "Category": "Data",
@@ -421,7 +421,7 @@
                 "OptimizeForDevices": "Off",
                 "Parent": "Container5",
                 "PersistMetaDataIDKey": false,
-                "PublishOrderIndex": 803,
+                "PublishOrderIndex": 804,
                 "Rules": [
                   {
                     "Category": "Data",
@@ -772,7 +772,7 @@
                 "OptimizeForDevices": "Off",
                 "Parent": "Container5",
                 "PersistMetaDataIDKey": false,
-                "PublishOrderIndex": 804,
+                "PublishOrderIndex": 805,
                 "Rules": [
                   {
                     "Category": "Data",
@@ -1161,7 +1161,7 @@
                 "OptimizeForDevices": "Off",
                 "Parent": "Container5",
                 "PersistMetaDataIDKey": false,
-                "PublishOrderIndex": 805,
+                "PublishOrderIndex": 806,
                 "Rules": [
                   {
                     "Category": "Design",
@@ -1408,7 +1408,7 @@
             "OptimizeForDevices": "Off",
             "Parent": "Gallery2",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 801,
+            "PublishOrderIndex": 802,
             "Rules": [
               {
                 "Category": "Design",
@@ -1608,7 +1608,7 @@
         "OptimizeForDevices": "Off",
         "Parent": "Toast Notification 2",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 799,
+        "PublishOrderIndex": 800,
         "Rules": [
           {
             "Category": "Data",
@@ -1873,7 +1873,7 @@
         "OptimizeForDevices": "Off",
         "Parent": "Toast Notification 2",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 806,
+        "PublishOrderIndex": 807,
         "Rules": [
           {
             "Category": "Data",
