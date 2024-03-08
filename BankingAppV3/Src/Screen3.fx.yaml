@@ -1,0 +1,133 @@
+Screen3 As screen:
+
+    Container9 As groupContainer.horizontalAutoLayoutContainer:
+        Height: =504
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutMode: =LayoutMode.Auto
+        LayoutOverflowX: =LayoutOverflow.Scroll
+        LayoutOverflowY: =LayoutOverflow.Scroll
+        Width: =Parent.Width
+        Y: =264
+        ZIndex: =1
+
+        Container10 As groupContainer.horizontalAutoLayoutContainer:
+            FillPortions: =0
+            Height: =Parent.Height*.13
+            LayoutAlignItems: =LayoutAlignItems.Center
+            LayoutGap: =5
+            LayoutMinHeight: =100
+            LayoutMinWidth: =Parent.Width
+            LayoutMode: =LayoutMode.Auto
+            LayoutOverflowX: =LayoutOverflow.Scroll
+            PaddingLeft: =10
+            ZIndex: =1
+
+            lbl_ApplicationNumberHeader_1 As label:
+                Align: =Align.Center
+                Color: =RGBA(107, 29, 94, 1)
+                FontWeight: =FontWeight.Bold
+                OnSelect: =
+                Size: =12
+                Text: ="Application Number"
+                Width: =App.ActiveScreen.Width*.12
+                X: =Parent.Width*.03
+                Y: =(Parent.Height-Self.Height)/2
+                ZIndex: =1
+
+            lbl_ApplicantNameHeader_1 As label:
+                Color: =RGBA(107, 29, 94, 1)
+                FontWeight: =FontWeight.Bold
+                Size: =12
+                Text: ="Applicant Name"
+                Width: =App.ActiveScreen.Width*.12
+                X: =lbl_ApplicationNumberHeader_1.Width+lbl_ApplicationNumberHeader_1.X
+                Y: =(Parent.Height-Self.Height)/2
+                ZIndex: =2
+
+            lbl_AppliedDateHeader_1 As label:
+                Align: =Align.Center
+                Color: =RGBA(107, 29, 94, 1)
+                FontWeight: =FontWeight.Bold
+                Size: =12
+                Text: ="Applied Date"
+                Width: =App.ActiveScreen.Width*.12
+                X: =lbl_ApplicantNameHeader_1.X+lbl_ApplicantNameHeader_1.Width
+                Y: =(Parent.Height-Self.Height)/2
+                ZIndex: =3
+
+            lbl_Adress_1 As label:
+                Align: =Align.Center
+                Color: =RGBA(107, 29, 94, 1)
+                FontWeight: =FontWeight.Bold
+                Size: =12
+                Text: ="Address"
+                Width: =App.ActiveScreen.Width*.12
+                X: =lbl_AppliedDateHeader_1.X+lbl_AppliedDateHeader_1.Width
+                Y: =(Parent.Height-Self.Height)/2
+                ZIndex: =4
+
+            lbl_PincodeHeader_1 As label:
+                Align: =Align.Center
+                Color: =RGBA(107, 29, 94, 1)
+                FontWeight: =FontWeight.Bold
+                Size: =12
+                Text: ="Pincode"
+                Width: =App.ActiveScreen.Width*.12
+                X: =lbl_Adress_1.X+lbl_Adress_1.Width
+                Y: =(Parent.Height-Self.Height)/2
+                ZIndex: =5
+
+            lbl_StateHeader_1 As label:
+                Align: =Align.Center
+                Color: =RGBA(107, 29, 94, 1)
+                FontWeight: =FontWeight.Bold
+                Size: =12
+                Text: ="State"
+                Width: =App.ActiveScreen.Width*.12
+                X: =lbl_PincodeHeader_1.X+lbl_PincodeHeader_1.Width
+                Y: =(Parent.Height-Self.Height)/2
+                ZIndex: =6
+
+            lbl_cityHeader_1 As label:
+                Align: =Align.Center
+                Color: =RGBA(107, 29, 94, 1)
+                FontWeight: =FontWeight.Bold
+                Size: =12
+                Text: ="City"
+                Width: =App.ActiveScreen.Width*.12
+                X: =lbl_StateHeader_1.X+lbl_StateHeader_1.Width
+                Y: =(Parent.Height-Self.Height)/2
+                ZIndex: =7
+
+            lbl_StatusHeader_1 As label:
+                Align: =Align.Center
+                Color: =RGBA(107, 29, 94, 1)
+                FontWeight: =FontWeight.Bold
+                Size: =12
+                Text: ="Status"
+                Width: =App.ActiveScreen.Width*.12
+                X: =lbl_cityHeader_1.X+lbl_cityHeader_1.Width
+                Y: =(Parent.Height-Self.Height)/2
+                ZIndex: =8
+
+            lbl_ScheduleDateHeader_1 As label:
+                Align: =Align.Center
+                Color: =RGBA(107, 29, 94, 1)
+                FontWeight: =FontWeight.Bold
+                Size: =12
+                Text: ="Schedule Date"
+                Width: =App.ActiveScreen.Width*.12
+                X: =lbl_StatusHeader_1.X+lbl_StatusHeader_1.Width
+                Y: =(Parent.Height-Self.Height)/2
+                ZIndex: =9
+
+        Container16 As groupContainer.horizontalAutoLayoutContainer:
+            FillPortions: =0
+            Height: =Parent.Height-Container10.Height
+            LayoutMinHeight: =100
+            LayoutMinWidth: =Parent.Width
+            LayoutMode: =LayoutMode.Auto
+            LayoutOverflowX: =LayoutOverflow.Scroll
+            LayoutOverflowY: =LayoutOverflow.Scroll
+            ZIndex: =2
+

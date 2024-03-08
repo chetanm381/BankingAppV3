@@ -488,6 +488,7 @@ Screen2 As screen:
             ZIndex: =3
 
             Container15 As groupContainer.manualLayoutContainer:
+                DropShadow: =DropShadow.None
                 FillPortions: =0
                 LayoutMinHeight: =Parent.Height
                 LayoutMinWidth: =250
@@ -511,6 +512,7 @@ Screen2 As screen:
                     HoverBorderColor: =RGBA(235, 235, 235, 1)
                     HoverFill: =RGBA(235, 235, 235, 1)
                     Size: =10
+                    Visible: =false
                     Width: =350
                     X: =Label9.X
                     Y: =Label9.Y+Label9.Height
@@ -540,7 +542,7 @@ Screen2 As screen:
                     PressedFill: =RGBA(107, 29, 94, 1)
                     SelectionFill: =RGBA(82, 82, 82, 1)
                     Size: =10
-                    Width: =Parent.Width*.15
+                    Width: =Parent.Width*.2
                     X: =Label9_1.X
                     Y: =TextInput2.Y
                     ZIndex: =5
@@ -554,10 +556,7 @@ Screen2 As screen:
                         =ColorValue("#6b1d5e")
                     HoverFill: |-
                         =ColorValue("#6b1d5e")
-                    OnSelect: |-
-                        =Reset(DS_Dropdown1_3);
-                        Reset(DS_Dropdown1_5);
-                        Set(InReview,false);
+                    OnSelect: =Reset(TextInput1_5)
                     PressedBorderColor: |-
                         =ColorValue("#6b1d5e")
                     PressedFill: |-
@@ -604,15 +603,55 @@ Screen2 As screen:
                     ZIndex: =7
 
                 Label10 As label:
+                    Align: =Align.Center
                     Color: =RGBA(107, 29, 94, 1)
                     FontWeight: =FontWeight.Bold
                     Height: =35
                     OnSelect: =Set(ShowAdvancedFilters,!ShowAdvancedFilters)
                     Text: ="Advanced Filters"
                     Width: =Parent.Width*.12
-                    X: =Parent.Width-Self.Width-Parent.Width*.01
+                    X: =Parent.Width-Self.Width-3
                     Y: =DS_Dropdown1_6.Y
                     ZIndex: =8
+
+                TextInput1_5 As text:
+                    BorderColor: =RGBA(157, 160, 163, 1)
+                    BorderThickness: =1
+                    Default: =""
+                    Fill: =RGBA(0, 0, 0, 0)
+                    Height: =35
+                    HintText: ="Search case number"
+                    HoverBorderColor: =RGBA(88, 81, 88, 0.73)
+                    HoverFill: =RGBA(157, 160, 163, 0.15)
+                    PaddingLeft: =If(!IsBlank(TextInput1_5),30,30+Icon3_1.Width)
+                    PressedBorderColor: =RGBA(88, 81, 88, 0.77)
+                    RadiusBottomLeft: =0
+                    RadiusBottomRight: =0
+                    RadiusTopLeft: =0
+                    RadiusTopRight: =0
+                    Size: =10
+                    Width: =TextInput2.Width
+                    X: =TextInput1.X
+                    Y: =40
+                    ZIndex: =9
+
+                Rectangle1_2 As rectangle:
+                    Fill: =RGBA(22, 151, 170, 1)
+                    Height: =1
+                    Visible: =false
+                    Width: =358
+                    X: =Parent.X+40
+                    Y: =75
+                    ZIndex: =10
+
+                Icon3_1 As icon.Search:
+                    Color: =RGBA(107, 29, 94, 1)
+                    Height: =20
+                    Icon: =Icon.Search
+                    Width: =20
+                    X: =TextInput1_5.X*1.15
+                    Y: =TextInput1_5.Y+(TextInput1_5.Height-Self.Width)/2
+                    ZIndex: =11
 
         Container15_1 As groupContainer.manualLayoutContainer:
             DropShadow: =DropShadow.None
@@ -822,8 +861,8 @@ Screen2 As screen:
                         OnSelect: =
                         Size: =12
                         Text: ="Application Number"
-                        Width: =Parent.Width*.12
-                        X: =Parent.Width*.03
+                        Width: =App.ActiveScreen.Width*.12
+                        X: =App.ActiveScreen.Width*0.01
                         Y: =(Parent.Height-Self.Height)/2
                         ZIndex: =3
 
@@ -832,7 +871,7 @@ Screen2 As screen:
                         FontWeight: =FontWeight.Bold
                         Size: =12
                         Text: ="Applicant Name"
-                        Width: =Parent.Width*.12
+                        Width: =App.ActiveScreen.Width*.12
                         X: =lbl_ApplicationNumberHeader.Width+lbl_ApplicationNumberHeader.X
                         Y: =(Parent.Height-Self.Height)/2
                         ZIndex: =4
@@ -843,7 +882,7 @@ Screen2 As screen:
                         FontWeight: =FontWeight.Bold
                         Size: =12
                         Text: ="Applied Date"
-                        Width: =Parent.Width*.11
+                        Width: =App.ActiveScreen.Width*.12
                         X: =lbl_ApplicantNameHeader.X+lbl_ApplicantNameHeader.Width
                         Y: =(Parent.Height-Self.Height)/2
                         ZIndex: =5
@@ -854,7 +893,7 @@ Screen2 As screen:
                         FontWeight: =FontWeight.Bold
                         Size: =12
                         Text: ="Address"
-                        Width: =Parent.Width*.12
+                        Width: =App.ActiveScreen.Width*.12
                         X: =lbl_AppliedDateHeader.X+lbl_AppliedDateHeader.Width
                         Y: =(Parent.Height-Self.Height)/2
                         ZIndex: =6
@@ -865,7 +904,7 @@ Screen2 As screen:
                         FontWeight: =FontWeight.Bold
                         Size: =12
                         Text: ="Pincode"
-                        Width: =Parent.Width*.06
+                        Width: =App.ActiveScreen.Width*.12
                         X: =lbl_Adress.X+lbl_Adress.Width
                         Y: =(Parent.Height-Self.Height)/2
                         ZIndex: =7
@@ -876,7 +915,7 @@ Screen2 As screen:
                         FontWeight: =FontWeight.Bold
                         Size: =12
                         Text: ="State"
-                        Width: =Parent.Width*.07
+                        Width: =App.ActiveScreen.Width*.12
                         X: =lbl_PincodeHeader.X+lbl_PincodeHeader.Width
                         Y: =(Parent.Height-Self.Height)/2
                         ZIndex: =8
@@ -887,7 +926,7 @@ Screen2 As screen:
                         FontWeight: =FontWeight.Bold
                         Size: =12
                         Text: ="City"
-                        Width: =Parent.Width*.07
+                        Width: =App.ActiveScreen.Width*.12
                         X: =lbl_StateHeader.X+lbl_StateHeader.Width
                         Y: =(Parent.Height-Self.Height)/2
                         ZIndex: =9
@@ -898,7 +937,7 @@ Screen2 As screen:
                         FontWeight: =FontWeight.Bold
                         Size: =12
                         Text: ="Status"
-                        Width: =Parent.Width*.07
+                        Width: =App.ActiveScreen.Width*.12
                         X: =lbl_cityHeader.X+lbl_cityHeader.Width
                         Y: =(Parent.Height-Self.Height)/2
                         ZIndex: =10
@@ -909,7 +948,7 @@ Screen2 As screen:
                         FontWeight: =FontWeight.Bold
                         Size: =12
                         Text: ="Schedule Date"
-                        Width: =Parent.Width*.09
+                        Width: =App.ActiveScreen.Width*.12
                         X: =lbl_StatusHeader.X+lbl_StatusHeader.Width
                         Y: =(Parent.Height-Self.Height)/2
                         ZIndex: =11
@@ -954,11 +993,12 @@ Screen2 As screen:
                     ShowScrollbar: =false
                     TemplatePadding: =0
                     TemplateSize: =60
-                    Width: =1600
+                    Width: =App.ActiveScreen.Width*1.1
                     Y: =DS_Rectangle4_2.Y+DS_Rectangle4_2.Height
                     ZIndex: =3
 
                     lbl_ApplicationNumber As label:
+                        Align: =Align.Center
                         Color: =RGBA(107, 29, 94, 1)
                         FontWeight: =FontWeight.Semibold
                         OnSelect: =Select(Parent)
